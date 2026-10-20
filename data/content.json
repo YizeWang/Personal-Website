@@ -1,0 +1,937 @@
+{
+  "source": "https://yizewang.weebly.com/",
+  "imported": "2026-10-20",
+  "name": "Yize Wang",
+  "email": "yize.wang.robotics@outlook.com",
+  "hero": {
+    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/background-images/1331584245.jpg",
+    "path": "images/originals/1331584245.jpg",
+    "sha256": "92c5146c82a3898a7c1cf13cc4a05a97a1ea797dc120a9e873ddf665bbaa35e8",
+    "bytes": 525716,
+    "width": 2000,
+    "height": 1333,
+    "frames": 1,
+    "preview": "images/previews/1331584245.webp",
+    "preview_width": 1100,
+    "preview_height": 733
+  },
+  "portrait": {
+    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/portrait_orig.png",
+    "path": "images/originals/portrait_orig.png",
+    "sha256": "65819f72e2c98b07832b4b31ce0acdd152601efefb3e7df1aa33580963a11361",
+    "bytes": 1705825,
+    "width": 846,
+    "height": 1213,
+    "frames": 1,
+    "preview": "images/previews/portrait_orig.webp",
+    "preview_width": 558,
+    "preview_height": 800
+  },
+  "cv": {
+    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/cv_yize_wang.pdf",
+    "path": "files/cv_yize_wang.pdf",
+    "sha256": "831ddea00a58a7040bb128a2a173f84f47265dfa5603217391b006cfc5ace683",
+    "bytes": 173538
+  },
+  "biography": [
+    "Hello! My name is Yize Wang, currently a master's student at ETH Zurich, majoring in Mechanical Engineering. My research interests are autonomous driving algorithms, specifically, path planning and decision making.",
+    "I obtained my bachelor’s degree from Shanghai Jiao Tong University with a GPA of 90/100, ranked first in the Mechanical Engineering Honor Program. My research projects are mainly about collision avoidance algorithm, mechanical design, and mechatronic system development. My advisor was Prof. Liang Gong from Institute of Mechatronics &amp; Logistics Equipment.",
+    "In Summer 2019, I joined the ETH Robotics Summer School held in Switzerland. I gained practical experiences on state estimation, localization, mapping and path planning through the operation of SuperMegaBot, a rescue robot developed by Robotic Systems Lab at ETH Zurich.",
+    "In 2017, I also spent a productive summer at University of Michigan, Ann Arbor, with Prof. Zida Li and Prof. Jianping Fu. My research topic was developing a measurement platform of blood retraction force."
+  ],
+  "education": [
+    {
+      "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/><a href=\"https://www.topuniversities.com/universities/eth-zurich-swiss-federal-institute-technology/postgrad\">ETH Zurich</a>, Switzerland<br/>Advised by <a href=\"https://www.mavt.ethz.ch/the-department/people/person-detail.html?persid=29981\">Prof. Roland Siegwart</a><br/><strong>GPA: 5.7 / 6.0</strong>",
+      "date": "Sep 2018 – May 2021"
+    },
+    {
+      "html": "<strong>ETH </strong><strong>Robotics Summer School<br/></strong>Wangen an der Aare, Switzerland<br/>Topic: Path Planning on Rescue Robots",
+      "date": "Jun 2019 – Jul 2019"
+    },
+    {
+      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/><a href=\"https://www.topuniversities.com/universities/shanghai-jiao-tong-university/undergrad\">Shanghai Jiao Tong University</a>, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100</strong>",
+      "date": "Sep 2014 – Jul 2018 · Rank: 1 / 28"
+    },
+    {
+      "html": "<strong>Research Assistant</strong><br/>Department of Mechanical Engineering<br/><a href=\"https://www.usnews.com/best-colleges/university-of-michigan-ann-arbor-9092\">University of Michigan, Ann Arbor</a>, USA<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>",
+      "date": "Jun 2017 – Sep 2017"
+    }
+  ],
+  "graduate_courses": [
+    [
+      "151-0851-00 <a href=\"http://www.rsl.ethz.ch/education-students/lectures/robotdynamics.html\">Robot Dynamics</a>",
+      "5.5 / 6.0"
+    ],
+    [
+      "151-0604-00 <a href=\"http://www.msrl.ethz.ch/education/microrobotics.html\">Microrobotics</a>",
+      "5.5 / 6.0"
+    ],
+    [
+      "151-0563-01 <a href=\"http://www.idsc.ethz.ch/education/lectures/optimal-control.html\">Dynamic Programming and Optimal Control</a>",
+      "5.5 / 6.0"
+    ],
+    [
+      "151-0854-00 <a href=\"http://www.asl.ethz.ch/education/lectures/autonomous_mobile_robots/spring-2019.html\">Autonomous Mobile Robots</a>",
+      "6.0 / 6.0"
+    ],
+    [
+      "151-0660-00 <a href=\"http://www.idsc.ethz.ch/education/lectures/model-predictive-control.html\">Model Predictive Control</a>",
+      "6.0 / 6.0"
+    ],
+    [
+      "151-0566-00 <a href=\"http://www.idsc.ethz.ch/education/lectures/recursive-estimation.html\">Recursive Estimation</a>",
+      "5.3 / 6.0"
+    ],
+    [
+      "252-0579-00 <a href=\"http://www.cvg.ethz.ch/teaching/3dvision/courseSchedule.php\">3D Vision</a>",
+      "5.5 / 6.0"
+    ],
+    [
+      "227-0216-00 <a href=\"http://www.vvz.ethz.ch/lerneinheitPre.do?semkez=2019S&amp;lerneinheitId=127912&amp;lang=en\">Control Systems II</a>",
+      "5.3 / 6.0"
+    ],
+    [
+      "227-0225-00 <a href=\"http://people.ee.ethz.ch/~ifalst/\">Linear System Theory</a>",
+      "6.0 / 6.0"
+    ],
+    [
+      "263-5210-00 <a href=\"https://las.inf.ethz.ch/pai-f19\">Probabilistic Artificial Intelligence</a>",
+      "5.5 / 6.0"
+    ]
+  ],
+  "undergraduate_courses": [
+    [
+      "ME429 Design and Practice of Mechatronic Systems",
+      "90/100"
+    ],
+    [
+      "EE205 Electrical and Electronic Technology",
+      "99/100"
+    ],
+    [
+      "ME113 Programming: Principles and Practice Using C++",
+      "93/100"
+    ],
+    [
+      "ME208 Design and Manufacture",
+      "90/100"
+    ],
+    [
+      "ME369 Modeling Analysis and System Control",
+      "85/100"
+    ],
+    [
+      "ME399 Measurement Principles and Technologies",
+      "97/100"
+    ],
+    [
+      "ME345 Engineering Material",
+      "95/100"
+    ],
+    [
+      "ES004 Electronic System Design Based on Android System",
+      "98/100"
+    ],
+    [
+      "CS902 Thinking and Approach of Programming",
+      "94/100"
+    ],
+    [
+      "EM003 Engineering Fluid Mechanics",
+      "91/100"
+    ],
+    [
+      "BE203 Engineering Thermodynamics",
+      "92/100"
+    ],
+    [
+      "MA097 Mathematical Methods in Physics",
+      "88/100"
+    ],
+    [
+      "MA118 Mathematical Analysis",
+      "91/100"
+    ],
+    [
+      "EM001 Theoretical Mechanics",
+      "89/100"
+    ],
+    [
+      "MA119 Probability and Statistics",
+      "91/100"
+    ]
+  ],
+  "skills": "<strong>Programming:</strong> C++, Python, MATLAB<br/><strong>Technology:</strong> Linux, ROS, Git, Docker, CMake, LaTeX, SolidWorks<br/><strong>Knowledge:</strong> path planning, state estimation, model predictive control, game theory, reinforcement learning<br/>",
+  "research": [
+    {
+      "title": "Intersection Path Planning for HD Maps",
+      "paragraphs": [
+        "<strong>Intelligent Automotive Solution Dept., Huawei | Jun 2020 - Sep 2020 (Full Time)</strong><br/><strong>Key Words: Autonomous Driving, Path Planning, HD Map, A* search, Bezier Curve</strong>",
+        "According to the HD map production pipeline, production workers will label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool will output a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool can accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>Till now, among more than 10,000 planned paths, 99% of them comply with all constraints and are now serving perfectly in the HD maps."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/a-fully-planned-intersection_orig.png",
+            "path": "images/originals/a-fully-planned-intersection_orig.png",
+            "sha256": "1f8d026e5b43731fbb1240bf19476df9fe143de8179956e10b2b6baa1e12c654",
+            "bytes": 408293,
+            "width": 915,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/a-fully-planned-intersection_orig.webp",
+            "preview_width": 915,
+            "preview_height": 800
+          },
+          "caption": "A Fully-Planned Intersection",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/8-obstacle-avoidance_orig.png",
+            "path": "images/originals/8-obstacle-avoidance_orig.png",
+            "sha256": "45a26e6aa4eb8334413c98c1ed08dd14b8ad6b2354526860c4120884d1f9a1b8",
+            "bytes": 226843,
+            "width": 915,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/8-obstacle-avoidance_orig.webp",
+            "preview_width": 915,
+            "preview_height": 800
+          },
+          "caption": "Obstacle Avoidance",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Path Planning for Constrained Stochastic Systems Based on Path Integral Algorithm",
+      "paragraphs": [
+        "<strong>ETH Zurich | Jun 2019 - Sep 2019 (Full Time)</strong><br/><strong>Advised by</strong><strong> Jan Carius, Dr. Farbod Farshidian, Prof. Marco Hutter, <a href=\"https://rsl.ethz.ch/\">Robotic Systems Lab</a></strong><br/><strong>Key Words: Stochastic Constrained Optimal Control, Path Integral, MPC</strong>",
+        "The problem of optimal control in the presence of noise occurs in many areas of science and engineering. Examples are the control of movement in biological systems, robotics, financial investment policies, and robot path planning. Dealing with real systems, we often have state-input inequality constraints. For instance, we want to keep the contact force inside the friction cone. <br/><br/>In stochastic sense, the cost function would thus be the expectation of nominal cost. After elegant manipulation and log transform, the optimality condition for the cost can be expressed in the linear form. Based on the path integral formulation, I investigated the possibility to find an analytic and a numerical optimizer. The sampling policy is finally modified to respect the inequality constraints. As a result, the robot can safely circumvent the barriers by applying the optimal control corrupted by the noise.<br/><br/>For higher dimensions, the state-input constrained feasible region may be complex and the computation cost grows fast. Further work would thus be applying parallel computation to improve the computation efficiency."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/input-constrained-10-000_orig.png",
+            "path": "images/originals/input-constrained-10-000_orig.png",
+            "sha256": "147b3c261e84713aea14fe11625791cbc67a0042602b9d7c9daa04461832c988",
+            "bytes": 97815,
+            "width": 1100,
+            "height": 645,
+            "frames": 1,
+            "preview": "images/previews/input-constrained-10-000_orig.webp",
+            "preview_width": 1100,
+            "preview_height": 645
+          },
+          "caption": "Circumvent Barrier and Respect Constraints",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/delayed-decision_orig.png",
+            "path": "images/originals/delayed-decision_orig.png",
+            "sha256": "00703ff4fd4881893d004efcfad47ba3b0c5841acbddd8b573534f9f20db2403",
+            "bytes": 74090,
+            "width": 1100,
+            "height": 645,
+            "frames": 1,
+            "preview": "images/previews/delayed-decision_orig.webp",
+            "preview_width": 1100,
+            "preview_height": 645
+          },
+          "caption": "Delayed Decision Phenomenon",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "3D Reconstruction from Depth Maps with Microsoft HoloLens",
+      "paragraphs": [
+        "<strong>ETH Zurich | Mar 2019 - Jun 2019</strong><br/><strong>Advised by Dr. Silvano Galliani, and Prof. Marc Pollefeys, CVG and Microsoft</strong><br/><strong>Key Words: Computer Vision, Depth Map Fusion, C++</strong>",
+        "Depth map fusion is an essential part of both stereo and RGB-D based 3D reconstruction pipelines. Thanks to the research mode in HoloLens, it’s possible to get direct access to the raw data obtained from the time-of-flight (ToF) camera. The goal of this research is to implement an algorithm that fuses multiple depth maps into a single point cloud by checking for visibility, geometric and appearance consistency. The input is a stream of depth, and intensity images from ToF Camera of HoloLens, together with a sequence of corresponding camera poses. The resulting output is a single point cloud containing the same amount of 3D information but in a more compact and consistent representation.<br/><br/>The outcome of this fusion algorithm is a combined and consistent point cloud derived from a stream of depth and intensity images produced by HoloLens. Tests were performed on public data sets as well as real data recorded from HoloLens. With appropriate parameter setting, the result is satisfying, as shown on the left side."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-1_1_orig.png",
+            "path": "images/originals/untitled-1_1_orig.png",
+            "sha256": "50a3be08d0ffe2e281ddfacaebe76a95bf11a724728b271770de0d2690376c70",
+            "bytes": 136311,
+            "width": 600,
+            "height": 431,
+            "frames": 1,
+            "preview": "images/previews/untitled-1_1_orig.webp",
+            "preview_width": 600,
+            "preview_height": 431
+          },
+          "caption": "Point Cloud",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/image12_orig.gif",
+            "path": "images/originals/image12_orig.gif",
+            "sha256": "2826ec62acf043a372995b08ca93adfa5c18a3ca1af5062fea66f002e8faee3c",
+            "bytes": 3153870,
+            "width": 600,
+            "height": 431,
+            "frames": 51,
+            "preview": "images/previews/image12_orig.webp",
+            "preview_width": 600,
+            "preview_height": 431
+          },
+          "caption": "Point Cloud with Reflectiviy",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "3D-Reconstruction Robot with Self-Collision Avoidance",
+      "paragraphs": [
+        "<strong>Shanghai Jiao Tong University | Oct 2017 - Jun 2018</strong><br/><strong>Advised by Prof. Liang Gong, Inst. of Mechatronics, SJTU</strong><br/><strong>Key Words: Robot Kinematics, Computer Vision, ROS, Mechanical Design</strong>",
+        "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and multiple inter-plant shades. Therefore, we aim to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles before the object of interest, we apply wearable human motion sensors to facilitate precise remote control (so that agricultural scientists do not have to go to fields). Specifically, we collect human motion data via motion capture equipment produced by Noitom. Then, joint angles are computed accordingly by the kinematic model so that human motion is mapped to the robot motion.<br/><br/>To avoid damage to the robot itself caused by misoperation, I designed a self-collision avoidance algorithm to ensure safety. The algorithm will first read input human motion data and compute the desired joint angles. If implementing these joint angles cause a link to enter the safety zone of other parts, the algorithm will prevent the potential collision.<br/><br/>Traditional 2D pictures lose important spatial information such as spatial angles. Therefore, I implemented the 3D reconstruction algorithm based on linear structured light. A calibrated camera and laser projector are carried by the robot to fulfill the reconstruction task.<br/> <br/>With these two features combined, one can control the robot remotely to 3D reconstruct the crops of interest for further biological study."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/visualization_orig.png",
+            "path": "images/originals/visualization_orig.png",
+            "sha256": "648fac394f6ab3621b3668f4bae425d37b1a83afd35afad24fdec1394c967cb8",
+            "bytes": 132509,
+            "width": 1090,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/visualization_orig.webp",
+            "preview_width": 1090,
+            "preview_height": 800
+          },
+          "caption": "RViz Visualization",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/mapping_orig.jpg",
+            "path": "images/originals/mapping_orig.jpg",
+            "sha256": "ffd715876932b4e1576fdb1bea0c04344894eb179c8bf2e569b68ec2b36312cc",
+            "bytes": 106933,
+            "width": 960,
+            "height": 544,
+            "frames": 1,
+            "preview": "images/previews/mapping_orig.webp",
+            "preview_width": 960,
+            "preview_height": 544
+          },
+          "caption": "Real-Time Motion Mapping",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Magnetic Control System Design",
+      "paragraphs": [
+        "<strong>Shanghai QuGe Tech. | Jun 2018 - Sep 2018 (Full Time)</strong><br/><strong>Key Words: Magnetism, Control, COMSOL, Simulation</strong>",
+        "Linear actuators available in the market are mostly expensive with limited types. The most common ones are voice coil actuators and classical linear actuators, which are expensive and big in shape respectively. However, there are a lot of application scenarios where linear actuators outperform rotary actuators. Thus, we wanted to design a system with movable coil arrays as linear actuators. The potential applications include the military sand table, rhythm visualization and compliant interaction.<br/><br/>The key idea is exploiting the properties of the magnetic field induced by a solenoid. After careful calculation and simulation, we decided on magnetic material (NdFeB) and coil parameters to develop a prototype.<br/><br/>Result: we failed to come up with a feasible design to meet all required specifications, namely, excellent dynamic response characteristics, adequate heat-sinking capability and large maximum current carrying capacity. The three most significant barriers are the limited magnetic force, the high cost of the feedback loop and significant magnetic flux leakage. Despite the failure, I learnt a lot about field simulation and enjoyed the time when I tried to exploit every possibility."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-2_2_orig.png",
+            "path": "images/originals/untitled-2_2_orig.png",
+            "sha256": "3e1bea8c3b1ed8bb1e6df24adba977c8c7bba02587de01ac100157d7a8d9c0e2",
+            "bytes": 116407,
+            "width": 150,
+            "height": 267,
+            "frames": 1,
+            "preview": "images/previews/untitled-2_2_orig.webp",
+            "preview_width": 150,
+            "preview_height": 267
+          },
+          "caption": "Single Coil Design",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/image9_orig.gif",
+            "path": "images/originals/image9_orig.gif",
+            "sha256": "d0ce0f8773e91a7e1ce9c65811aa55bd43029acc5aec5f0f18efbcc51e03cbc9",
+            "bytes": 2081621,
+            "width": 150,
+            "height": 267,
+            "frames": 98,
+            "preview": "images/previews/image9_orig.webp",
+            "preview_width": 150,
+            "preview_height": 267
+          },
+          "caption": "Single Coil Test",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/image6_orig.png",
+            "path": "images/originals/image6_orig.png",
+            "sha256": "20114e0b565458ee177ea4f311428e24768008a6f2d7a8c45030bc1de8dc01e9",
+            "bytes": 267912,
+            "width": 1122,
+            "height": 529,
+            "frames": 1,
+            "preview": "images/previews/image6_orig.webp",
+            "preview_width": 1100,
+            "preview_height": 519
+          },
+          "caption": "Magnetic Flux Density",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/image7_orig.png",
+            "path": "images/originals/image7_orig.png",
+            "sha256": "a9e7015be5f6044717dacb2f42727c6e91f2beee66022c92838db90851f712a6",
+            "bytes": 149135,
+            "width": 1067,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/image7_orig.webp",
+            "preview_width": 1067,
+            "preview_height": 800
+          },
+          "caption": "Parameter Study",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Microscale Platform for the Measurement of Blood Retraction Force",
+      "paragraphs": [
+        "<strong>University of Michigan, Ann Arbor | Jun 2017 - Oct 2017 (Full Time)</strong><br/><strong>Advised by Prof. Jianping Fu, Dept. of ME, U-M, Ann Arbor</strong><br/><strong>Key Words:  Image Analysis, Experiment Design, Mechanical Design, Data Analysis</strong>",
+        "Coagulation monitoring is essential for perioperative care and thrombosis treatment. However, existing assays for coagulation monitoring have limitations such as a large footprint and complex setup. In this work, we developed a miniaturized device for point-of-care blood coagulation testing by measuring dynamic clot retraction force development during blood clotting. In this device, a blood drop was localized between a protrusion and a flexible force-sensing beam to measure clot retraction force. The beam was featured with micropillar arrays to assist the deposition of carbon nanotube films, which served as a strain sensor to achieve label-free electrical readout of clot retraction force in real time. We characterized mechanical and electrical properties of the force-sensing beam and optimized its design. We further demonstrated that this blood coagulation monitoring device could obtain results that were consistent with those using an imaging method and that the device was capable of differentiating blood samples with different coagulation profiles. Owing to its low fabrication cost, small size, and low consumption of blood samples, the blood coagulation testing device using carbon nanotube strain sensors holds great potential as a point-of-care tool for future coagulation monitoring."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-1-fig-1_orig.png",
+            "path": "images/originals/research-1-fig-1_orig.png",
+            "sha256": "e4c0934eee657a27a555a94c4f22bf777398917f036e8b354b3dd02886bea877",
+            "bytes": 1085122,
+            "width": 844,
+            "height": 595,
+            "frames": 1,
+            "preview": "images/previews/research-1-fig-1_orig.webp",
+            "preview_width": 844,
+            "preview_height": 595
+          },
+          "caption": "CNT Deposition",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-1-fig-1-measurement_orig.png",
+            "path": "images/originals/research-1-fig-1-measurement_orig.png",
+            "sha256": "6676550eadefa219dd0a1e0938b6caf8ec518467f9d48cdb2171516f4df46ae3",
+            "bytes": 299302,
+            "width": 1000,
+            "height": 443,
+            "frames": 1,
+            "preview": "images/previews/research-1-fig-1-measurement_orig.webp",
+            "preview_width": 1000,
+            "preview_height": 443
+          },
+          "caption": "Measurement",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Multifunctional Portable Instrument for Seed & Panicle Phenotyping",
+      "paragraphs": [
+        "<strong>Shanghai Jiao Tong University | Sep 2015 - Jan 2018<br/>Advised by Prof. Liang Gong, Inst. of Mechatronics, SJTU</strong><br/><strong>Key Words: Image Analysis, PCB, Mechanical Design</strong>",
+        "For crop breeding and variety screening, it is essential to improve the phenotyping throughput for quantitatively evaluating the seed traits. However, existing high-throughput phenotyping facilities for crop seeds generally have some limitations such as high cost, large size and high weight which hinder the usage in the field. Thus, a smartphone-based, low-cost, portable instrument to achieve the function of high-throughput field phenotyping for crop seeds is in high demand.<br/><br/>I use a smartphone as the instrument's main platform, which offers rich functionality for fast phenotyping the crop seeds. First, advanced computing ability and the high-resolution camera offer the conditions for image analysis, which measures morphological parameters by image processing. Second, the Bluetooth module makes communication convenient for device control. Third, user-friendly Human-Machine Interface (HMI) makes it easy for users to find and correct a calculation error. The experiment results showed that the measurement accuracy of phenotypic parameters is over 97%, and this instrument can be applied in the precise measurement of crop seeds phenotypic parameters. More importantly, I introduced cloud storage to my instrument and equipped it with the capability of location-based data collection. I took full advantage of the big data collected via this instrument to provide valuable information for agricultural breeding as well as crop selection. So far, this instrument has been deployed in 24 agricultural technology promotion service centers, and the number continues increasing."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-2-fig-1-high-level-overview_1_orig.png",
+            "path": "images/originals/research-2-fig-1-high-level-overview_1_orig.png",
+            "sha256": "c5b97cc960bce0444a439408edb6d7e4b058026fadd205fef93f0df551234617",
+            "bytes": 313184,
+            "width": 1067,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/research-2-fig-1-high-level-overview_1_orig.webp",
+            "preview_width": 1067,
+            "preview_height": 800
+          },
+          "caption": "High Level Overview",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-2-fig-2-seed-analysis_2_orig.png",
+            "path": "images/originals/research-2-fig-2-seed-analysis_2_orig.png",
+            "sha256": "6db0d7993506f81436230f01a708ad87d8026cd14f62d2142c17befba4db6be5",
+            "bytes": 119825,
+            "width": 600,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/research-2-fig-2-seed-analysis_2_orig.webp",
+            "preview_width": 600,
+            "preview_height": 800
+          },
+          "caption": "Seed Analysis",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-2-fig-3-panicle-analysis_1_orig.png",
+            "path": "images/originals/research-2-fig-3-panicle-analysis_1_orig.png",
+            "sha256": "864f75117978034e6063a0374b3d686dec107fabc533bdeba5f24fe4630ba524",
+            "bytes": 76818,
+            "width": 600,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/research-2-fig-3-panicle-analysis_1_orig.webp",
+            "preview_width": 600,
+            "preview_height": 800
+          },
+          "caption": "Panicle Analysis",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Unmanned Ground Vehicle",
+      "paragraphs": [
+        "<strong>Shanghai Jiao Tong University | Sep 2014 - Jul 2015</strong><br/><strong>Advised by Prof. Liang Gong, Inst. of Mechatronics, SJTU</strong><br/><strong>Key Words: Mechanical Design, PCB, Control, Arduino </strong><strong>Microcontroller</strong>",
+        "For cutting-edge protected agriculture, it is a leading trend to build an unmanned plant factory that requires robotic machinery as basic autonomous production units. However, the scheduling and cooperation among agricultural machines are rarely investigated. This research focuses on a modular logistics system based on the motion decomposition, and the objective is to develop a fully interrelating intelligent agricultural production system.<br/><br/>Firstly, an unmanned ground vehicle is developed for transferring intelligent agricultural machines such as agricultural robots. In consideration of the complex terrain features, both automatic mode and manual mode are available. The multifunctional smart remote-control mode is designed for users to control the logistic systems accurately and the application of tablet PC provides a good user experience. Secondly, a control and mechanical system is designed to dock and transfer a harvesting robot. The safety and reliability of this system are jointly ensured by its movement pattern, the design of guide rails on the slope and the precise positioning. Third, the automatic charging function is realized by an automatic docking system with a maximum tolerance of 8 cm, which enables the system to work 7/24."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-3-fig-1-unmanned-platform_1_orig.png",
+            "path": "images/originals/research-3-fig-1-unmanned-platform_1_orig.png",
+            "sha256": "fa21de3baf5cd1f135e581d3024f213047844e61db06e11b0c5143f28affbec8",
+            "bytes": 155513,
+            "width": 1100,
+            "height": 582,
+            "frames": 1,
+            "preview": "images/previews/research-3-fig-1-unmanned-platform_1_orig.webp",
+            "preview_width": 1100,
+            "preview_height": 582
+          },
+          "caption": "Unmanned Ground Vehicle",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/research-3-fig-2-motion-decomposition_1_orig.jpg",
+            "path": "images/originals/research-3-fig-2-motion-decomposition_1_orig.jpg",
+            "sha256": "a69b8bc4d56e27317af14119c64aafdaf7f51e1a8ca519d23e35f8dfa39ce4f5",
+            "bytes": 115336,
+            "width": 900,
+            "height": 500,
+            "frames": 1,
+            "preview": "images/previews/research-3-fig-2-motion-decomposition_1_orig.webp",
+            "preview_width": 900,
+            "preview_height": 500
+          },
+          "caption": "Motion Decomposition",
+          "link": null
+        }
+      ]
+    }
+  ],
+  "publications": [
+    "[1] <strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11-19.",
+    "[2] Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). A Self-morphing Algorithm of Modular Robot. <em>Journal of Machine Design</em>, 36(01), 5-9",
+    "[3] Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). Carbon Nanotube Strain Sensor Based Hemoretractometer for Blood Coagulation Testing. <em>ACS Sensors</em>, 3(3), 670-676.",
+    "[4] Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). Capillary Assisted Deposition of Carbon Nanotube Film for Strain Sensing. <em>Applied Physics Letters</em>, 111(17), 173105."
+  ],
+  "patents": [
+    "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma Z., Mao Y. &amp; Zhang D., “An Intelligent Platform for Agricultural Robots Based on Motion Decomposition”, Patent Number: ZL 2016 2 0928634.8",
+    "[2] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma Z. &amp; Zhang, D., “A Multifunctional Instrument for Seed and Panicle Phenotyping Based on Android System”, Patent Number: ZL 2016 2 0259293.X",
+    "[3] Gong, L., Wang, Y., Mao, Y., Ma, Z, Zhou, B., <strong>Wang, Y.</strong>, Liu C. &amp; Zhang, D., \"A Multistage Winnowing Fulfilled and Unfulfilled Grains Device and Method Based on Human-Computer Interaction \", Patent ID: 201610589454.6",
+    "[4] Gong. L., Ma, Z., Mao, Y., Zhou, B., <strong>Wang, Y.</strong>, Yang, H., Wu, L, Zhang, D. &amp; Liu, C., \"A Panicle Phenotyping Analysis Instrument and Method Based on Android Tablet\", Patent ID: 201610794431.9"
+  ],
+  "honors": [
+    [
+      "<strong>ETH Scholarships for International Students (6,000 USD)</strong>",
+      "2020"
+    ],
+    [
+      "<strong>China National Study Abroad Scholarship</strong> <strong>(50,000 USD)</strong>",
+      "2018"
+    ],
+    [
+      "<strong>Tang Lixin Study Abroad Scholarship (7,000 USD)</strong>",
+      "2018"
+    ],
+    [
+      "<strong>Outstanding Graduate of Shanghai (Top 5%)</strong>",
+      "2018"
+    ],
+    [
+      "Outstanding Graduate of School of Mechanical Engineering (Top 10%)",
+      "2018"
+    ],
+    [
+      "<strong>Tang Lixin </strong><strong>Scholarship (Top 1 out of 441, 5,000 USD)</strong>",
+      "2017"
+    ],
+    [
+      "<strong>Person of the Year in SJTU (SCI-TECH Innovation) (Top 3)</strong>",
+      "2017"
+    ],
+    [
+      "Second Place in CHENJIAGENG Cup Invention Competition (Top 3 out of 395)",
+      "2017"
+    ],
+    [
+      "Second Place in Hsue-Shen Tsien Cup Innovation Competition (Top 10%)",
+      "2017"
+    ],
+    [
+      "Best of Innovation Award in Annual Project Exhibition (Top 5%)",
+      "2017"
+    ],
+    [
+      "Silver Award in SJTU ECO-TECH Innovation &amp; Entrepreneurship Competition",
+      "2017"
+    ],
+    [
+      "Outstanding Individual of Student Association (Top 10%)",
+      "2017"
+    ],
+    [
+      "<strong>China National Scholarship (Top 3 out of 468, 1,150 USD)</strong>",
+      "2016"
+    ],
+    [
+      "Excellent Volunteer of China (4 Times)",
+      "2016"
+    ],
+    [
+      "Eleme Scholarship (Top 3 out of 48)",
+      "2015"
+    ],
+    [
+      "Merit Student in SJTU (Top 10%)",
+      "2015"
+    ]
+  ],
+  "personal": [
+    {
+      "title": "Life",
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/2_1_orig.png",
+            "path": "images/originals/2_1_orig.png",
+            "sha256": "39812af7f53adfbf2faecb7e26d5b122ea6efd6b75718e4c8dad5d7c5563b7b2",
+            "bytes": 2378654,
+            "width": 800,
+            "height": 600,
+            "frames": 1,
+            "preview": "images/previews/2_1_orig.webp",
+            "preview_width": 800,
+            "preview_height": 600
+          },
+          "caption": "Graduation Photo at Shanghai Jiao Tong University",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/6_orig.png",
+            "path": "images/originals/6_orig.png",
+            "sha256": "0c34543a978f157cbf3acfdcbdeb404b6f19c200f2b0ec26908637b746e097d6",
+            "bytes": 2580259,
+            "width": 800,
+            "height": 600,
+            "frames": 1,
+            "preview": "images/previews/6_orig.webp",
+            "preview_width": 800,
+            "preview_height": 600
+          },
+          "caption": "With Tang Linxin on Royal Caribbean",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/4_2_orig.png",
+            "path": "images/originals/4_2_orig.png",
+            "sha256": "3c58218bc8696a9a188122303ea08e239d1d0e9993ce07d61080fc1fe091555e",
+            "bytes": 2487478,
+            "width": 800,
+            "height": 600,
+            "frames": 1,
+            "preview": "images/previews/4_2_orig.webp",
+            "preview_width": 800,
+            "preview_height": 600
+          },
+          "caption": "Teaching Pupils to Program in Scratch",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/3_3_orig.png",
+            "path": "images/originals/3_3_orig.png",
+            "sha256": "eb53f8e080e6ce05d0919eededc2c691c949c2833224ae2394562b5ef2b480f2",
+            "bytes": 2619221,
+            "width": 800,
+            "height": 600,
+            "frames": 1,
+            "preview": "images/previews/3_3_orig.webp",
+            "preview_width": 800,
+            "preview_height": 600
+          },
+          "caption": "Lab Group in University of Michigan, Ann Arbor",
+          "link": null
+        }
+      ]
+    },
+    {
+      "title": "Favorite Books",
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-1_2_orig.png",
+            "path": "images/originals/untitled-1_2_orig.png",
+            "sha256": "8ad36c1539bf750dce6c749e1c743d2c42b7783991a60fe5967986d71607ddf8",
+            "bytes": 2230344,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/untitled-1_2_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "The Three Body Problem",
+          "link": "https://www.goodreads.com/book/show/20518872-the-three-body-problem"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-5_1_orig.png",
+            "path": "images/originals/untitled-5_1_orig.png",
+            "sha256": "8dd22ea9ac32499bea32b7534ee29738c2b040372260aa0ca73d5479b75dd930",
+            "bytes": 2322712,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/untitled-5_1_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Modern Control Engineering",
+          "link": "https://www.amazon.com/Modern-Control-Engineering-Katsuhiko-Ogata/dp/0136156738"
+        }
+      ]
+    },
+    {
+      "title": "Favorite Series",
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-3_orig.png",
+            "path": "images/originals/untitled-3_orig.png",
+            "sha256": "4a50d1b8d8598ca6c329406b2bb2b443eb4a0804459bb9e3fe9b080e5b9cd197",
+            "bytes": 2258152,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/untitled-3_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Game of Thrones",
+          "link": "https://www.imdb.com/title/tt0944947/"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/person-of-interest_orig.png",
+            "path": "images/originals/person-of-interest_orig.png",
+            "sha256": "ef5b5e029864760d650dd7f9ab4e66ab95f958e62227c1305e373ab647d487fc",
+            "bytes": 2302518,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/person-of-interest_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Person of Interest",
+          "link": "https://www.imdb.com/title/tt1839578/?ref_=nv_sr_1?ref_=nv_sr_1"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-7_orig.png",
+            "path": "images/originals/untitled-7_orig.png",
+            "sha256": "54a1e412b5a153fafd6d7a8961a94ef5eef828412397955697612715ea8c2a6b",
+            "bytes": 2569176,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/untitled-7_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Attack on Titan",
+          "link": "https://www.imdb.com/title/tt2560140/?ref_=nv_sr_1?ref_=nv_sr_1"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/your-lie-in-april_orig.png",
+            "path": "images/originals/your-lie-in-april_orig.png",
+            "sha256": "9b928fe8100eca058a68dce838050d9c6892cdb25223c485a0bdbb4ffcf0ab90",
+            "bytes": 2425691,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/your-lie-in-april_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Your Lie in April",
+          "link": "https://www.imdb.com/title/tt3895150/?ref_=nv_sr_1?ref_=nv_sr_1"
+        }
+      ]
+    },
+    {
+      "title": "Favorite Movies",
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-shawshank-redemption_1_orig.png",
+            "path": "images/originals/the-shawshank-redemption_1_orig.png",
+            "sha256": "576c200345185a15b7352e77f708771c3a2ae17c0799d8869289147b00f2b2d1",
+            "bytes": 2204594,
+            "width": 700,
+            "height": 1000,
+            "frames": 1,
+            "preview": "images/previews/the-shawshank-redemption_1_orig.webp",
+            "preview_width": 560,
+            "preview_height": 800
+          },
+          "caption": "The Shawshank Redemption",
+          "link": "https://www.imdb.com/title/tt0111161/?ref_=nv_sr_1?ref_=nv_sr_1"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-lord-of-the-rings_orig.png",
+            "path": "images/originals/the-lord-of-the-rings_orig.png",
+            "sha256": "de6bc3f3647161d7d0e86328708a83e9f1ee940d1314e975b08f09cc7f84a6f5",
+            "bytes": 4101543,
+            "width": 700,
+            "height": 1000,
+            "frames": 1,
+            "preview": "images/previews/the-lord-of-the-rings_orig.webp",
+            "preview_width": 560,
+            "preview_height": 800
+          },
+          "caption": "The Lord of the Rings",
+          "link": "https://www.imdb.com/title/tt0120737/?ref_=nv_sr_1?ref_=nv_sr_1"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-pirates-of-the-caribbean_orig.png",
+            "path": "images/originals/the-pirates-of-the-caribbean_orig.png",
+            "sha256": "392c4df51129234be99386ffc896da0bf1fb41c18d8a66c86a1c7ee5c12e9002",
+            "bytes": 2160278,
+            "width": 700,
+            "height": 1000,
+            "frames": 1,
+            "preview": "images/previews/the-pirates-of-the-caribbean_orig.webp",
+            "preview_width": 560,
+            "preview_height": 800
+          },
+          "caption": "The Pirates of the Caribbean",
+          "link": "https://www.imdb.com/title/tt1790809/?ref_=nv_sr_5?ref_=nv_sr_5"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/your-name_orig.png",
+            "path": "images/originals/your-name_orig.png",
+            "sha256": "efe535da3c35c3e8589d405c76944039a608da5d64b916302edf34d37e34b979",
+            "bytes": 1866216,
+            "width": 700,
+            "height": 1000,
+            "frames": 1,
+            "preview": "images/previews/your-name_orig.webp",
+            "preview_width": 560,
+            "preview_height": 800
+          },
+          "caption": "Your Name",
+          "link": "https://www.imdb.com/title/tt5311514/?ref_=nv_sr_2?ref_=nv_sr_2"
+        }
+      ]
+    },
+    {
+      "title": "Favorite Games",
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/cities-skylines_orig.png",
+            "path": "images/originals/cities-skylines_orig.png",
+            "sha256": "554a7211d152eb3ac726b8056de9e69a5f200e7de6f0d1050ba1574a1413f31f",
+            "bytes": 2327005,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/cities-skylines_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Cities Skylines",
+          "link": "https://www.paradoxplaza.com/cities-skylines"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/legend-of-zelda_orig.png",
+            "path": "images/originals/legend-of-zelda_orig.png",
+            "sha256": "1a5bd75423d3b133f42919ba60c14300698981b37f54a2a4a16218bc1d4bfc69",
+            "bytes": 2076425,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/legend-of-zelda_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Legend of Zelda",
+          "link": "https://www.zelda.com/"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/skyrim_orig.png",
+            "path": "images/originals/skyrim_orig.png",
+            "sha256": "e4219bdb6e7de22f3a797be17c6ca87567a8f6edf8984d471d5a10143568d90e",
+            "bytes": 2976087,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/skyrim_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Skyrim",
+          "link": "https://elderscrolls.bethesda.net/en/skyrim"
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/stardew-valley_orig.png",
+            "path": "images/originals/stardew-valley_orig.png",
+            "sha256": "e23c9c83f63f1a432721e025c8f60ca497fd02e277a5059addc44f0e07387d8a",
+            "bytes": 1777404,
+            "width": 700,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/stardew-valley_orig.webp",
+            "preview_width": 700,
+            "preview_height": 800
+          },
+          "caption": "Stardew Valley",
+          "link": "https://www.stardewvalley.net/"
+        }
+      ]
+    }
+  ],
+  "personal_notice": "Pictures are for non-commercial purposes. All cited pictured from the Internet are linked to the original websites."
+}
