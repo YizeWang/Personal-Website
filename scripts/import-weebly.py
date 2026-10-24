@@ -82,6 +82,9 @@ ed = contents['education'].select('.paragraph')
 education_blocks = re.split(r'(?:<br/>\s*){2,}', clean(ed[0]))
 education_blocks = [b.strip() for b in education_blocks if b.strip()]
 assert len(education_blocks) == 4
+# Preserve the owner's corrected rankings when refreshing the source content.
+education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 · Rank: Top 10%</strong>')
+education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 · Rank: 1/441</strong>')
 pub = contents['publication--honors'].select('.paragraph')
 pg = contents['personal']
 personal = []
@@ -95,7 +98,7 @@ data = {
  'source': SOURCE, 'imported': '2026-10-20', 'name': 'Yize Wang', 'email': email,
  'hero': assets[urljoin(SOURCE, hero)], 'portrait': image(contents['home'].select_one('.wsite-image'))['asset'], 'cv': assets[cv],
  'biography': re.split(r'(?:<br/>\s*){2,}', clean(contents['home'].select_one('.paragraph'))),
- 'education': [{'html': h, 'date': d} for h, d in zip(education_blocks, ['Sep 2018 – May 2021', 'Jun 2019 – Jul 2019', 'Sep 2014 – Jul 2018 · Rank: 1 / 28', 'Jun 2017 – Sep 2017'])],
+ 'education': [{'html': h, 'date': d} for h, d in zip(education_blocks, ['Sep 2018 – May 2021', 'Jun 2019 – Jul 2019', 'Sep 2014 – Jul 2018', 'Jun 2017 – Sep 2017'])],
  'skills': clean(ed[6]),
  'research': research, 'publications': lines(pub[0]), 'patents': lines(pub[1]), 'honors': list(zip(lines(pub[2]), lines(pub[3]))),
  'personal': personal, 'personal_notice': text(pg.select_one('.paragraph')),
