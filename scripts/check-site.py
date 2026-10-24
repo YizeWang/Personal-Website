@@ -50,7 +50,7 @@ data = json.loads((ROOT / 'data/content.json').read_text())
 for key, expected in [('education',5),('research',8),('publications',4),('patents',4),('honors',16)]:
     if len(data[key]) != expected: errors.append(f'{key}: expected {expected} records')
 main = docs['index.html']
-for id in ['about','education','research','publications','personal']:
+for id in ['career','education','research','publications','personal']:
     if id not in main.ids: errors.append('Missing section: ' + id)
 if errors:
     raise SystemExit('\n'.join(errors))

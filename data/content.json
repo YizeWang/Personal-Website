@@ -27,12 +27,6 @@
     "preview_width": 558,
     "preview_height": 800
   },
-  "biography": [
-    "Hello! My name is Yize Wang, currently a master's student at ETH Zurich, majoring in Mechanical Engineering. My research interests are autonomous driving algorithms, specifically, path planning and decision making.",
-    "I obtained my bachelor’s degree from Shanghai Jiao Tong University with a GPA of 90/100, ranked first in the Mechanical Engineering Honor Program. My research projects are mainly about collision avoidance algorithm, mechanical design, and mechatronic system development. My advisor was Prof. Liang Gong from Institute of Mechatronics &amp; Logistics Equipment.",
-    "In Summer 2019, I joined the ETH Robotics Summer School held in Switzerland. I gained practical experiences on state estimation, localization, mapping and path planning through the operation of SuperMegaBot, a rescue robot developed by Robotic Systems Lab at ETH Zurich.",
-    "In 2017, I also spent a productive summer at University of Michigan, Ann Arbor, with Prof. Zida Li and Prof. Jianping Fu. My research topic was developing a measurement platform of blood retraction force."
-  ],
   "education": [
     {
       "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/>ETH Zurich, Zurich, Switzerland<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a><br/><strong>GPA: 5.7 / 6.0 | Rank: Top 10%</strong>",

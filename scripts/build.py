@@ -5,6 +5,7 @@ import hashlib, json, re
 
 ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / 'data/content.json').read_text())
+career_data = json.loads((ROOT / 'data/career.json').read_text())
 css_version = hashlib.sha256((ROOT / 'css/site.css').read_bytes()).hexdigest()[:12]
 js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
 icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
@@ -26,7 +27,7 @@ def figure(i):
 def section(id, number, title, intro, content):
     return f'<section id="{id}" aria-labelledby="{id}-title"><div class="container"><header class="section-heading"><span class="section-number">{number}</span><div><h2 id="{id}-title">{title_words(title)}</h2><p>{intro}</p></div></header>{content}</div></section>'
 
-nav = [('about', 'About'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications & Honors'), ('personal', 'Personal')]
+nav = [('career', 'Career Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications & Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
 profile_links = []
 for profile in d['profiles']:
@@ -51,9 +52,27 @@ parts = [f'''<!doctype html>
  '<p class="sidebar-note">Robots are reflections<br>of ourselves.</p></nav></aside><main id="main">',
  f'<div class="hero"><img src="{d["hero"]["preview"]}" width="{d["hero"]["preview_width"]}" height="{d["hero"]["preview_height"]}" alt="Yize Wang working on a mechatronics project" fetchpriority="high"><div class="hero-content"><p class="eyebrow">YIZE WANG / PERSONAL WEBSITE</p><p class="hero-title">Serve Our World<br>with Humanoid Robots</p><a href="#research">Explore the research <span aria-hidden="true">↓</span></a></div></div>'
 ]
-about = '<div class="biography">' + ''.join(f'<p>{p}</p>' for p in d['biography']) + '</div>'
-# Keep the original biography intact, while clearly identifying its historical context.
-parts.append(section('about', '01', 'About Me', 'Robots are reflections of ourselves.', '<p class="archive-note">Biography preserved from the original website (academic information through 2021).</p>' + about))
+def career_highlights(items):
+    return '<ul class="career-highlights">' + ''.join(f'<li>{esc(item)}</li>' for item in items) + '</ul>'
+
+career = '<div class="career-list">'
+for entry in career_data['entries']:
+    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-role">{esc(entry["role"])}</p><p class="career-department">{esc(entry["department"])}</p></div><p class="date">{esc(entry["date"])}</p></header>'
+    if entry.get('highlights'):
+        career += career_highlights(entry['highlights'])
+    for project in entry.get('projects', []):
+        career += f'<div class="career-project"><header><div><h4>{esc(title_words(project["title"]))}</h4>'
+        if project.get('role'):
+            career += f'<p class="career-project-role">{esc(project["role"])}</p>'
+        career += '</div>'
+        if project.get('date'):
+            career += f'<p class="date">{esc(project["date"])}</p>'
+        career += '</header>' + career_highlights(project['highlights']) + '</div>'
+    if entry.get('awards'):
+        career += f'<p class="career-awards"><strong>Awards:</strong> {esc(entry["awards"])}</p>'
+    career += '</article>'
+career += '</div>'
+parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, robotics, and software engineering.', career))
 ed = '<div class="education-list">'
 for e in d['education']:
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
@@ -77,7 +96,7 @@ for group in d['personal']:
     personal += f'<h3 class="subheading">{esc(title_words(group["title"]))}</h3><div class="gallery {"life" if group["title"] == "Life" else "favorites"}">' + ''.join(figure(i) for i in group['images']) + '</div>'
 personal += f'<p class="smallprint">{esc(d["personal_notice"])}</p>'
 parts.append(section('personal','05','Beyond Research','Don’t worry, be happy!',personal))
-parts.append('''<footer><span>© Yize Wang</span><a href="#about">Back to top ↑</a></footer></main>
+parts.append('''<footer><span>© Yize Wang</span><a href="#career">Back to top ↑</a></footer></main>
 <dialog id="media-viewer" aria-label="Image viewer"><div class="viewer-toolbar"><p id="media-caption"></p><button type="button" id="close-viewer" aria-label="Close image viewer">Close ×</button></div><div id="media-content"></div><p id="media-status" role="status" aria-live="polite"></p><a id="media-original" target="_blank" rel="noopener">Open original ↗</a></dialog></body></html>''')
 (ROOT / 'index.html').write_text('\n'.join(parts) + '\n')
 for path,target in [('education.html','education'),('research.html','research'),('publication--honors.html','publications'),('personal.html','personal')]:

@@ -1,0 +1,65 @@
+{
+  "source": "Yize Wang CV, July 31, 2026",
+  "entries": [
+    {
+      "company": "NVIDIA",
+      "department": "Automotive Vehicle Department",
+      "role": "Senior Software Engineer",
+      "date": "Sep 2024 – Present",
+      "highlights": [
+        "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
+        "Served as a mono-repo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
+        "Owned code quality, overseeing Coverity and coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
+        "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
+      ],
+      "projects": [
+        {
+          "title": "Isaac Lab",
+          "highlights": [
+            "Implemented tutorial scripts demonstrating physics backends and the use of PyTorch and Warp.",
+            "Trained Franka and SO101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Shanghai Jiao Tong University",
+      "department": "Institute of Mechatronics",
+      "role": "Research Assistant",
+      "date": "Jun 2024 – Sep 2024",
+      "highlights": [
+        "Designed and deployed a multi-sensor data acquisition rig with surrounding cameras and motion-capture gloves, featuring a green-screen occluded workbench for hand segmentation.",
+        "Developed a Kalman-filter-based sensor fusion pipeline combining motion-captured joint poses, YOLO-based 2D keypoints, and stereo-vision depth data to generate stable 3D hand pose estimates for robotic imitation learning."
+      ]
+    },
+    {
+      "company": "DJI Automotive",
+      "department": "Planning and Control Department",
+      "role": "Algorithm Engineer",
+      "date": "Jul 2021 – May 2024",
+      "projects": [
+        {
+          "title": "Highway NOA (HNOA)",
+          "role": "Function Owner & Navigation Algorithm Lead",
+          "date": "Apr 2023 – May 2024",
+          "highlights": [
+            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation and escalation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. Achieved over 85% success in merging into and exiting main roads, serving 2,300 customers across 610,000 km of autonomous driving as of December 2023.",
+            "Platformized HNOA across vehicle models from multiple OEMs, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
+            "Designed HNOA navigation algorithms that achieved over 98% accuracy for navigation-triggered lane changes using only vehicle navigation information, including maneuvers, distance, suggested lanes, and road classes."
+          ]
+        },
+        {
+          "title": "Memory on Driving (MOD)",
+          "role": "Integration Lead & Core Developer",
+          "date": "Jul 2021 – Apr 2023",
+          "highlights": [
+            "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility, securing approvals from multiple OEMs. MOD was released to users in June 2024.",
+            "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved decisions across multiple lane options, reduced trajectory-following behavior, and prevented deviations from memory maps.",
+            "Optimized reference lines by fusing memory maps and perceived lane markers with iLQR, handling turns, U-turns, on/off-ramps, diverging and merging lanes, and narrow gaps."
+          ]
+        }
+      ],
+      "awards": "2023 DJI Automotive Best Individual Award (Top 1/400); 2022 Outstanding Individual Award in the Planning Department (Top 6%)."
+    }
+  ]
+}

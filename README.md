@@ -3,8 +3,8 @@
 Static migration of [yizewang.weebly.com](https://yizewang.weebly.com/), inspired
 by the fixed profile sidebar and section layout in
 [manymuch.github.io](https://github.com/manymuch/manymuch.github.io).
-Content was imported on 2026-10-20. Academic information is historical
-and retains the original wording; they have not been updated to claim a current role.
+Content was imported on 2026-10-20. Career Experience is based on the CV supplied by the owner, dated 2026-07-31.
+Education and research details retain the separately approved website edits.
 
 ## Preview
 
@@ -20,7 +20,9 @@ Animation posters remain still until clicked; the original GIF then loads in the
 
 ## Edit and verify
 
-- `data/content.json`: all editable biography, education, projects, publications,
+- `data/career.json`: career roles and achievements extracted from the owner’s CV.
+  The original DOCX is not published.
+- `data/content.json`: editable education, projects, publications,
   patents, honors, interests, and original external links.
 - `scripts/build.py`: renders the content to `index.html` and four old-page redirects.
 - `css/site.css`, `js/site.js`: presentation and progressive enhancements.
@@ -88,6 +90,7 @@ links and noncommercial-use notice. Layout inspiration: Jiaxin (Jimmy) Zhang's
 portfolio and [Read Only by HTML5 UP](https://html5up.net/read-only),
 [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 No reference-site biography, contact details, or project assets are included.
+The former About Me section has been replaced by Career Experience as section 01.
 
 ## Validation of this migration
 
