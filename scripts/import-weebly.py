@@ -96,13 +96,11 @@ data = {
  'hero': assets[urljoin(SOURCE, hero)], 'portrait': image(contents['home'].select_one('.wsite-image'))['asset'], 'cv': assets[cv],
  'biography': re.split(r'(?:<br/>\s*){2,}', clean(contents['home'].select_one('.paragraph'))),
  'education': [{'html': h, 'date': d} for h, d in zip(education_blocks, ['Sep 2018 – May 2021', 'Jun 2019 – Jul 2019', 'Sep 2014 – Jul 2018 · Rank: 1 / 28', 'Jun 2017 – Sep 2017'])],
- 'graduate_courses': list(zip(lines(ed[2]), lines(ed[3]))),
- 'undergraduate_courses': list(zip(lines(ed[4]), lines(ed[5]))), 'skills': clean(ed[6]),
+ 'skills': clean(ed[6]),
  'research': research, 'publications': lines(pub[0]), 'patents': lines(pub[1]), 'honors': list(zip(lines(pub[2]), lines(pub[3]))),
  'personal': personal, 'personal_notice': text(pg.select_one('.paragraph')),
 }
 assert len(data['research']) == 8
-assert len(data['graduate_courses']) == 10 and len(data['undergraduate_courses']) == 15
 assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 16
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 (ROOT / 'data/assets.json').write_text(json.dumps(list(assets.values()), ensure_ascii=False, indent=2) + '\n')

@@ -39,7 +39,7 @@ node --check js/site.js
 
 The checker validates every local HTML reference, section anchor, image metadata,
 original-file checksum, and expected content counts (8 projects, 4 publications,
-4 patents, 16 honors, 10 graduate courses and 15 undergraduate courses).
+4 patents and 16 honors).
 
 `scripts/import-weebly.py` is the optional one-time importer (requires
 `beautifulsoup4` and `Pillow`). Re-running it overwrites content from the old site;
