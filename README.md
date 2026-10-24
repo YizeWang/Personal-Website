@@ -3,8 +3,8 @@
 Static migration of [yizewang.weebly.com](https://yizewang.weebly.com/), inspired
 by the fixed profile sidebar and section layout in
 [manymuch.github.io](https://github.com/manymuch/manymuch.github.io).
-Content was imported on 2026-10-20. Academic information and the CV are historical
-and retain the original wording; they have not been updated to claim a current role.
+Content was imported on 2026-10-20. Academic information is historical
+and retains the original wording; they have not been updated to claim a current role.
 
 ## Preview
 
@@ -15,7 +15,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 Open [the local preview](http://127.0.0.1:8765/). No package installation or build
 is required to view the checked-in HTML. The site has a responsive mobile layout,
 automatic dark appearance, keyboard-accessible media viewer, and reduced-motion
-support. Navigation, images, external links and CV also work without JavaScript.
+support. Navigation, images, and contact/profile links also work without JavaScript.
 Animation posters remain still until clicked; the original GIF then loads in the viewer.
 
 ## Edit and verify
@@ -27,8 +27,11 @@ Animation posters remain still until clicked; the original GIF then loads in the
 - Degree entries span the page; non-degree entries use smaller type and paired
   rows on desktop, with a single column on phones.
 - `images/previews/`: compressed, still WebP thumbnails (about 2.25 MiB total).
-- `images/originals/`, `files/`: 40 imported original files, including animated GIFs,
-  the portrait, banner and CV, with byte-identical source files.
+- `images/originals/`: 39 imported original images, including animated GIFs,
+  the portrait and banner, with byte-identical source files.
+- Sidebar contact details and GitHub, Google Scholar, and LinkedIn links are
+  editable in `data/content.json`; SVG profile icons are stored locally.
+  The CV download and main-content contact panel have been removed.
 - `data/assets.json`: source URLs, dimensions, sizes, and SHA-256 checksums.
 
 The builder versions the stylesheet URL using a content hash, so browsers fetch
@@ -88,7 +91,7 @@ No reference-site biography, contact details, or project assets are included.
 
 Local Chromium checks passed for 360, 390, 768, 1024 and 1920 pixel widths,
 all original displayed images, GIF viewing, keyboard dismissal and focus restoration,
-missing-image fallback/retry, PDF download, all four legacy redirects, deployment
+missing-image fallback/retry, all four legacy redirects, deployment
 under `/Personal-Website/`, dark appearance, reduced motion, and no-JavaScript
 content. Original assets passed SHA-256 verification. Safari and Firefox have not
 been tested. Pages activation and the first live deployment still require the

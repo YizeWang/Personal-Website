@@ -27,12 +27,6 @@
     "preview_width": 558,
     "preview_height": 800
   },
-  "cv": {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/cv_yize_wang.pdf",
-    "path": "files/cv_yize_wang.pdf",
-    "sha256": "831ddea00a58a7040bb128a2a173f84f47265dfa5603217391b006cfc5ace683",
-    "bytes": 173538
-  },
   "biography": [
     "Hello! My name is Yize Wang, currently a master's student at ETH Zurich, majoring in Mechanical Engineering. My research interests are autonomous driving algorithms, specifically, path planning and decision making.",
     "I obtained my bachelor’s degree from Shanghai Jiao Tong University with a GPA of 90/100, ranked first in the Mechanical Engineering Honor Program. My research projects are mainly about collision avoidance algorithm, mechanical design, and mechatronic system development. My advisor was Prof. Liang Gong from Institute of Mechatronics &amp; Logistics Equipment.",
@@ -838,5 +832,24 @@
       ]
     }
   ],
-  "personal_notice": "Pictures are for non-commercial purposes. All cited pictured from the Internet are linked to the original websites."
+  "personal_notice": "Pictures are for non-commercial purposes. All cited pictured from the Internet are linked to the original websites.",
+  "phone": "+8615846625655",
+  "phone_display": "+86 158 4662 5655",
+  "profiles": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/YizeWang",
+      "icon": "github"
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=ZGKO_KUAAAAJ&hl=en",
+      "icon": "scholar"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/yize-wang?originalSubdomain=cn",
+      "icon": "linkedin"
+    }
+  ]
 }

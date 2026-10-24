@@ -39,7 +39,8 @@ for name, doc in docs.items():
             errors.append(f'{name}: Missing anchor: {ref}')
     for a in doc.images:
         if urlsplit(a['src']).scheme: errors.append(f'{name}: Remote image dependency: {a["src"]}')
-for a in json.loads((ROOT / 'data/assets.json').read_text()):
+assets = json.loads((ROOT / 'data/assets.json').read_text())
+for a in assets:
     path = ROOT / a['path']
     if not path.exists() or hashlib.sha256(path.read_bytes()).hexdigest() != a['sha256']:
         errors.append('Original asset changed or missing: ' + a['path'])
@@ -53,4 +54,4 @@ for id in ['about','education','research','publications','personal']:
     if id not in main.ids: errors.append('Missing section: ' + id)
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(docs)} HTML pages, {len(main.images)} page images, all local references and anchors, 40 original asset checksums, and all migrated content counts.')
+print(f'PASS: {len(docs)} HTML pages, {len(main.images)} page images, all local references and anchors, {len(assets)} original asset checksums, and all migrated content counts.')
