@@ -55,13 +55,17 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 
 @media(max-width:760px){.career-heading,.career-project>header{flex-direction:column;gap:6px}.career-heading h3{font-size:21px}.career-role{font-size:14px}.career-highlights{font-size:13px}.career-project header .date{font-size:11px}}
 
-/* Native course disclosures follow GPA/rank inline; expanded tables flow below. */
+/* Course toggles share the rank line and align with the date column. */
+.education-primary .education-body{grid-column:1/-1}
+.education-primary .education-body>strong:first-child{display:inline-block;max-width:calc(100% - 190px)}
 .degree-stats{margin:0}
-.degree-stats>.courses{display:inline;margin:0 0 0 12px;padding:0;border:0;font-size:12px}
-.degree-stats>.courses summary{display:inline-flex;align-items:center;gap:5px;line-height:1.8;font-weight:500;color:var(--accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.degree-stats::after{content:"";display:block;clear:both}
+.degree-stats>.courses{display:inline;margin:0;padding:0;border:0;font-size:12px}
+.degree-stats>.courses summary{float:right;display:inline-flex;align-items:center;gap:5px;margin-left:12px;line-height:1.7;font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;text-decoration:none;cursor:pointer}
 .degree-stats>.courses summary::before{content:"▸";font-size:10px}
 .degree-stats>.courses[open] summary::before{content:"▾"}
 .degree-stats>.courses summary::-webkit-details-marker{display:none}
-.degree-stats>.courses .table-scroll{display:block;margin-top:10px;max-width:100%}
+.degree-stats>.courses .table-scroll{display:block;clear:both;padding-top:10px;max-width:100%}
 .degree-stats>.courses table{margin-top:0}
-@media(max-width:760px){.degree-stats{font-size:13px}.degree-stats>.courses{margin-left:8px;font-size:11px}}
+@media(max-width:1100px){.education-primary .education-body>strong:first-child{max-width:100%}}
+@media(max-width:760px){.degree-stats{font-size:13px}.degree-stats>.courses{font-size:11px}.degree-stats>.courses summary{margin-left:8px}}

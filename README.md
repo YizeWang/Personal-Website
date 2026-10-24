@@ -29,7 +29,7 @@ Animation posters remain still until clicked; the original GIF then loads in the
 - Degree entries span the page; non-degree entries use smaller type and paired
   rows on desktop, with a single column on phones. Graduate and undergraduate
   courses are attached to their corresponding degrees in native disclosure widgets,
-  collapsed by default, with the Courses toggle inline after GPA/rank.
+  collapsed by default, with the Courses toggle right-aligned on the GPA/rank line using the date text style.
   Publications (including patents) and Honors have separate sections and navigation
   links. The former Skills block has been removed.
 - `images/previews/`: compressed, still WebP thumbnails (about 2.25 MiB total).
