@@ -1,23 +1,28 @@
 {
-  "source": "Yize Wang CV, July 31, 2026",
+  "source": "Yize Wang CV, July 31, 2026; NVIDIA team transition updated by the owner, October 2026",
   "entries": [
     {
       "company": "NVIDIA",
-      "department": "Automotive Vehicle Department",
       "role": "Senior Software Engineer",
       "date": "Sep 2024 – Present",
-      "highlights": [
-        "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
-        "Served as a mono-repo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
-        "Owned code quality, overseeing Coverity and coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
-        "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
-      ],
-      "projects": [
+      "positions": [
         {
-          "title": "Isaac Lab",
+          "title": "Isaac Applications Team",
+          "department": "Robotics Department",
+          "date": "Oct 2026 – Present",
           "highlights": [
-            "Implemented tutorial scripts demonstrating physics backends and the use of PyTorch and Warp.",
+            "Implemented Isaac Lab tutorial scripts demonstrating physics backends and the use of PyTorch and Warp.",
             "Trained Franka and SO101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
+          ]
+        },
+        {
+          "title": "Automotive Vehicle Department",
+          "date": "Sep 2024 – Oct 2026",
+          "highlights": [
+            "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
+            "Served as a mono-repo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
+            "Owned code quality, overseeing Coverity and coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
+            "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
           ]
         }
       ]

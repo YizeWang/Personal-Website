@@ -57,11 +57,14 @@ def career_highlights(items):
 
 career = '<div class="career-list">'
 for entry in career_data['entries']:
-    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-role">{esc(entry["role"])}</p><p class="career-department">{esc(entry["department"])}</p></div><p class="date">{esc(entry["date"])}</p></header>'
+    department = f'<p class="career-department">{esc(entry["department"])}</p>' if entry.get('department') else ''
+    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-role">{esc(entry["role"])}</p>{department}</div><p class="date">{esc(entry["date"])}</p></header>'
     if entry.get('highlights'):
         career += career_highlights(entry['highlights'])
-    for project in entry.get('projects', []):
+    for project in entry.get('positions', []) + entry.get('projects', []):
         career += f'<div class="career-project"><header><div><h4>{esc(title_words(project["title"]))}</h4>'
+        if project.get('department'):
+            career += f'<p class="career-project-role">{esc(project["department"])}</p>'
         if project.get('role'):
             career += f'<p class="career-project-role">{esc(project["role"])}</p>'
         career += '</div>'
