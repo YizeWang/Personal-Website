@@ -27,7 +27,7 @@ def figure(i):
 def section(id, number, title, intro, content):
     return f'<section id="{id}" aria-labelledby="{id}-title"><div class="container"><header class="section-heading"><span class="section-number">{number}</span><div><h2 id="{id}-title">{title_words(title)}</h2><p>{intro}</p></div></header>{content}</div></section>'
 
-nav = [('career', 'Career Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications & Honors'), ('personal', 'Personal')]
+nav = [('career', 'Career Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications'), ('honors', 'Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
 profile_links = []
 for profile in d['profiles']:
@@ -77,13 +77,15 @@ parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, r
 ed = '<div class="education-list">'
 for e in d['education']:
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
-    courses = ''
+    body = e['html']
     if e.get('courses'):
         label = esc(e['courses_title'])
-        courses += f'<details class="courses"><summary>{label}<span>{len(e["courses"])} courses</span></summary><div class="table-scroll"><table><caption>{label} and Grades</caption><thead><tr><th scope="col">Course</th><th scope="col">Grade</th></tr></thead><tbody>'
+        courses = f'<details class="courses"><summary aria-label="{label}" title="{label}">Courses</summary><div class="table-scroll"><table><caption>{label} and Grades</caption><thead><tr><th scope="col">Course</th><th scope="col">Grade</th></tr></thead><tbody>'
         courses += ''.join(f'<tr><td>{course}</td><td>{esc(grade)}</td></tr>' for course, grade in e['courses'])
         courses += '</tbody></table></div></details>'
-    ed += f'<article class="education-entry {kind}"><div class="education-body">{e["html"]}</div><p class="date">{e["date"]}</p>{courses}</article>'
+        before, rank = body.rsplit('<strong>', 1)
+        body = before + '<div class="degree-stats"><strong>' + rank + courses + '</div>'
+    ed += f'<article class="education-entry {kind}"><div class="education-body">{body}</div><p class="date">{e["date"]}</p></article>'
 ed += '</div>'
 parts.append(section('education', '02', 'Education', 'Excellent academic performance is never the destination.', ed))
 research = '<div class="project-index">' + ''.join(f'<a href="#project-{n}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'
@@ -96,13 +98,14 @@ pubs = ''
 for title,key in [('Publications','publications'),('Patents','patents')]:
     pubs += f'<h3 class="subheading">{title}</h3><ol class="publication-list">'
     pubs += ''.join('<li>' + re.sub(r'^\[\d+\]\s*', '', p) + '</li>' for p in d[key]) + '</ol>'
-pubs += '<h3 class="subheading">Selected Honors &amp; Awards</h3><ul class="honors">' + ''.join(f'<li><span>{award}</span><span class="date">{year}</span></li>' for award,year in d['honors']) + '</ul>'
-parts.append(section('publications','04','Publications &amp; honors','Writing is thinking.',pubs))
+parts.append(section('publications','04','Publications','Writing is thinking.',pubs))
+honors = '<ul class="honors">' + ''.join(f'<li><span>{award}</span><span class="date">{year}</span></li>' for award,year in d['honors']) + '</ul>'
+parts.append(section('honors','05','Honors','Selected Honors &amp; Awards',honors))
 personal = ''
 for group in d['personal']:
     personal += f'<h3 class="subheading">{esc(title_words(group["title"]))}</h3><div class="gallery {"life" if group["title"] == "Life" else "favorites"}">' + ''.join(figure(i) for i in group['images']) + '</div>'
 personal += f'<p class="smallprint">{esc(d["personal_notice"])}</p>'
-parts.append(section('personal','05','Beyond Research','Don’t worry, be happy!',personal))
+parts.append(section('personal','06','Beyond Research','Don’t worry, be happy!',personal))
 parts.append('''<footer><span>© Yize Wang</span><a href="#career">Back to top ↑</a></footer></main>
 <dialog id="media-viewer" aria-label="Image viewer"><div class="viewer-toolbar"><p id="media-caption"></p><button type="button" id="close-viewer" aria-label="Close image viewer">Close ×</button></div><div id="media-content"></div><p id="media-status" role="status" aria-live="polite"></p><a id="media-original" target="_blank" rel="noopener">Open original ↗</a></dialog></body></html>''')
 (ROOT / 'index.html').write_text('\n'.join(parts) + '\n')

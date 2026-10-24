@@ -53,7 +53,7 @@ for entry, expected in zip([e for e in data['education'] if e['kind'] == 'degree
     if len(entry.get('courses', [])) != expected:
         errors.append(f'Degree course list: expected {expected} records')
 main = docs['index.html']
-for id in ['career','education','research','publications','personal']:
+for id in ['career','education','research','publications','honors','personal']:
     if id not in main.ids: errors.append('Missing section: ' + id)
 if errors:
     raise SystemExit('\n'.join(errors))

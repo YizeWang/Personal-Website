@@ -55,9 +55,13 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 
 @media(max-width:760px){.career-heading,.career-project>header{flex-direction:column;gap:6px}.career-heading h3{font-size:21px}.career-role{font-size:14px}.career-highlights{font-size:13px}.career-project header .date{font-size:11px}}
 
-/* Each degree owns its native, initially collapsed course list. */
-.education-primary>.courses{grid-column:1/-1;grid-row:2;margin-top:4px;padding:10px 0 0;border-top:1px solid var(--line);border-bottom:0;font-size:13px}
-.education-primary>.courses summary{line-height:1.8}
-.education-primary>.courses table{margin-top:12px}
-@media(max-width:1100px){.education-primary>.courses{grid-row:3}}
-@media(max-width:760px){.education-primary>.courses{font-size:12px}.education-primary>.courses summary span{float:none;margin-left:10px}}
+/* Native course disclosures follow GPA/rank inline; expanded tables flow below. */
+.degree-stats{margin:0}
+.degree-stats>.courses{display:inline;margin:0 0 0 12px;padding:0;border:0;font-size:12px}
+.degree-stats>.courses summary{display:inline-flex;align-items:center;gap:5px;line-height:1.8;font-weight:500;color:var(--accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.degree-stats>.courses summary::before{content:"▸";font-size:10px}
+.degree-stats>.courses[open] summary::before{content:"▾"}
+.degree-stats>.courses summary::-webkit-details-marker{display:none}
+.degree-stats>.courses .table-scroll{display:block;margin-top:10px;max-width:100%}
+.degree-stats>.courses table{margin-top:0}
+@media(max-width:760px){.degree-stats{font-size:13px}.degree-stats>.courses{margin-left:8px;font-size:11px}}
