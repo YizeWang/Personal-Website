@@ -83,8 +83,8 @@ education_blocks = re.split(r'(?:<br/>\s*){2,}', clean(ed[0]))
 education_blocks = [b.strip() for b in education_blocks if b.strip()]
 assert len(education_blocks) == 4
 # Preserve the owner's corrected rankings when refreshing the source content.
-education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 · Rank: Top 10%</strong>')
-education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 · Rank: 1/441</strong>')
+education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 | Rank: Top 10%</strong>')
+education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 | Rank: 1/441</strong>')
 pub = contents['publication--honors'].select('.paragraph')
 pg = contents['personal']
 personal = []
@@ -103,6 +103,8 @@ data = {
  'research': research, 'publications': lines(pub[0]), 'patents': lines(pub[1]), 'honors': list(zip(lines(pub[2]), lines(pub[3]))),
  'personal': personal, 'personal_notice': text(pg.select_one('.paragraph')),
 }
+# Education entry supplied by the owner after the original migration.
+data['education'].insert(1, {'html': '<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London<br/>Advised by <a href="https://www.doc.ic.ac.uk/~dpaccagnan">Dr. Dario Paccagnan</a>', 'date': 'Oct 2020 – May 2021'})
 assert len(data['research']) == 8
 assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 16
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')

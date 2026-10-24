@@ -46,7 +46,7 @@ for a in json.loads((ROOT / 'data/assets.json').read_text()):
     if a.get('preview') and not (ROOT / a['preview']).is_file():
         errors.append('Missing preview: ' + a['preview'])
 data = json.loads((ROOT / 'data/content.json').read_text())
-for key, expected in [('education',4),('research',8),('publications',4),('patents',4),('honors',16)]:
+for key, expected in [('education',5),('research',8),('publications',4),('patents',4),('honors',16)]:
     if len(data[key]) != expected: errors.append(f'{key}: expected {expected} records')
 main = docs['index.html']
 for id in ['about','education','research','publications','personal']:

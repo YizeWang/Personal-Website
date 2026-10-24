@@ -41,15 +41,19 @@
   ],
   "education": [
     {
-      "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/><a href=\"https://www.topuniversities.com/universities/eth-zurich-swiss-federal-institute-technology/postgrad\">ETH Zurich</a>, Switzerland<br/>Advised by <a href=\"https://www.mavt.ethz.ch/the-department/people/person-detail.html?persid=29981\">Prof. Roland Siegwart</a><br/><strong>GPA: 5.7 / 6.0 · Rank: Top 10%</strong>",
+      "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/><a href=\"https://www.topuniversities.com/universities/eth-zurich-swiss-federal-institute-technology/postgrad\">ETH Zurich</a>, Switzerland<br/>Advised by <a href=\"https://www.mavt.ethz.ch/the-department/people/person-detail.html?persid=29981\">Prof. Roland Siegwart</a><br/><strong>GPA: 5.7 / 6.0 | Rank: Top 10%</strong>",
       "date": "Sep 2018 – May 2021"
+    },
+    {
+      "html": "<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dpaccagnan\">Dr. Dario Paccagnan</a>",
+      "date": "Oct 2020 – May 2021"
     },
     {
       "html": "<strong>ETH </strong><strong>Robotics Summer School<br/></strong>Wangen an der Aare, Switzerland<br/>Topic: Path Planning on Rescue Robots",
       "date": "Jun 2019 – Jul 2019"
     },
     {
-      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/><a href=\"https://www.topuniversities.com/universities/shanghai-jiao-tong-university/undergrad\">Shanghai Jiao Tong University</a>, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 · Rank: 1/441</strong>",
+      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/><a href=\"https://www.topuniversities.com/universities/shanghai-jiao-tong-university/undergrad\">Shanghai Jiao Tong University</a>, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 | Rank: 1/441</strong>",
       "date": "Sep 2014 – Jul 2018"
     },
     {
