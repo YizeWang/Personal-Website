@@ -1,10 +1,11 @@
 """Build the dependency-free static site from the editable content archive."""
 from pathlib import Path
 from html import escape as esc
-import json, re
+import hashlib, json, re
 
 ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / 'data/content.json').read_text())
+css_version = hashlib.sha256((ROOT / 'css/site.css').read_bytes()).hexdigest()[:12]
 
 def title_words(s):
     """Capitalize each title word without changing acronyms or names."""
@@ -25,13 +26,13 @@ def section(id, number, title, intro, content):
 
 nav = [('about', 'About'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications & Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
-parts = ['''<!doctype html>
+parts = [f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yize Wang · Robotics & Autonomous Driving</title>
 <meta name="description" content="Yize Wang's research in robotics, autonomous driving, path planning, optimal control, and mechatronics. Education, publications, and projects.">
 <meta name="color-scheme" content="light dark"><meta name="theme-color" content="#245c4f">
 <meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="Robots are reflections of ourselves. Research, education, publications, and life.">
-<link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css"><script src="js/site.js" defer></script>
+<link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js" defer></script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><aside id="sidebar" aria-label="Profile and navigation"><header>''',
  img(d['portrait'], 'Yize Wang', True),
  f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Path Planning · Decision Making<br>Mechanical Engineering</p><div class="profile-links"><a href="mailto:{email}">Email</a><a href="https://github.com/YizeWang">GitHub ↗</a><a href="{d["cv"]["path"]}">CV ↓</a></div></header><nav aria-label="Main navigation">',

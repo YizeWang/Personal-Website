@@ -31,6 +31,9 @@ Animation posters remain still until clicked; the original GIF then loads in the
   the portrait, banner and CV, with byte-identical source files.
 - `data/assets.json`: source URLs, dimensions, sizes, and SHA-256 checksums.
 
+The builder versions the stylesheet URL using a content hash, so browsers fetch
+updated layout styles after each CSS change.
+
 After editing content, run:
 
 ```sh
