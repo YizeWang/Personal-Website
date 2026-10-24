@@ -24,6 +24,9 @@ Animation posters remain still until clicked; the original GIF then loads in the
   patents, honors, interests, and original external links.
 - `scripts/build.py`: renders the content to `index.html` and four old-page redirects.
 - `css/site.css`, `js/site.js`: presentation and progressive enhancements.
+- `data/education-logos.json`, `images/logos/`: local university logos and their source URLs.
+  Degree entries span the page; non-degree entries use smaller logos and paired rows
+  on desktop, with a single column on phones.
 - `images/previews/`: compressed, still WebP thumbnails (about 2.25 MiB total).
 - `images/originals/`, `files/`: 40 imported original files, including animated GIFs,
   the portrait, banner and CV, with byte-identical source files.
@@ -82,9 +85,17 @@ No reference-site biography, contact details, or project assets are included.
 ## Validation of this migration
 
 Local Chromium checks passed for 360, 390, 768, 1024 and 1920 pixel widths,
-all 39 displayed images, GIF viewing, keyboard dismissal and focus restoration,
+all original displayed images, GIF viewing, keyboard dismissal and focus restoration,
 missing-image fallback/retry, PDF download, all four legacy redirects, deployment
 under `/Personal-Website/`, dark appearance, reduced motion, and no-JavaScript
 content. Original assets passed SHA-256 verification. Safari and Firefox have not
 been tested. Pages activation and the first live deployment still require the
 repository setting described above.
+
+University logos identify the institutions for each education entry. ETH uses its
+official website wordmark; SJTU uses its official visual identity emblem; Imperial
+uses the historical wordmark from Wikimedia Commons; Michigan uses the university
+logo supplied by the UMich AI Resources style-guide repository. Source URLs and
+intrinsic dimensions are recorded in `data/education-logos.json`. Marks belong to
+their respective institutions. The five education logos were checked in Chromium
+on desktop, mobile and dark appearance, with no horizontal overflow.

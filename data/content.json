@@ -42,23 +42,33 @@
   "education": [
     {
       "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/>ETH Zurich, Zurich, Switzerland<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a><br/><strong>GPA: 5.7 / 6.0 | Rank: Top 10%</strong>",
-      "date": "Sep 2018 – May 2021"
+      "date": "Sep 2018 – May 2021",
+      "institution": "eth",
+      "kind": "degree"
     },
     {
       "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 | Rank: 1/441</strong>",
-      "date": "Sep 2014 – Jul 2018"
+      "date": "Sep 2014 – Jul 2018",
+      "institution": "sjtu",
+      "kind": "degree"
     },
     {
       "html": "<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dpaccagnan\">Prof. Dario Paccagnan</a>",
-      "date": "Oct 2020 – May 2021"
+      "date": "Oct 2020 – May 2021",
+      "institution": "imperial",
+      "kind": "nondegree"
     },
     {
       "html": "<strong>ETH </strong><strong>Robotics Summer School<br/></strong>Wangen an der Aare, Switzerland<br/>Topic: Path Planning on Rescue Robots",
-      "date": "Jun 2019 – Jul 2019"
+      "date": "Jun 2019 – Jul 2019",
+      "institution": "eth",
+      "kind": "nondegree"
     },
     {
       "html": "<strong>Research Assistant</strong><br/>Department of Mechanical Engineering<br/>University of Michigan, Ann Arbor, USA<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>",
-      "date": "Jun 2017 – Sep 2017"
+      "date": "Jun 2017 – Sep 2017",
+      "institution": "michigan",
+      "kind": "nondegree"
     }
   ],
   "skills": "<strong>Programming:</strong> C++, Python, MATLAB<br/><strong>Technology:</strong> Linux, ROS, Git, Docker, CMake, LaTeX, SolidWorks<br/><strong>Knowledge:</strong> path planning, state estimation, model predictive control, game theory, reinforcement learning<br/>",

@@ -112,6 +112,9 @@ data = {
 data['education'].insert(1, {'html': '<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href="https://www.doc.ic.ac.uk/~dpaccagnan">Prof. Dario Paccagnan</a>', 'date': 'Oct 2020 – May 2021'})
 # Keep the two degree programs first, followed by thesis and other experiences.
 data['education'].insert(1, data['education'].pop(3))
+# Presentation metadata for degree and non-degree education entries.
+for entry, (institution, kind) in zip(data['education'], [('eth', 'degree'), ('sjtu', 'degree'), ('imperial', 'nondegree'), ('eth', 'nondegree'), ('michigan', 'nondegree')]):
+    entry.update(institution=institution, kind=kind)
 assert len(data['research']) == 8
 assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 16
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
