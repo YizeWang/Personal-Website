@@ -29,13 +29,15 @@ Animation posters remain still until clicked; the original GIF then loads in the
 - `images/previews/`: compressed, still WebP thumbnails (about 2.25 MiB total).
 - `images/originals/`: 39 imported original images, including animated GIFs,
   the portrait and banner, with byte-identical source files.
-- Sidebar contact details and GitHub, Google Scholar, and LinkedIn links are
+- Sidebar contact details and GitHub, Google Scholar, LinkedIn, and WeChat links are
   editable in `data/content.json`; SVG profile icons are stored locally.
+  The user-provided WeChat QR image opens in the existing accessible media viewer
+  and remains available as a normal image link without JavaScript.
   The CV download and main-content contact panel have been removed.
 - `data/assets.json`: source URLs, dimensions, sizes, and SHA-256 checksums.
 
-The builder versions the stylesheet URL using a content hash, so browsers fetch
-updated layout styles after each CSS change.
+The builder versions stylesheet, script, and social-icon URLs using content hashes
+so browsers fetch updated assets after each change.
 
 After editing content, run:
 

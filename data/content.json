@@ -850,6 +850,13 @@
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/yize-wang?originalSubdomain=cn",
       "icon": "linkedin"
+    },
+    {
+      "name": "WeChat",
+      "url": "images/wechat-qr.png",
+      "icon": "wechat",
+      "media": true,
+      "caption": "WeChat QR Code — Scan to Connect"
     }
   ]
 }

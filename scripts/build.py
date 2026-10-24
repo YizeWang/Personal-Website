@@ -6,6 +6,8 @@ import hashlib, json, re
 ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / 'data/content.json').read_text())
 css_version = hashlib.sha256((ROOT / 'css/site.css').read_bytes()).hexdigest()[:12]
+js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
+icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
 
 def title_words(s):
     """Capitalize each title word without changing acronyms or names."""
@@ -26,10 +28,14 @@ def section(id, number, title, intro, content):
 
 nav = [('about', 'About'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications & Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
-social_links = '<div class="social-links" aria-label="Social profiles">' + ''.join(
-    f'<a class="social-link" href="{esc(profile["url"], quote=True)}" title="{esc(profile["name"], quote=True)}" aria-label="{esc(profile["name"], quote=True)}" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="images/social-icons.svg#{profile["icon"]}"></use></svg></a>'
-    for profile in d['profiles']
-) + '</div>'
+profile_links = []
+for profile in d['profiles']:
+    if profile.get('media'):
+        attrs = f'data-media data-caption="{esc(profile["caption"], quote=True)}" aria-haspopup="dialog" aria-controls="media-viewer"'
+    else:
+        attrs = 'target="_blank" rel="noopener noreferrer"'
+    profile_links.append(f'<a class="social-link" href="{esc(profile["url"], quote=True)}" title="{esc(profile["name"], quote=True)}" aria-label="{esc(profile["name"], quote=True)}" {attrs}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="images/social-icons.svg?v={icons_version}#{profile["icon"]}"></use></svg></a>')
+social_links = '<div class="social-links" aria-label="Social profiles">' + ''.join(profile_links) + '</div>'
 
 parts = [f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +43,7 @@ parts = [f'''<!doctype html>
 <meta name="description" content="Yize Wang's research in robotics, autonomous driving, path planning, optimal control, and mechatronics. Education, publications, and projects.">
 <meta name="color-scheme" content="light dark"><meta name="theme-color" content="#245c4f">
 <meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="Robots are reflections of ourselves. Research, education, publications, and life.">
-<link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js" defer></script>
+<link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js?v={js_version}" defer></script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><aside id="sidebar" aria-label="Profile and navigation"><header>''',
  img(d['portrait'], 'Yize Wang', True),
  f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Path Planning · Decision Making<br>Mechanical Engineering</p><div class="profile-contact"><a href="mailto:{email}">{email}</a><a href="tel:{esc(d["phone"], quote=True)}">{esc(d["phone_display"])}</a></div>{social_links}</header><nav aria-label="Main navigation">',

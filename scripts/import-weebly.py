@@ -100,7 +100,7 @@ email = ''.join(chr(c ^ b[0]) for c in b[1:])
 data = {
  'source': SOURCE, 'imported': '2026-10-20', 'name': 'Yize Wang', 'email': email,
  'phone': '+8615846625655', 'phone_display': '+86 158 4662 5655',
- 'profiles': [{'name': 'GitHub', 'url': 'https://github.com/YizeWang', 'icon': 'github'}, {'name': 'Google Scholar', 'url': 'https://scholar.google.com/citations?user=ZGKO_KUAAAAJ&hl=en', 'icon': 'scholar'}, {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/yize-wang?originalSubdomain=cn', 'icon': 'linkedin'}],
+ 'profiles': [{'name': 'GitHub', 'url': 'https://github.com/YizeWang', 'icon': 'github'}, {'name': 'Google Scholar', 'url': 'https://scholar.google.com/citations?user=ZGKO_KUAAAAJ&hl=en', 'icon': 'scholar'}, {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/yize-wang?originalSubdomain=cn', 'icon': 'linkedin'}, {'name': 'WeChat', 'url': 'images/wechat-qr.png', 'icon': 'wechat', 'media': True, 'caption': 'WeChat QR Code — Scan to Connect'}],
  'hero': assets[urljoin(SOURCE, hero)], 'portrait': image(contents['home'].select_one('.wsite-image'))['asset'],
  'biography': re.split(r'(?:<br/>\s*){2,}', clean(contents['home'].select_one('.paragraph'))),
  'education': [{'html': h, 'date': d} for h, d in zip(education_blocks, ['Sep 2018 – May 2021', 'Jun 2019 – Jul 2019', 'Sep 2014 – Jul 2018', 'Jun 2017 – Sep 2017'])],

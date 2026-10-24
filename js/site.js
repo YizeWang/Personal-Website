@@ -31,12 +31,17 @@ if (typeof viewer.showModal === 'function') {
     event.preventDefault();
     opener = link;
     const current = ++generation;
-    const caption = link.closest('figure').querySelector('figcaption').textContent;
+    const caption = link.dataset.caption || link.closest('figure')?.querySelector('figcaption')?.textContent || link.getAttribute('aria-label') || 'Image';
     document.querySelector('#media-caption').textContent = caption;
     document.querySelector('#media-original').href = link.href;
-    const preview = link.querySelector('img').cloneNode();
-    preview.removeAttribute('loading');
-    content.replaceChildren(preview);
+    const sourcePreview = link.querySelector('img');
+    if (sourcePreview) {
+      const preview = sourcePreview.cloneNode();
+      preview.removeAttribute('loading');
+      content.replaceChildren(preview);
+    } else {
+      content.replaceChildren();
+    }
     status.textContent = 'Loading original…';
     viewer.showModal();
     document.body.classList.add('viewer-open');
