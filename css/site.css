@@ -54,3 +54,10 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .career-project header .date{white-space:nowrap;flex-shrink:0;margin:0}
 .career-awards{font-size:12px;line-height:1.8;padding:14px 18px;margin:22px 0 0;background:var(--soft);border-radius:3px}
 @media(max-width:760px){.career-heading,.career-project>header{flex-direction:column;gap:6px}.career-heading h3{font-size:21px}.career-role{font-size:14px}.career-highlights{font-size:13px}.career-project header .date{font-size:11px}}
+
+/* Each degree owns its native, initially collapsed course list. */
+.education-primary>.courses{grid-column:1/-1;grid-row:2;margin-top:4px;padding:10px 0 0;border-top:1px solid var(--line);border-bottom:0;font-size:13px}
+.education-primary>.courses summary{line-height:1.8}
+.education-primary>.courses table{margin-top:12px}
+@media(max-width:1100px){.education-primary>.courses{grid-row:3}}
+@media(max-width:760px){.education-primary>.courses{font-size:12px}.education-primary>.courses summary span{float:none;margin-left:10px}}

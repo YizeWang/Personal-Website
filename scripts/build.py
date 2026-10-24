@@ -76,8 +76,14 @@ parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, r
 ed = '<div class="education-list">'
 for e in d['education']:
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
-    ed += f'<article class="education-entry {kind}"><div class="education-body">{e["html"]}</div><p class="date">{e["date"]}</p></article>'
-ed += '</div><h3 class="subheading">Skills</h3><p>' + d['skills'] + '</p>'
+    courses = ''
+    if e.get('courses'):
+        label = esc(e['courses_title'])
+        courses += f'<details class="courses"><summary>{label}<span>{len(e["courses"])} courses</span></summary><div class="table-scroll"><table><caption>{label} and Grades</caption><thead><tr><th scope="col">Course</th><th scope="col">Grade</th></tr></thead><tbody>'
+        courses += ''.join(f'<tr><td>{course}</td><td>{esc(grade)}</td></tr>' for course, grade in e['courses'])
+        courses += '</tbody></table></div></details>'
+    ed += f'<article class="education-entry {kind}"><div class="education-body">{e["html"]}</div><p class="date">{e["date"]}</p>{courses}</article>'
+ed += '</div>'
 parts.append(section('education', '02', 'Education', 'Excellent academic performance is never the destination.', ed))
 research = '<div class="project-index">' + ''.join(f'<a href="#project-{n}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'
 for n,p in enumerate(d['research'],1):

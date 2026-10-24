@@ -31,12 +31,118 @@
     {
       "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/>ETH Zurich, Zurich, Switzerland<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a><br/><strong>GPA: 5.7 / 6.0 | Rank: Top 10%</strong>",
       "date": "Sep 2018 – May 2021",
-      "kind": "degree"
+      "kind": "degree",
+      "courses": [
+        [
+          "151-0851-00 <a href=\"http://www.rsl.ethz.ch/education-students/lectures/robotdynamics.html\">Robot Dynamics</a>",
+          "5.5 / 6.0"
+        ],
+        [
+          "151-0604-00 <a href=\"http://www.msrl.ethz.ch/education/microrobotics.html\">Microrobotics</a>",
+          "5.5 / 6.0"
+        ],
+        [
+          "151-0563-01 <a href=\"http://www.idsc.ethz.ch/education/lectures/optimal-control.html\">Dynamic Programming and Optimal Control</a>",
+          "5.5 / 6.0"
+        ],
+        [
+          "151-0854-00 <a href=\"http://www.asl.ethz.ch/education/lectures/autonomous_mobile_robots/spring-2019.html\">Autonomous Mobile Robots</a>",
+          "6.0 / 6.0"
+        ],
+        [
+          "151-0660-00 <a href=\"http://www.idsc.ethz.ch/education/lectures/model-predictive-control.html\">Model Predictive Control</a>",
+          "6.0 / 6.0"
+        ],
+        [
+          "151-0566-00 <a href=\"http://www.idsc.ethz.ch/education/lectures/recursive-estimation.html\">Recursive Estimation</a>",
+          "5.3 / 6.0"
+        ],
+        [
+          "252-0579-00 <a href=\"http://www.cvg.ethz.ch/teaching/3dvision/courseSchedule.php\">3D Vision</a>",
+          "5.5 / 6.0"
+        ],
+        [
+          "227-0216-00 <a href=\"http://www.vvz.ethz.ch/lerneinheitPre.do?semkez=2019S&amp;lerneinheitId=127912&amp;lang=en\">Control Systems II</a>",
+          "5.3 / 6.0"
+        ],
+        [
+          "227-0225-00 <a href=\"http://people.ee.ethz.ch/~ifalst/\">Linear System Theory</a>",
+          "6.0 / 6.0"
+        ],
+        [
+          "263-5210-00 <a href=\"https://las.inf.ethz.ch/pai-f19\">Probabilistic Artificial Intelligence</a>",
+          "5.5 / 6.0"
+        ]
+      ],
+      "courses_title": "Graduate Courses"
     },
     {
       "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 | Rank: 1/441</strong>",
       "date": "Sep 2014 – Jul 2018",
-      "kind": "degree"
+      "kind": "degree",
+      "courses": [
+        [
+          "ME429 Design and Practice of Mechatronic Systems",
+          "90/100"
+        ],
+        [
+          "EE205 Electrical and Electronic Technology",
+          "99/100"
+        ],
+        [
+          "ME113 Programming: Principles and Practice Using C++",
+          "93/100"
+        ],
+        [
+          "ME208 Design and Manufacture",
+          "90/100"
+        ],
+        [
+          "ME369 Modeling Analysis and System Control",
+          "85/100"
+        ],
+        [
+          "ME399 Measurement Principles and Technologies",
+          "97/100"
+        ],
+        [
+          "ME345 Engineering Material",
+          "95/100"
+        ],
+        [
+          "ES004 Electronic System Design Based on Android System",
+          "98/100"
+        ],
+        [
+          "CS902 Thinking and Approach of Programming",
+          "94/100"
+        ],
+        [
+          "EM003 Engineering Fluid Mechanics",
+          "91/100"
+        ],
+        [
+          "BE203 Engineering Thermodynamics",
+          "92/100"
+        ],
+        [
+          "MA097 Mathematical Methods in Physics",
+          "88/100"
+        ],
+        [
+          "MA118 Mathematical Analysis",
+          "91/100"
+        ],
+        [
+          "EM001 Theoretical Mechanics",
+          "89/100"
+        ],
+        [
+          "MA119 Probability and Statistics",
+          "91/100"
+        ]
+      ],
+      "courses_title": "Undergraduate Core Courses"
     },
     {
       "html": "<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dpaccagnan\">Prof. Dario Paccagnan</a>",
@@ -54,7 +160,6 @@
       "kind": "nondegree"
     }
   ],
-  "skills": "<strong>Programming:</strong> C++, Python, MATLAB<br/><strong>Technology:</strong> Linux, ROS, Git, Docker, CMake, LaTeX, SolidWorks<br/><strong>Knowledge:</strong> path planning, state estimation, model predictive control, game theory, reinforcement learning<br/>",
   "research": [
     {
       "title": "Intersection Path Planning For HD Maps",

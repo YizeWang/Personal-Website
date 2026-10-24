@@ -49,6 +49,9 @@ for a in assets:
 data = json.loads((ROOT / 'data/content.json').read_text())
 for key, expected in [('education',5),('research',8),('publications',4),('patents',4),('honors',16)]:
     if len(data[key]) != expected: errors.append(f'{key}: expected {expected} records')
+for entry, expected in zip([e for e in data['education'] if e['kind'] == 'degree'], [10, 15]):
+    if len(entry.get('courses', [])) != expected:
+        errors.append(f'Degree course list: expected {expected} records')
 main = docs['index.html']
 for id in ['career','education','research','publications','personal']:
     if id not in main.ids: errors.append('Missing section: ' + id)

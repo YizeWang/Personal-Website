@@ -103,7 +103,6 @@ data = {
  'profiles': [{'name': 'GitHub', 'url': 'https://github.com/YizeWang', 'icon': 'github'}, {'name': 'Google Scholar', 'url': 'https://scholar.google.com/citations?user=ZGKO_KUAAAAJ&hl=en', 'icon': 'scholar'}, {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/yize-wang?originalSubdomain=cn', 'icon': 'linkedin'}, {'name': 'WeChat', 'url': 'images/wechat-qr.png', 'icon': 'wechat', 'media': True, 'caption': 'WeChat QR Code — Scan to Connect'}],
  'hero': assets[urljoin(SOURCE, hero)], 'portrait': image(contents['home'].select_one('.wsite-image'))['asset'],
  'education': [{'html': h, 'date': d} for h, d in zip(education_blocks, ['Sep 2018 – May 2021', 'Jun 2019 – Jul 2019', 'Sep 2014 – Jul 2018', 'Jun 2017 – Sep 2017'])],
- 'skills': clean(ed[6]),
  'research': research, 'publications': lines(pub[0]), 'patents': lines(pub[1]), 'honors': list(zip(lines(pub[2]), lines(pub[3]))),
  'personal': personal, 'personal_notice': text(pg.select_one('.paragraph')),
 }
@@ -111,6 +110,9 @@ data = {
 data['education'].insert(1, {'html': '<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href="https://www.doc.ic.ac.uk/~dpaccagnan">Prof. Dario Paccagnan</a>', 'date': 'Oct 2020 – May 2021'})
 # Keep the two degree programs first, followed by thesis and other experiences.
 data['education'].insert(1, data['education'].pop(3))
+# Keep course lists attached to their corresponding degree programs.
+data['education'][0].update(courses=list(zip(lines(ed[2]), lines(ed[3]))), courses_title='Graduate Courses')
+data['education'][1].update(courses=list(zip(lines(ed[4]), lines(ed[5]))), courses_title='Undergraduate Core Courses')
 # Presentation metadata for degree and non-degree education entries.
 for entry, kind in zip(data['education'], ['degree', 'degree', 'nondegree', 'nondegree', 'nondegree']):
     entry.update(kind=kind)
