@@ -49,8 +49,8 @@ parts = [f'''<!doctype html>
  img(d['portrait'], 'Yize Wang', True),
  f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Path Planning · Decision Making<br>Mechanical Engineering</p><div class="profile-contact"><a href="mailto:{email}">{email}</a><a href="tel:{esc(d["phone"], quote=True)}">{esc(d["phone_display"])}</a></div>{social_links}</header><nav aria-label="Main navigation">',
  ''.join(f'<a href="#{id}"><span>{label}</span><span aria-hidden="true">{n:02d}</span></a>' for n, (id, label) in enumerate(nav, 1)),
- '<p class="sidebar-note">Robots are reflections<br>of ourselves.</p></nav></aside><main id="main">',
- f'<div class="hero"><img src="{d["hero"]["preview"]}" width="{d["hero"]["preview_width"]}" height="{d["hero"]["preview_height"]}" alt="Yize Wang working on a mechatronics project" fetchpriority="high"><div class="hero-content"><p class="eyebrow">YIZE WANG / PERSONAL WEBSITE</p><p class="hero-title">Serve Our World<br>with Humanoid Robots</p><a href="#research">Explore the research <span aria-hidden="true">↓</span></a></div></div>'
+ '</nav></aside><main id="main">',
+ f'<div class="hero"><img src="{d["hero"]["preview"]}" width="{d["hero"]["preview_width"]}" height="{d["hero"]["preview_height"]}" alt="Yize Wang working on a mechatronics project" fetchpriority="high"><div class="hero-content"><p class="eyebrow">YIZE WANG / PERSONAL WEBSITE</p><p class="hero-title">Robots are reflections<br>of ourselves.</p></div></div>'
 ]
 def career_highlights(items):
     return '<ul class="career-highlights">' + ''.join(f'<li>{esc(item)}</li>' for item in items) + '</ul>'
