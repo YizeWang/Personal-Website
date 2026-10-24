@@ -5,7 +5,6 @@ import json, re
 
 ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / 'data/content.json').read_text())
-education_logos = json.loads((ROOT / 'data/education-logos.json').read_text())
 
 def title_words(s):
     """Capitalize each title word without changing acronyms or names."""
@@ -46,9 +45,8 @@ about += '<div class="contact-panel"><div><h3>Get In Touch</h3>' + f'<a href="ma
 parts.append(section('about', '01', 'About Me', 'Robots are reflections of ourselves.', '<p class="archive-note">Biography and CV preserved from the original website (academic information through 2021).</p>' + about))
 ed = '<div class="education-list">'
 for e in d['education']:
-    logo = education_logos[e['institution']]
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
-    ed += f'<article class="education-entry {kind}"><span class="education-logo"><img src="{logo["path"]}" alt="{esc(logo["alt"], quote=True)}" width="{logo["width"]}" height="{logo["height"]}" loading="lazy" decoding="async"></span><div class="education-body">{e["html"]}</div><p class="date">{e["date"]}</p></article>'
+    ed += f'<article class="education-entry {kind}"><div class="education-body">{e["html"]}</div><p class="date">{e["date"]}</p></article>'
 ed += '</div><h3 class="subheading">Skills</h3><p>' + d['skills'] + '</p>'
 parts.append(section('education', '02', 'Education', 'Excellent academic performance is never the destination.', ed))
 research = '<div class="project-index">' + ''.join(f'<a href="#project-{n}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'

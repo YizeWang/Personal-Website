@@ -15,17 +15,14 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .project-media figure img{height:230px;object-fit:contain;padding:8px}
 .project-media:has(figure:nth-child(3)){grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:760px){.project-media figure img{height:160px}.project-media{grid-template-columns:repeat(2,minmax(0,1fr))}}
-/* Degree programs span the page; non-degree experiences use smaller paired rows. */
+/* Degree programs span the page; non-degree experiences use compact paired rows. */
 .education-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}
-.education-entry{display:grid;grid-template-columns:52px minmax(0,1fr);gap:8px 16px;align-items:start;padding:24px 0 0;border:0;border-top:1px solid var(--line);min-width:0;font-size:13px;line-height:1.75}
+.education-entry{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:start;padding:24px 0 0;border:0;border-top:1px solid var(--line);min-width:0;font-size:13px;line-height:1.75}
 .education-entry:first-child{padding-top:0;border-top:0}
-.education-logo{display:flex;align-items:center;justify-content:center;grid-column:1;grid-row:1/3;width:52px;height:52px;background:#fff;border-radius:5px;padding:5px}
-.education-logo img{width:100%;max-height:100%;object-fit:contain}
-.education-body{grid-column:2;grid-row:1;min-width:0;overflow-wrap:anywhere}
-.education-entry .date{grid-column:2;grid-row:2;margin:0;font-size:11px;line-height:1.6}
-.education-primary{grid-column:1/-1;grid-template-columns:80px minmax(0,1fr) auto;gap:10px 22px;font-size:15px;line-height:1.85}
-.education-primary .education-logo{width:80px;height:80px;grid-row:1;padding:6px}
-.education-primary .date{grid-column:3;grid-row:1;font-size:12px;white-space:nowrap;padding-top:2px}
+.education-body{grid-column:1;grid-row:1;min-width:0;overflow-wrap:anywhere}
+.education-entry .date{grid-column:1;grid-row:2;margin:0;font-size:11px;line-height:1.6}
+.education-primary{grid-column:1/-1;grid-template-columns:minmax(0,1fr) auto;gap:10px 22px;font-size:15px;line-height:1.85}
+.education-primary .date{grid-column:2;grid-row:1;font-size:12px;white-space:nowrap;padding-top:2px}
 .education-primary .education-body>strong:first-child{font-size:16px}
-@media(max-width:1100px){.education-primary{grid-template-columns:72px minmax(0,1fr)}.education-primary .education-logo{width:72px;height:72px;grid-row:1/3}.education-primary .date{grid-column:2;grid-row:2;padding:0}.education-list{gap:24px}.education-secondary{grid-template-columns:44px minmax(0,1fr);column-gap:12px}.education-secondary .education-logo{width:44px;height:44px}}
-@media(max-width:760px){.education-list{grid-template-columns:1fr;gap:22px}.education-primary{grid-template-columns:60px minmax(0,1fr);gap:8px 16px;font-size:14px}.education-primary .education-logo{width:60px;height:60px}.education-primary .education-body>strong:first-child{font-size:15px}.education-secondary{grid-template-columns:44px minmax(0,1fr);font-size:12px;padding-top:20px}.education-entry .date{font-size:11px}}
+@media(max-width:1100px){.education-primary{grid-template-columns:minmax(0,1fr)}.education-primary .date{grid-column:1;grid-row:2;padding:0}.education-list{gap:24px}}
+@media(max-width:760px){.education-list{grid-template-columns:1fr;gap:22px}.education-primary{gap:8px;font-size:14px}.education-primary .education-body>strong:first-child{font-size:15px}.education-secondary{font-size:12px;padding-top:20px}.education-entry .date{font-size:11px}}
