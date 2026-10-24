@@ -83,6 +83,7 @@ education_blocks = re.split(r'(?:<br/>\s*){2,}', clean(ed[0]))
 education_blocks = [b.strip() for b in education_blocks if b.strip()]
 assert len(education_blocks) == 4
 # Preserve the owner's corrected rankings when refreshing the source content.
+education_blocks[0] = education_blocks[0].replace('<a href="https://www.mavt.ethz.ch/the-department/people/person-detail.html?persid=29981">Prof. Roland Siegwart</a>', '<a href="https://jan.carius.io/about/">Dr. Jan Carius</a> and <a href="https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html">Prof. Marco Hutter</a>')
 education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 | Rank: Top 10%</strong>')
 education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 | Rank: 1/441</strong>')
 pub = contents['publication--honors'].select('.paragraph')
