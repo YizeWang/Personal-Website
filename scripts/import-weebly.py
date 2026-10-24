@@ -87,7 +87,6 @@ education_blocks[0] = education_blocks[0].replace('<a href="https://www.mavt.eth
 education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 | Rank: Top 10%</strong>')
 education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 | Rank: 1/441</strong>')
 education_blocks[0] = education_blocks[0].replace('<a href="https://www.topuniversities.com/universities/eth-zurich-swiss-federal-institute-technology/postgrad">ETH Zurich</a>, Switzerland', 'ETH Zurich, Zurich, Switzerland')
-education_blocks[1] = education_blocks[1].replace('Wangen an der Aare, Switzerland<br/>', '')
 education_blocks[2] = education_blocks[2].replace('<a href="https://www.topuniversities.com/universities/shanghai-jiao-tong-university/undergrad">Shanghai Jiao Tong University</a>, China', 'Shanghai Jiao Tong University, Shanghai, China')
 education_blocks[3] = education_blocks[3].replace('<a href="https://www.usnews.com/best-colleges/university-of-michigan-ann-arbor-9092">University of Michigan, Ann Arbor</a>, USA', 'University of Michigan, Ann Arbor, USA')
 education_blocks[3] = education_blocks[3].replace('Prof. Jianping Fu</a>', 'Prof. Jianping Fu</a> and <a href="https://med.szu.edu.cn/en/faculty/engineering/content_10211">Prof. Zida Li</a>')
@@ -111,6 +110,8 @@ data = {
 }
 # Education entry supplied by the owner after the original migration.
 data['education'].insert(1, {'html': '<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href="https://www.doc.ic.ac.uk/~dpaccagnan">Prof. Dario Paccagnan</a>', 'date': 'Oct 2020 – May 2021'})
+# Keep the two degree programs first, followed by thesis and other experiences.
+data['education'].insert(1, data['education'].pop(3))
 assert len(data['research']) == 8
 assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 16
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
