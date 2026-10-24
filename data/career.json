@@ -23,16 +23,6 @@
       ]
     },
     {
-      "company": "Shanghai Jiao Tong University",
-      "department": "Institute of Mechatronics",
-      "role": "Research Assistant",
-      "date": "Jun 2024 – Sep 2024",
-      "highlights": [
-        "Designed and deployed a multi-sensor data acquisition rig with surrounding cameras and motion-capture gloves, featuring a green-screen occluded workbench for hand segmentation.",
-        "Developed a Kalman-filter-based sensor fusion pipeline combining motion-captured joint poses, YOLO-based 2D keypoints, and stereo-vision depth data to generate stable 3D hand pose estimates for robotic imitation learning."
-      ]
-    },
-    {
       "company": "DJI Automotive",
       "department": "Planning and Control Department",
       "role": "Algorithm Engineer",
@@ -58,8 +48,7 @@
             "Optimized reference lines by fusing memory maps and perceived lane markers with iLQR, handling turns, U-turns, on/off-ramps, diverging and merging lanes, and narrow gaps."
           ]
         }
-      ],
-      "awards": "2023 DJI Automotive Best Individual Award (Top 1/400); 2022 Outstanding Individual Award in the Planning Department (Top 6%)."
+      ]
     }
   ]
 }

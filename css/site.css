@@ -52,7 +52,7 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .career-project h4{color:var(--heading);font-size:16px;line-height:1.5;margin:0}
 .career-project-role{font-size:12px;color:var(--muted);margin:4px 0 0}
 .career-project header .date{white-space:nowrap;flex-shrink:0;margin:0}
-.career-awards{font-size:12px;line-height:1.8;padding:14px 18px;margin:22px 0 0;background:var(--soft);border-radius:3px}
+
 @media(max-width:760px){.career-heading,.career-project>header{flex-direction:column;gap:6px}.career-heading h3{font-size:21px}.career-role{font-size:14px}.career-highlights{font-size:13px}.career-project header .date{font-size:11px}}
 
 /* Each degree owns its native, initially collapsed course list. */

@@ -68,8 +68,6 @@ for entry in career_data['entries']:
         if project.get('date'):
             career += f'<p class="date">{esc(project["date"])}</p>'
         career += '</header>' + career_highlights(project['highlights']) + '</div>'
-    if entry.get('awards'):
-        career += f'<p class="career-awards"><strong>Awards:</strong> {esc(entry["awards"])}</p>'
     career += '</article>'
 career += '</div>'
 parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, robotics, and software engineering.', career))
