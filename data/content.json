@@ -892,16 +892,16 @@
       "images": [
         {
           "asset": {
-            "source": "https://irs.www.warnerbros.com/keyart-jpeg/shawshank_redemption_keyart.jpg",
-            "path": "images/originals/shawshank-official.jpg",
-            "sha256": "f609a60d2a829f90844d88867b1d3f8e2c858555fe131ee66a32edf02a1302b1",
-            "bytes": 34125,
-            "width": 256,
-            "height": 384,
+            "source": "https://irs.www.warnerbros.com/gallery-v2-jpeg/the_shawshank_redemption_posterlarge_0-675188670.jpg",
+            "path": "images/originals/shawshank-classic.jpg",
+            "sha256": "cf454330be21498f06d7d498779d57a37bd7fc6689878bee2e23fd5b4d0a3c19",
+            "bytes": 36833,
+            "width": 244,
+            "height": 450,
             "frames": 1,
-            "preview": "images/previews/shawshank-official.webp",
-            "preview_width": 256,
-            "preview_height": 384,
+            "preview": "images/previews/shawshank-classic.webp",
+            "preview_width": 244,
+            "preview_height": 450,
             "origin": "curated"
           },
           "caption": "The Shawshank Redemption",
@@ -943,20 +943,20 @@
         },
         {
           "asset": {
-            "source": "https://i0.wp.com/gkids.com/wp-content/uploads/2026/07/YNAME-4K_Poster2_Web_Dated.jpg?fit=700%2C1024&ssl=1",
-            "path": "images/originals/your-name-official.jpg",
-            "sha256": "1393908e453a6f235ce0704d2200112e9de89f8b7c7c1e31ed3bfa25bc0c0eba",
-            "bytes": 108779,
-            "width": 700,
-            "height": 1024,
+            "source": "https://www.kiminona.com/images/top/sp_main_vsl01.jpg",
+            "path": "images/originals/your-name-sky.jpg",
+            "sha256": "343ca32d0ce7c81cb0d9684093b49a5cd52943ab2fec6810c7a6f27091d21d6b",
+            "bytes": 139969,
+            "width": 640,
+            "height": 730,
             "frames": 1,
-            "preview": "images/previews/your-name-official.webp",
-            "preview_width": 547,
-            "preview_height": 800,
+            "preview": "images/previews/your-name-sky.webp",
+            "preview_width": 640,
+            "preview_height": 730,
             "origin": "curated"
           },
           "caption": "Your Name",
-          "link": "https://gkids.com/films/your-name/"
+          "link": "https://www.kiminona.com/"
         }
       ]
     },
@@ -1021,20 +1021,20 @@
       "images": [
         {
           "asset": {
-            "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/library_600x900.jpg",
-            "path": "images/originals/cities-skylines-steam.jpg",
-            "sha256": "96c18791c0ff1f83cd6c895aa1af56ef6172db06948da68e90a067fea9cae044",
-            "bytes": 65619,
+            "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/949230/library_600x900.jpg",
+            "path": "images/originals/cities-skylines-ii.jpg",
+            "sha256": "b8f8db0fc6436df220d2da7ad9d1e17252678401e9031d892c07c8bbef780ed5",
+            "bytes": 59797,
             "width": 300,
             "height": 450,
             "frames": 1,
-            "preview": "images/previews/cities-skylines-steam.webp",
+            "preview": "images/previews/cities-skylines-ii.webp",
             "preview_width": 300,
             "preview_height": 450,
             "origin": "curated"
           },
-          "caption": "Cities Skylines",
-          "link": "https://store.steampowered.com/app/255710/Cities_Skylines/"
+          "caption": "Cities: Skylines II",
+          "link": "https://store.steampowered.com/app/949230/Cities_Skylines_II/"
         },
         {
           "asset": {
