@@ -34,15 +34,6 @@
       "date": "Jul 2021 – May 2024",
       "projects": [
         {
-          "title": "City NOA (CNOA)",
-          "role": "Navigation Algorithm Lead & Project Agile Coach",
-          "date": "Oct 2023 – May 2024",
-          "highlights": [
-            "Designed and delivered CNOA navigation algorithms, achieving robust urban routing based on multi-hypothesis matching of SD maps and online lane perception. The output was presented as a topological graph indicating lane-level probabilistic connectivity.",
-            "Led a 12-member CNOA Scrum team as Scrum Master, responsible for planning, tracking, and verifying Stories and Tasks in Sprints."
-          ]
-        },
-        {
           "title": "Highway NOA (HNOA)",
           "role": "Function Owner & Navigation Algorithm Lead",
           "date": "Apr 2023 – May 2024",
@@ -50,6 +41,15 @@
             "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation and escalation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. Achieved over 85% success in merging into and exiting main roads, serving 2,300 customers across 610,000 km of autonomous driving as of December 2023.",
             "Platformized HNOA across vehicle models from multiple OEMs, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
             "Designed HNOA navigation algorithms that achieved over 98% accuracy for navigation-triggered lane changes using only vehicle navigation information, including maneuvers, distance, suggested lanes, and road classes."
+          ]
+        },
+        {
+          "title": "City NOA (CNOA)",
+          "role": "Navigation Algorithm Lead & Project Agile Coach",
+          "date": "Oct 2023 – May 2024",
+          "highlights": [
+            "Designed and delivered CNOA navigation algorithms, achieving robust urban routing based on multi-hypothesis matching of SD maps and online lane perception. The output was presented as a topological graph indicating lane-level probabilistic connectivity.",
+            "Led a 12-member CNOA Scrum team as Scrum Master, responsible for planning, tracking, and verifying Stories and Tasks in Sprints."
           ]
         },
         {
