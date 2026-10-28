@@ -69,3 +69,6 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .degree-stats>.courses table{margin-top:0}
 @media(max-width:1100px){.education-primary .education-body>strong:first-child{max-width:100%}}
 @media(max-width:760px){.degree-stats{font-size:13px}.degree-stats>.courses{font-size:11px}.degree-stats>.courses summary{margin-left:8px}}
+
+/* Preserve the full portrait composition of the new Life photos. */
+.gallery.life figure.portrait img{aspect-ratio:auto;object-fit:contain}

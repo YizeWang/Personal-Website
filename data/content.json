@@ -630,6 +630,40 @@
       "images": [
         {
           "asset": {
+            "source": "user-provided:hawaii-beach-2026",
+            "path": "images/originals/hawaii-beach-2026.jpg",
+            "sha256": "6947e1dd60b53b57c9ebba1f068f15d4cc590ee124193fabde80b4915eacc54e",
+            "bytes": 420021,
+            "width": 1440,
+            "height": 2559,
+            "frames": 1,
+            "preview": "images/previews/hawaii-beach-2026.webp",
+            "preview_width": 563,
+            "preview_height": 1000
+          },
+          "caption": "Hawaii Beach (2026)",
+          "link": null,
+          "orientation": "portrait"
+        },
+        {
+          "asset": {
+            "source": "user-provided:proposal-matterhorn-2026",
+            "path": "images/originals/proposal-matterhorn-2026.jpg",
+            "sha256": "77e530167af4f71118e3c79cdc705658d36c060e9bd7b1cb77b7a4e70e3b4e92",
+            "bytes": 401706,
+            "width": 1440,
+            "height": 2556,
+            "frames": 1,
+            "preview": "images/previews/proposal-matterhorn-2026.webp",
+            "preview_width": 563,
+            "preview_height": 1000
+          },
+          "caption": "Proposal under Matterhorn (2026)",
+          "link": null,
+          "orientation": "portrait"
+        },
+        {
+          "asset": {
             "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/2_1_orig.png",
             "path": "images/originals/2_1_orig.png",
             "sha256": "39812af7f53adfbf2faecb7e26d5b122ea6efd6b75718e4c8dad5d7c5563b7b2",
@@ -641,7 +675,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "Graduation Photo at Shanghai Jiao Tong University",
+          "caption": "Graduation Photo at Shanghai Jiao Tong University (2018)",
           "link": null
         },
         {
@@ -657,7 +691,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "With Tang Linxin on Royal Caribbean",
+          "caption": "With Tang Linxin on Royal Caribbean (2018)",
           "link": null
         },
         {
@@ -673,7 +707,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "Teaching Pupils to Program in Scratch",
+          "caption": "Teaching Pupils to Program in Scratch (2017)",
           "link": null
         },
         {
@@ -689,7 +723,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "Lab Group in University of Michigan, Ann Arbor",
+          "caption": "Lab Group in University of Michigan, Ann Arbor (2017)",
           "link": null
         }
       ]

@@ -8,6 +8,8 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = 'https://yizewang.weebly.com/'
+saved_content = json.loads((ROOT / 'data/content.json').read_text()) if (ROOT / 'data/content.json').exists() else {}
+saved_assets = json.loads((ROOT / 'data/assets.json').read_text()) if (ROOT / 'data/assets.json').exists() else []
 PAGES = ['home', 'education', 'research', 'publication--honors', 'personal']
 
 def fetch(url):
@@ -61,6 +63,8 @@ def download(url):
 
 with ThreadPoolExecutor(max_workers=6) as pool:
     assets = dict(pool.map(download, sorted(urls)))
+# Keep the owner's uploaded photos, which are not hosted on the original site.
+assets.update({a['source']: a for a in saved_assets if a['source'].startswith('user-provided:')})
 
 def image(e):
     im = e.select_one('img')
@@ -94,6 +98,10 @@ personal = []
 for h in pg.select('h2')[1:]:
     images = [image(i) for i in pg.select('.wsite-image') if i.find_previous('h2') == h]
     personal.append({'title': text(h), 'images': images})
+# Preserve the owner's curated Life gallery and dated captions on re-import.
+saved_life = next((g for g in saved_content.get('personal', []) if g['title'] == 'Life'), None)
+if saved_life:
+    next(g for g in personal if g['title'] == 'Life')['images'] = saved_life['images']
 email_hex = contents['home'].select_one('[data-cfemail]')['data-cfemail']
 b = bytes.fromhex(email_hex)
 email = ''.join(chr(c ^ b[0]) for c in b[1:])

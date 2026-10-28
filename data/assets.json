@@ -466,5 +466,29 @@
     "preview": "images/previews/your-name_orig.webp",
     "preview_width": 560,
     "preview_height": 800
+  },
+  {
+    "source": "user-provided:hawaii-beach-2026",
+    "path": "images/originals/hawaii-beach-2026.jpg",
+    "sha256": "6947e1dd60b53b57c9ebba1f068f15d4cc590ee124193fabde80b4915eacc54e",
+    "bytes": 420021,
+    "width": 1440,
+    "height": 2559,
+    "frames": 1,
+    "preview": "images/previews/hawaii-beach-2026.webp",
+    "preview_width": 563,
+    "preview_height": 1000
+  },
+  {
+    "source": "user-provided:proposal-matterhorn-2026",
+    "path": "images/originals/proposal-matterhorn-2026.jpg",
+    "sha256": "77e530167af4f71118e3c79cdc705658d36c060e9bd7b1cb77b7a4e70e3b4e92",
+    "bytes": 401706,
+    "width": 1440,
+    "height": 2556,
+    "frames": 1,
+    "preview": "images/previews/proposal-matterhorn-2026.webp",
+    "preview_width": 563,
+    "preview_height": 1000
   }
 ]
