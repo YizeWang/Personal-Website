@@ -781,6 +781,23 @@
           },
           "caption": "One Hundred Years of Solitude",
           "link": "https://www.penguin.co.uk/books/482987/one-hundred-years-of-solitude-by-marquez-gabriel-garcia/9780241968581"
+        },
+        {
+          "asset": {
+            "source": "https://learning.oreilly.com/library/cover/9781491908419/600w/",
+            "path": "images/originals/effective-modern-cpp.jpg",
+            "sha256": "a8497e46d1a961c1304e02dc3bfaff341dc0dfc8ec6a092fff72a587592d5ec9",
+            "bytes": 129619,
+            "width": 600,
+            "height": 787,
+            "frames": 1,
+            "preview": "images/previews/effective-modern-cpp.webp",
+            "preview_width": 600,
+            "preview_height": 787,
+            "origin": "curated"
+          },
+          "caption": "Effective Modern C++",
+          "link": "https://www.oreilly.com/library/view/effective-modern-c/9781491908419/"
         }
       ]
     },

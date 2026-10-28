@@ -698,5 +698,18 @@
     "preview_width": 300,
     "preview_height": 450,
     "origin": "curated"
+  },
+  {
+    "source": "https://learning.oreilly.com/library/cover/9781491908419/600w/",
+    "path": "images/originals/effective-modern-cpp.jpg",
+    "sha256": "a8497e46d1a961c1304e02dc3bfaff341dc0dfc8ec6a092fff72a587592d5ec9",
+    "bytes": 129619,
+    "width": 600,
+    "height": 787,
+    "frames": 1,
+    "preview": "images/previews/effective-modern-cpp.webp",
+    "preview_width": 600,
+    "preview_height": 787,
+    "origin": "curated"
   }
 ]
