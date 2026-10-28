@@ -58,16 +58,23 @@ def career_highlights(items):
 
 career = '<div class="career-list">'
 for entry in career_data['entries']:
-    department = f'<p class="career-department">{esc(entry["department"])}</p>' if entry.get('department') else ''
-    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-role">{esc(entry["role"])}</p>{department}</div><p class="date">{esc(entry["date"])}</p></header>'
+    metadata = [f'<span class="career-role">{esc(entry["role"])}</span>']
+    for key in ('department', 'team', 'location'):
+        if entry.get(key):
+            metadata.append(f'<span class="career-{key}">{esc(entry[key])}</span>')
+    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-meta">' + ''.join(metadata) + f'</p></div><p class="date">{esc(entry["date"])}</p></header>'
     if entry.get('highlights'):
         career += career_highlights(entry['highlights'])
     for project in entry.get('positions', []) + entry.get('projects', []):
-        career += f'<div class="career-project"><header><div><h4>{esc(title_words(project["title"]))}</h4>'
-        if project.get('department'):
-            career += f'<p class="career-project-role">{esc(project["department"])}</p>'
+        is_position = project in entry.get('positions', [])
+        title = (project.get('department') or project['title']) if is_position else project['title']
+        kind = ' career-position' if is_position else ''
+        career += f'<div class="career-project{kind}"><header><div><h4>{esc(title_words(title))}</h4>'
+        if is_position and project.get('department'):
+            career += f'<p class="career-position-team">{esc(project["title"])}</p>'
         if project.get('role'):
-            career += f'<p class="career-project-role">{esc(project["role"])}</p>'
+            role = project['role'].replace(' & ', ' · ')
+            career += f'<p class="career-project-role">{esc(role)}</p>'
         career += '</div>'
         if project.get('date'):
             career += f'<p class="date">{esc(project["date"])}</p>'

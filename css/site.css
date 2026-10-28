@@ -79,3 +79,16 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 
 /* Center every Life and favorites caption beneath its own image. */
 #personal figcaption{text-align:center}
+
+/* Company, position, and project metadata share a consistent hierarchy. */
+.career-heading>div,.career-project>header>div{min-width:0}
+.career-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 0;margin:0;line-height:1.7}
+.career-meta>span{display:inline;font-size:12px;margin:0;color:var(--muted)}
+.career-meta>.career-role{font-size:14px;font-weight:600;color:var(--heading)}
+.career-meta>span+span::before{content:"·";display:inline-block;margin:0 9px;color:var(--muted);font-weight:400}
+.career-position{border-left:2px solid var(--line);padding-left:20px}
+.career-position-team{font-size:12px;color:var(--muted);margin:4px 0 0}
+.career-project-role{font-weight:500;color:var(--heading);line-height:1.7}
+.career-project>header{align-items:flex-start}
+.career-project header .date{margin-top:2px}
+@media(max-width:760px){.career-meta{display:block}.career-meta>span{display:block}.career-meta>span+span::before{content:none}.career-position{padding-left:14px}.career-heading>.date,.career-project header .date{margin-top:0}}
