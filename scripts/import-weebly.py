@@ -117,7 +117,7 @@ data['education'][1].update(courses=list(zip(lines(ed[4]), lines(ed[5]))), cours
 for entry, kind in zip(data['education'], ['degree', 'degree', 'nondegree', 'nondegree', 'nondegree']):
     entry.update(kind=kind)
 # Career awards supplied by the owner from the newer CV.
-data['honors'] = [['<strong>DJI Automotive Best Individual Award (Top 1/400)</strong>', '2023'], ['<strong>DJI Automotive Outstanding Individual Award in the Planning Department (Top 6%)</strong>', '2022']] + data['honors']
+data['honors'] = [['<strong>DJI Automotive Best Individual Award (Top 1/400, 40g Gold)</strong>', '2023'], ['<strong>DJI Automotive Outstanding Individual Award in the Planning Department (Top 6%)</strong>', '2022']] + data['honors']
 assert len(data['research']) == 8
 assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 18
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')

@@ -47,7 +47,7 @@ parts = [f'''<!doctype html>
 <link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js?v={js_version}" defer></script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><aside id="sidebar" aria-label="Profile and navigation"><header>''',
  img(d['portrait'], 'Yize Wang', True),
- f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Path Planning · Decision Making</p><div class="profile-contact"><a href="mailto:{email}">{email}</a><a href="tel:{esc(d["phone"], quote=True)}">{esc(d["phone_display"])}</a></div>{social_links}</header><nav aria-label="Main navigation">',
+ f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Humanoid Robots · Model Fine Tuning<br>Path Planning · Decision Making</p><div class="profile-contact"><a href="mailto:{email}">{email}</a><a href="tel:{esc(d["phone"], quote=True)}">{esc(d["phone_display"])}</a></div>{social_links}</header><nav aria-label="Main navigation">',
  ''.join(f'<a href="#{id}"><span>{label}</span><span aria-hidden="true">{n:02d}</span></a>' for n, (id, label) in enumerate(nav, 1)),
  '</nav></aside><main id="main">',
  f'<div class="hero"><img src="{d["hero"]["preview"]}" width="{d["hero"]["preview_width"]}" height="{d["hero"]["preview_height"]}" alt="Yize Wang working on a mechatronics project" fetchpriority="high"><div class="hero-content"><p class="eyebrow">YIZE WANG / PERSONAL WEBSITE</p><p class="hero-title">Robots are reflections<br>of ourselves.</p></div></div>'
