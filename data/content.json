@@ -630,6 +630,23 @@
       "images": [
         {
           "asset": {
+            "source": "user-provided:proposal-matterhorn-2026",
+            "path": "images/originals/proposal-matterhorn-2026.jpg",
+            "sha256": "77e530167af4f71118e3c79cdc705658d36c060e9bd7b1cb77b7a4e70e3b4e92",
+            "bytes": 401706,
+            "width": 1440,
+            "height": 2556,
+            "frames": 1,
+            "preview": "images/previews/proposal-matterhorn-2026.webp",
+            "preview_width": 563,
+            "preview_height": 1000
+          },
+          "caption": "Proposal under Matterhorn (2026)",
+          "link": null,
+          "orientation": "portrait"
+        },
+        {
+          "asset": {
             "source": "user-provided:hawaii-beach-2026",
             "path": "images/originals/hawaii-beach-2026.jpg",
             "sha256": "6947e1dd60b53b57c9ebba1f068f15d4cc590ee124193fabde80b4915eacc54e",
@@ -647,18 +664,18 @@
         },
         {
           "asset": {
-            "source": "user-provided:proposal-matterhorn-2026",
-            "path": "images/originals/proposal-matterhorn-2026.jpg",
-            "sha256": "77e530167af4f71118e3c79cdc705658d36c060e9bd7b1cb77b7a4e70e3b4e92",
-            "bytes": 401706,
-            "width": 1440,
-            "height": 2556,
+            "source": "user-provided:/Users/yizew/Desktop/Hawaii Volcanoes National - Fuji Camera (3).JPG",
+            "path": "images/originals/hawaii-volcano-eruption-2026.jpg",
+            "sha256": "977c34dd2f83ef9176f3ccb47353eb3f869492eca3929dd37bd675e4f7faccb6",
+            "bytes": 1708980,
+            "width": 2488,
+            "height": 4416,
             "frames": 1,
-            "preview": "images/previews/proposal-matterhorn-2026.webp",
-            "preview_width": 563,
-            "preview_height": 1000
+            "preview": "images/previews/hawaii-volcano-eruption-2026.webp",
+            "preview_width": 451,
+            "preview_height": 800
           },
-          "caption": "Proposal under Matterhorn (2026)",
+          "caption": "Volcano Eruption at Hawaii (2026)",
           "link": null,
           "orientation": "portrait"
         },

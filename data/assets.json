@@ -711,5 +711,17 @@
     "preview_width": 600,
     "preview_height": 787,
     "origin": "curated"
+  },
+  {
+    "source": "user-provided:/Users/yizew/Desktop/Hawaii Volcanoes National - Fuji Camera (3).JPG",
+    "path": "images/originals/hawaii-volcano-eruption-2026.jpg",
+    "sha256": "977c34dd2f83ef9176f3ccb47353eb3f869492eca3929dd37bd675e4f7faccb6",
+    "bytes": 1708980,
+    "width": 2488,
+    "height": 4416,
+    "frames": 1,
+    "preview": "images/previews/hawaii-volcano-eruption-2026.webp",
+    "preview_width": 451,
+    "preview_height": 800
   }
 ]

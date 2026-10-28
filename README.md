@@ -32,10 +32,10 @@ Animation posters remain still until clicked; the original GIF then loads in the
   collapsed by default, with the Courses toggle right-aligned on the GPA/rank line using the date text style.
   Publications (including patents) and Honors have separate sections and navigation
   links. The former Skills block has been removed.
-- `images/previews/`: compressed, still WebP thumbnails (about 3.25 MiB total).
-- `images/originals/`: 58 original images, including animated GIFs,
-  the portrait, banner, and two owner-provided 2026 photos, with byte-identical
-  source files. Life captions include years; the two new photos retain their full
+- `images/previews/`: compressed, still WebP thumbnails (about 3.26 MiB total).
+- `images/originals/`: 59 original images, including animated GIFs,
+  the portrait, banner, and three owner-provided 2026 photos, with byte-identical
+  source files. Life captions include years; the three 2026 photos share a smaller first row, with Matterhorn first, retain their full
   portrait composition and open their originals in the media viewer.
   Favorite books, board games, and video games include curated official cover art;
   all 23 covers link to official publisher, studio, distributor, or Steam pages.

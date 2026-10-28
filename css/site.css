@@ -70,5 +70,9 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 @media(max-width:1100px){.education-primary .education-body>strong:first-child{max-width:100%}}
 @media(max-width:760px){.degree-stats{font-size:13px}.degree-stats>.courses{font-size:11px}.degree-stats>.courses summary{margin-left:8px}}
 
-/* Preserve the full portrait composition of the new Life photos. */
+/* Three compact portraits first; older landscape photos remain paired. */
+.gallery.life{grid-template-columns:repeat(6,minmax(0,1fr))}
+.gallery.life>figure{grid-column:span 3}
+.gallery.life>figure.portrait{grid-column:span 2}
 .gallery.life figure.portrait img{aspect-ratio:auto;object-fit:contain}
+@media(max-width:760px){.gallery.life{column-gap:12px}}
