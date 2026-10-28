@@ -334,7 +334,7 @@
     {
       "title": "Magnetic Control System Design",
       "paragraphs": [
-        "<strong>Shanghai QuGe Tech. | Jun 2018 - Sep 2018 (Full Time)</strong><br/><strong>Key Words: Magnetism, Control, COMSOL, Simulation</strong>",
+        "<strong>Wuji Technology | Jun 2018 - Sep 2018 (Full Time)</strong><br/><strong>Key Words: Magnetism, Control, COMSOL, Simulation</strong>",
         "Linear actuators available in the market are mostly expensive with limited types. The most common ones are voice coil actuators and classical linear actuators, which are expensive and big in shape respectively. However, there are a lot of application scenarios where linear actuators outperform rotary actuators. Thus, we wanted to design a system with movable coil arrays as linear actuators. The potential applications include the military sand table, rhythm visualization and compliant interaction.<br/><br/>The key idea is exploiting the properties of the magnetic field induced by a solenoid. After careful calculation and simulation, we decided on magnetic material (NdFeB) and coil parameters to develop a prototype.<br/><br/>Result: we failed to come up with a feasible design to meet all required specifications, namely, excellent dynamic response characteristics, adequate heat-sinking capability and large maximum current carrying capacity. The three most significant barriers are the limited magnetic force, the high cost of the feedback loop and significant magnetic flux leakage. Despite the failure, I learnt a lot about field simulation and enjoyed the time when I tried to exploit every possibility."
       ],
       "images": [
