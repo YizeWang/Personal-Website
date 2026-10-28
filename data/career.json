@@ -63,6 +63,17 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Huawei",
+      "department": "Automotive Business Unit · HD Map Group, Shanghai, China",
+      "role": "Algorithm Intern",
+      "date": "Jun 2020 – Sep 2020",
+      "highlights": [
+        "Developed intersection path-planning algorithms using third-order Bézier curve optimization, lane-group combinatorial optimization, and Hybrid A* to generate smooth, collision-free reference lines that respect vehicle kinematics.",
+        "Planned 9,625 intersection paths in Shanghai; 99% met the required standards, and the remaining 1% were correctly flagged for review.",
+        "Deployed the algorithms to the HD-map labeling production platform, increasing labeling efficiency by over 1,000% and replacing error-prone manual operations."
+      ]
     }
   ]
 }

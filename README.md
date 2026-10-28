@@ -60,11 +60,12 @@ node --check js/site.js
 ```
 
 The checker validates every local HTML reference, section anchor, image metadata,
-original-file checksum, and expected content counts (8 projects, 4 publications,
-4 patents and 18 honors).
+original-file checksum, and expected content counts (8 projects, 7 publications,
+4 patents and 19 honors).
 
 `scripts/import-weebly.py` is the optional one-time importer (requires
-`beautifulsoup4` and `Pillow`). Re-running it overwrites content from the old site;
+`beautifulsoup4` and `Pillow`). Re-running it refreshes content from the old site while retaining edited personal
+galleries, research descriptions, publications, and honors;
 normal editing and deployment require only standard-library Python.
 
 ## Publish to GitHub Pages

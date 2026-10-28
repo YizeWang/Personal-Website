@@ -127,8 +127,12 @@ for entry, kind in zip(data['education'], ['degree', 'degree', 'nondegree', 'non
     entry.update(kind=kind)
 # Career awards supplied by the owner from the newer CV.
 data['honors'] = [['<strong>DJI Automotive Best Individual Award (Top 1/400, 40g Gold Coin)</strong>', '2023'], ['<strong>DJI Automotive Outstanding Individual Award in the Planning Department (Top 6%)</strong>', '2022']] + data['honors']
+# Preserve reviewed project contributions, publications, and awards on re-import.
+for key in ('research', 'publications', 'honors'):
+    if saved_content.get(key):
+        data[key] = saved_content[key]
 assert len(data['research']) == 8
-assert len(data['publications']) == 4 and len(data['patents']) == 4 and len(data['honors']) == 18
+assert len(data['publications']) >= 4 and len(data['patents']) == 4 and len(data['honors']) >= 18
 (ROOT / 'data/content.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 (ROOT / 'data/assets.json').write_text(json.dumps(list(assets.values()), ensure_ascii=False, indent=2) + '\n')
 print(f'Imported {len(assets)} assets and all five pages; {sum(a["bytes"] for a in assets.values()) / 1024**2:.1f} MiB originals.')

@@ -165,7 +165,7 @@
       "title": "Intersection Path Planning For HD Maps",
       "paragraphs": [
         "<strong>Intelligent Automotive Solution Dept., Huawei | Jun 2020 - Sep 2020 (Full Time)</strong><br/><strong>Key Words: Autonomous Driving, Path Planning, HD Map, A* search, Bezier Curve</strong>",
-        "According to the HD map production pipeline, production workers will label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool will output a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool can accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>Till now, among more than 10,000 planned paths, 99% of them comply with all constraints and are now serving perfectly in the HD maps."
+        "According to the HD map production pipeline, production workers will label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool will output a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool can accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
       ],
       "images": [
         {
@@ -402,7 +402,10 @@
       "title": "Microscale Platform For The Measurement Of Blood Retraction Force",
       "paragraphs": [
         "<strong>University of Michigan, Ann Arbor | Jun 2017 - Oct 2017 (Full Time)</strong><br/><strong>Advised by Prof. Jianping Fu, Dept. of ME, U-M, Ann Arbor</strong><br/><strong>Key Words:  Image Analysis, Experiment Design, Mechanical Design, Data Analysis</strong>",
-        "Coagulation monitoring is essential for perioperative care and thrombosis treatment. However, existing assays for coagulation monitoring have limitations such as a large footprint and complex setup. In this work, we developed a miniaturized device for point-of-care blood coagulation testing by measuring dynamic clot retraction force development during blood clotting. In this device, a blood drop was localized between a protrusion and a flexible force-sensing beam to measure clot retraction force. The beam was featured with micropillar arrays to assist the deposition of carbon nanotube films, which served as a strain sensor to achieve label-free electrical readout of clot retraction force in real time. We characterized mechanical and electrical properties of the force-sensing beam and optimized its design. We further demonstrated that this blood coagulation monitoring device could obtain results that were consistent with those using an imaging method and that the device was capable of differentiating blood samples with different coagulation profiles. Owing to its low fabrication cost, small size, and low consumption of blood samples, the blood coagulation testing device using carbon nanotube strain sensors holds great potential as a point-of-care tool for future coagulation monitoring."
+        "This project developed a miniaturized platform for blood coagulation testing by measuring clot retraction force. A blood sample was held between a protrusion and a flexible force-sensing beam; carbon nanotube strain sensors enabled electrical readout, with image-based measurements used for comparison.",
+        "<strong>My Contributions — Image Processing.</strong> Improved blood-clot tracking during retraction using Normalized Cross-Correlation (NCC) template matching.",
+        "<strong>My Contributions — Device Fabrication and Experimental Design.</strong> Developed a laser-cutting-based fabrication process to produce standardized devices and reduce manual manufacturing errors. Designed alignment structures and equipment geometry to ensure consistent image acquisition and measurement conditions.",
+        "<strong>My Contributions — Experiments and Analysis.</strong> Conducted 50 groups of experiments and analyzed the relationship between blood coagulation ability, disease, and physical condition."
       ],
       "images": [
         {
@@ -539,10 +542,13 @@
     }
   ],
   "publications": [
-    "[1] <strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11-19.",
-    "[2] Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). A Self-morphing Algorithm of Modular Robot. <em>Journal of Machine Design</em>, 36(01), 5-9",
-    "[3] Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). Carbon Nanotube Strain Sensor Based Hemoretractometer for Blood Coagulation Testing. <em>ACS Sensors</em>, 3(3), 670-676.",
-    "[4] Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). Capillary Assisted Deposition of Carbon Nanotube Film for Strain Sensing. <em>Applied Physics Letters</em>, 111(17), 173105."
+    "<strong>Wang, Y.</strong>, &amp; Paccagnan, D. (2022). <a href=\"https://doi.org/10.1109/CDC51059.2022.9993033\">Data-Driven Robust Congestion Pricing</a>. <em>2022 IEEE 61st Conference on Decision and Control (CDC)</em>, 4437–4443.",
+    "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings for Effective Blood Sample Fencing and High-Throughput Measurement of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
+    "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11-19.",
+    "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). A Self-morphing Algorithm of Modular Robot. <em>Journal of Machine Design</em>, 36(01), 5-9",
+    "Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). Carbon Nanotube Strain Sensor Based Hemoretractometer for Blood Coagulation Testing. <em>ACS Sensors</em>, 3(3), 670-676.",
+    "Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). Capillary Assisted Deposition of Carbon Nanotube Film for Strain Sensing. <em>Applied Physics Letters</em>, 111(17), 173105.",
+    "Mao, Y., <strong>Wang, Y.</strong>, Gong, L., Wang, Y., Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016). A Multistage Winnowing Fulfilled and Unfulfilled Grains Device and Method Based on Human-Computer Interaction. <em>Mechatronics (机电一体化)</em>, 22(3), 3–6, 28."
   ],
   "patents": [
     "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma Z., Mao Y. &amp; Zhang D., “An Intelligent Platform for Agricultural Robots Based on Motion Decomposition”, Patent Number: ZL 2016 2 0928634.8",
@@ -553,6 +559,10 @@
   "honors": [
     [
       "<strong>DJI Automotive Best Individual Award (Top 1/400, 40g Gold Coin)</strong>",
+      "2023"
+    ],
+    [
+      "<strong>DJI Automotive Best Agile Development Team (Top 10%)</strong>",
       "2023"
     ],
     [

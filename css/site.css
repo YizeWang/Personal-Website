@@ -76,3 +76,6 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .gallery.life>figure.portrait{grid-column:span 2}
 .gallery.life figure.portrait img{aspect-ratio:auto;object-fit:contain}
 @media(max-width:760px){.gallery.life{column-gap:12px}}
+
+/* Center every Life and favorites caption beneath its own image. */
+#personal figcaption{text-align:center}
