@@ -762,6 +762,23 @@
           },
           "caption": "Modern Control Engineering",
           "link": "https://www.amazon.com/Modern-Control-Engineering-Katsuhiko-Ogata/dp/0136156738"
+        },
+        {
+          "asset": {
+            "source": "https://cdn.penguin.co.uk/dam-assets/books/9780241968581/9780241968581-jacket-large.jpg",
+            "path": "images/originals/one-hundred-years-of-solitude.jpg",
+            "sha256": "db0c670b3a6052905604a7e39a5162425d6f6d5e33832264fcb965fa69ae4db2",
+            "bytes": 108295,
+            "width": 328,
+            "height": 500,
+            "frames": 1,
+            "preview": "images/previews/one-hundred-years-of-solitude.webp",
+            "preview_width": 328,
+            "preview_height": 500,
+            "origin": "curated"
+          },
+          "caption": "One Hundred Years of Solitude",
+          "link": "https://www.penguin.co.uk/books/57541/one-hundred-years-of-solitude-by-marquez-gabriel-garcia/9780241968581"
         }
       ]
     },
@@ -904,6 +921,62 @@
       ]
     },
     {
+      "title": "Favorite Board Games",
+      "images": [
+        {
+          "asset": {
+            "source": "https://cdn.shopify.com/s/files/1/0900/3540/products/3d-wingspan.png?v=1569132201",
+            "path": "images/originals/wingspan.png",
+            "sha256": "3720fba7d71d6c1d21c5943814df18efa6ac29f051b4f0e8280c3427693391db",
+            "bytes": 2778392,
+            "width": 1279,
+            "height": 1615,
+            "frames": 1,
+            "preview": "images/previews/wingspan.webp",
+            "preview_width": 634,
+            "preview_height": 800,
+            "origin": "curated"
+          },
+          "caption": "Wingspan",
+          "link": "https://store.stonemaiergames.com/products/wingspan"
+        },
+        {
+          "asset": {
+            "source": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/Everdell-Standard-Edition-FlatCover-_01.webp?v=1772549363",
+            "path": "images/originals/everdell.webp",
+            "sha256": "b4a5f44d676c2e8ecef5ef298eb7838874044cd5dffde12090d60ba794e151f8",
+            "bytes": 692002,
+            "width": 2832,
+            "height": 2832,
+            "frames": 1,
+            "preview": "images/previews/everdell.webp",
+            "preview_width": 800,
+            "preview_height": 800,
+            "origin": "curated"
+          },
+          "caption": "Everdell",
+          "link": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition"
+        },
+        {
+          "asset": {
+            "source": "https://cdn.shopify.com/s/files/1/0485/0594/6265/products/DuneImperium_Game1_76cd5c7e-7a40-4c1d-b109-97d32277cc08.png?v=1608239050",
+            "path": "images/originals/dune-imperium.png",
+            "sha256": "6c70e56e939b56a05a56f0a7759808c28977dfd5906a881a75a9cae6ae355fb2",
+            "bytes": 1419705,
+            "width": 1200,
+            "height": 1200,
+            "frames": 1,
+            "preview": "images/previews/dune-imperium.webp",
+            "preview_width": 800,
+            "preview_height": 800,
+            "origin": "curated"
+          },
+          "caption": "Dune: Imperium",
+          "link": "https://shop.direwolfdigital.com/products/dune-imperium-1"
+        }
+      ]
+    },
+    {
       "title": "Favorite Games",
       "images": [
         {
@@ -969,6 +1042,57 @@
           },
           "caption": "Stardew Valley",
           "link": "https://www.stardewvalley.net/"
+        },
+        {
+          "asset": {
+            "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900.jpg",
+            "path": "images/originals/black-myth-wukong.jpg",
+            "sha256": "96be3e787368a762a5728135ace06a4b465537265f7b4d4b9d507258f55e8333",
+            "bytes": 52678,
+            "width": 300,
+            "height": 450,
+            "frames": 1,
+            "preview": "images/previews/black-myth-wukong.webp",
+            "preview_width": 300,
+            "preview_height": 450,
+            "origin": "curated"
+          },
+          "caption": "Black Myth: Wukong",
+          "link": "https://store.steampowered.com/app/2358720/Black_Myth_Wukong/"
+        },
+        {
+          "asset": {
+            "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/library_600x900.jpg",
+            "path": "images/originals/dota-2.jpg",
+            "sha256": "f0a047c8f44520c0d10ec556f2747ca81310aabb31a9f5280420388b93a59737",
+            "bytes": 46024,
+            "width": 300,
+            "height": 450,
+            "frames": 1,
+            "preview": "images/previews/dota-2.webp",
+            "preview_width": 300,
+            "preview_height": 450,
+            "origin": "curated"
+          },
+          "caption": "Dota 2",
+          "link": "https://store.steampowered.com/app/570/Dota_2/"
+        },
+        {
+          "asset": {
+            "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813780/library_600x900.jpg",
+            "path": "images/originals/age-of-empires-ii-definitive-edition.jpg",
+            "sha256": "e897765ccc2669c563a1fe21b6b273fd0c4122e169f0b43b71b286ee28703093",
+            "bytes": 72521,
+            "width": 300,
+            "height": 450,
+            "frames": 1,
+            "preview": "images/previews/age-of-empires-ii-definitive-edition.webp",
+            "preview_width": 300,
+            "preview_height": 450,
+            "origin": "curated"
+          },
+          "caption": "Age of Empires II: Definitive Edition",
+          "link": "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/"
         }
       ]
     }

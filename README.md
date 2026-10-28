@@ -32,11 +32,13 @@ Animation posters remain still until clicked; the original GIF then loads in the
   collapsed by default, with the Courses toggle right-aligned on the GPA/rank line using the date text style.
   Publications (including patents) and Honors have separate sections and navigation
   links. The former Skills block has been removed.
-- `images/previews/`: compressed, still WebP thumbnails (about 2.42 MiB total).
-- `images/originals/`: 41 original images, including animated GIFs,
+- `images/previews/`: compressed, still WebP thumbnails (about 2.76 MiB total).
+- `images/originals/`: 48 original images, including animated GIFs,
   the portrait, banner, and two owner-provided 2026 photos, with byte-identical
   source files. Life captions include years; the two new photos retain their full
   portrait composition and open their originals in the media viewer.
+  Favorite books, board games, and video games include curated official cover art;
+  each cover links to its publisher or game page, with image provenance in the asset manifest.
 - Sidebar contact details and GitHub, Google Scholar, LinkedIn, and WeChat links are
   editable in `data/content.json`; SVG profile icons are stored locally.
   The user-provided WeChat QR image opens in the existing accessible media viewer

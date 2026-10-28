@@ -63,8 +63,9 @@ def download(url):
 
 with ThreadPoolExecutor(max_workers=6) as pool:
     assets = dict(pool.map(download, sorted(urls)))
-# Keep the owner's uploaded photos, which are not hosted on the original site.
-assets.update({a['source']: a for a in saved_assets if a['source'].startswith('user-provided:')})
+# Keep uploaded photos and curated covers that are not on the original site.
+assets.update({a['source']: a for a in saved_assets
+               if a['source'].startswith('user-provided:') or a.get('origin') == 'curated'})
 
 def image(e):
     im = e.select_one('img')
@@ -98,10 +99,10 @@ personal = []
 for h in pg.select('h2')[1:]:
     images = [image(i) for i in pg.select('.wsite-image') if i.find_previous('h2') == h]
     personal.append({'title': text(h), 'images': images})
-# Preserve the owner's curated Life gallery and dated captions on re-import.
-saved_life = next((g for g in saved_content.get('personal', []) if g['title'] == 'Life'), None)
-if saved_life:
-    next(g for g in personal if g['title'] == 'Life')['images'] = saved_life['images']
+# Preserve edited galleries, captions, links, and their order on re-import.
+if saved_content.get('personal'):
+    saved_titles = {g['title'] for g in saved_content['personal']}
+    personal = saved_content['personal'] + [g for g in personal if g['title'] not in saved_titles]
 email_hex = contents['home'].select_one('[data-cfemail]')['data-cfemail']
 b = bytes.fromhex(email_hex)
 email = ''.join(chr(c ^ b[0]) for c in b[1:])
