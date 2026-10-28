@@ -23,7 +23,13 @@ def figure(i):
     attrs = 'target="_blank" rel="noopener noreferrer"' if i['link'] else 'data-media'
     motion = '<span class="motion-label">Play animation ↗</span>' if a.get('frames', 1) > 1 else ''
     figure_attrs = ' class="portrait"' if i.get('orientation') == 'portrait' else ''
-    return f'<figure{figure_attrs}><a href="{esc(link, quote=True)}" {attrs} aria-label="{esc(caption, quote=True)}">{img(a, caption)}{motion}</a><figcaption>{esc(caption)}</figcaption></figure>'
+    picture = img(a, caption)
+    if i.get('crop'):
+        crop = i['crop']
+        width, height = crop['width'], crop['height']
+        style = f"--crop-ratio:{width}/{height};--crop-image-width:{a['width'] / width * 100:.6f}%;--crop-left:{-crop['x'] / width * 100:.6f}%;--crop-top:{-crop['y'] / height * 100:.6f}%"
+        picture = f'<span class="media-crop" style="{style}">{picture}</span>'
+    return f'<figure{figure_attrs}><a href="{esc(link, quote=True)}" {attrs} aria-label="{esc(caption, quote=True)}">{picture}{motion}</a><figcaption>{esc(caption)}</figcaption></figure>'
 
 def section(id, number, title, intro, content):
     return f'<section id="{id}" aria-labelledby="{id}-title"><div class="container"><header class="section-heading"><span class="section-number">{number}</span><div><h2 id="{id}-title">{title_words(title)}</h2><p>{intro}</p></div></header>{content}</div></section>'

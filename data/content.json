@@ -198,7 +198,13 @@
             "preview_height": 800
           },
           "caption": "Obstacle Avoidance",
-          "link": null
+          "link": null,
+          "crop": {
+            "x": 129,
+            "y": 62,
+            "width": 658,
+            "height": 677
+          }
         }
       ]
     },

@@ -92,3 +92,12 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .career-project>header{align-items:flex-start}
 .career-project header .date{margin-top:2px}
 @media(max-width:760px){.career-meta{display:block}.career-meta>span{display:block}.career-meta>span+span::before{content:none}.career-position{padding-left:14px}.career-heading>.date,.career-project header .date{margin-top:0}}
+
+/* Crop source-image padding without altering the archived diagram. */
+.media-crop{display:block;position:relative;overflow:hidden;aspect-ratio:var(--crop-ratio);width:100%;background:#fff}
+.media-crop>img{position:absolute;width:var(--crop-image-width);max-width:none;max-height:none;height:auto;left:var(--crop-left);top:var(--crop-top)}
+#media-content>.media-crop{width:min(85vw,66vh);margin:auto}
+#media-content>.media-crop>img{max-width:none;max-height:none;margin:0}
+.project-media figure .media-crop{width:min(100%,224px);margin:auto}
+.project-media figure .media-crop>img{height:auto;padding:0}
+@media(max-width:760px){.project-media figure .media-crop{width:min(100%,155.5px)}}

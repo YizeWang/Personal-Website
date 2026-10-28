@@ -35,9 +35,10 @@ if (typeof viewer.showModal === 'function') {
     document.querySelector('#media-caption').textContent = caption;
     document.querySelector('#media-original').href = link.href;
     const sourcePreview = link.querySelector('img');
+    const crop = link.querySelector('.media-crop');
     if (sourcePreview) {
-      const preview = sourcePreview.cloneNode();
-      preview.removeAttribute('loading');
+      const preview = (crop || sourcePreview).cloneNode(true);
+      (preview.matches('img') ? preview : preview.querySelector('img')).removeAttribute('loading');
       content.replaceChildren(preview);
     } else {
       content.replaceChildren();
@@ -49,7 +50,13 @@ if (typeof viewer.showModal === 'function') {
     original.alt = caption;
     original.onload = () => {
       if (current !== generation) return;
-      content.replaceChildren(original);
+      if (crop) {
+        const frame = crop.cloneNode(false);
+        frame.append(original);
+        content.replaceChildren(frame);
+      } else {
+        content.replaceChildren(original);
+      }
       status.textContent = '';
     };
     original.onerror = () => {
