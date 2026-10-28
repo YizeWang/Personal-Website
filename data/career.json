@@ -34,6 +34,15 @@
       "date": "Jul 2021 – May 2024",
       "projects": [
         {
+          "title": "City NOA (CNOA)",
+          "role": "Navigation Algorithm Lead & Project Agile Coach",
+          "date": "Oct 2023 – May 2024",
+          "highlights": [
+            "Designed and delivered CNOA navigation algorithms, achieving robust urban routing based on multi-hypothesis matching of SD maps and online lane perception. The output was presented as a topological graph indicating lane-level probabilistic connectivity.",
+            "Led a 12-member CNOA Scrum team as Scrum Master, responsible for planning, tracking, and verifying Stories and Tasks in Sprints."
+          ]
+        },
+        {
           "title": "Highway NOA (HNOA)",
           "role": "Function Owner & Navigation Algorithm Lead",
           "date": "Apr 2023 – May 2024",
