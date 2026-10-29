@@ -74,21 +74,9 @@ The target repository is `YizeWang/yizewang.github.io`, with the root Pages URL:
 
 **https://yizewang.github.io/**
 
-Migration from `YizeWang/Personal-Website`:
-
-1. In GitHub **Settings → General → Repository name**, rename the repository to
-   `yizewang.github.io`. This requires repository admin access.
-2. Update this checkout's remote after the rename:
-   `git remote set-url origin git@github.com:YizeWang/yizewang.github.io.git`.
-3. Keep **Settings → Pages → Build and deployment** configured to publish from
-   GitHub Actions, and push to `main` to redeploy after the rename.
-4. Confirm that the root URL serves the site and `/Personal-Website/` redirects
-   to the root while preserving section fragments and query parameters.
-
-The workflow publishes the compatibility directory `Personal-Website/` alongside
-all public assets. GitHub repository redirects do not redirect old Pages URLs;
-these compatibility pages handle existing project-site bookmarks explicitly.
-All site assets use relative URLs and work at both the old project path and the root.
+The repository is `YizeWang/yizewang.github.io`. Pushes to `main` automatically
+publish the site at the root URL. The old `/Personal-Website/` compatibility pages
+have been removed and that path is no longer published.
 
 The workflow uses GitHub's official configure/upload/deploy Pages actions.
 See [GitHub's publishing source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
@@ -112,7 +100,7 @@ The former About Me section has been replaced by Career Experience as section 01
 Local Chromium checks passed for 360, 390, 768, 1024 and 1920 pixel widths,
 all original displayed images, GIF viewing, keyboard dismissal and focus restoration,
 missing-image fallback/retry, all four legacy redirects, deployment
-under `/Personal-Website/`, dark appearance, reduced motion, and no-JavaScript
+at the root URL, dark appearance, reduced motion, and no-JavaScript
 content. Original assets passed SHA-256 verification. Safari and Firefox have not
 been tested. Pages activation and the first live deployment still require the
 repository setting described above.

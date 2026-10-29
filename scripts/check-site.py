@@ -25,7 +25,7 @@ class Document(HTMLParser):
                 if not a.get(key): self.errors.append('Image missing ' + key)
             self.images.append(a)
 
-pages = list(ROOT.glob('*.html')) + list((ROOT / 'Personal-Website').glob('*.html'))
+pages = list(ROOT.glob('*.html'))
 docs = {str(p.relative_to(ROOT)): Document(p) for p in pages}
 errors = []
 for name, doc in docs.items():

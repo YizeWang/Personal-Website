@@ -125,12 +125,4 @@ parts.append('''<footer><span>© Yize Wang</span><a href="#career">Back to top �
 (ROOT / 'index.html').write_text('\n'.join(parts) + '\n')
 for path,target in [('education.html','education'),('research.html','research'),('publication--honors.html','publications'),('personal.html','personal')]:
     (ROOT / path).write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yize Wang · {target.title()}</title><meta http-equiv="refresh" content="0;url=./index.html#{target}"></head><body><p>This page has moved. <a href="./index.html#{target}">Continue to {target}</a>.</p></body></html>\n')
-# Keep bookmarks to the previous project URL working after the repository rename.
-compat = ROOT / 'Personal-Website'
-compat.mkdir(exist_ok=True)
-for path, target in [('index.html', ''), ('education.html', 'education'), ('research.html', 'research'), ('publication--honors.html', 'publications'), ('personal.html', 'personal')]:
-    fallback = '../' + ('#' + target if target else '')
-    default_hash = '#' + target if target else ''
-    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yize Wang · Website moved</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="1;url={fallback}"></head><body><p>This page has moved. <a href="{fallback}">Continue to Yize Wang’s website</a>.</p><script>location.replace('../' + location.search + (location.hash || '{default_hash}'));</script></body></html>\n'''
-    (compat / path).write_text(page)
-print('Built index.html, four legacy redirects, and five project-URL redirects.')
+print('Built index.html and four legacy page redirects.')
