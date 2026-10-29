@@ -101,3 +101,11 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .project-media figure .media-crop{width:min(100%,224px);margin:auto}
 .project-media figure .media-crop>img{height:auto;padding:0}
 @media(max-width:760px){.project-media figure .media-crop{width:min(100%,155.5px)}}
+
+/* One company heading, with each position and its dates on the same row. */
+.career-entry>h3{font-size:23px;letter-spacing:-.3px;margin:0 0 8px}
+.career-heading>.career-meta{min-width:0;flex:1}
+.career-heading>.date{margin:0;line-height:1.7}
+.career-position+.career-position{margin-top:28px}
+.career-position>.career-project:first-of-type{margin-top:18px}
+@media(max-width:760px){.career-entry>h3{font-size:21px}.career-position>.career-heading{flex-direction:row;align-items:baseline;gap:12px}.career-heading>.date{font-size:11px;line-height:1.7}}

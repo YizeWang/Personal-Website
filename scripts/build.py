@@ -63,23 +63,30 @@ def career_highlights(items):
     return '<ul class="career-highlights">' + ''.join(f'<li>{esc(item)}</li>' for item in items) + '</ul>'
 
 career = '<div class="career-list">'
+previous_company = None
 for entry in career_data['entries']:
+    if entry['company'] != previous_company:
+        if previous_company is not None:
+            career += '</article>'
+        career += f'<article class="career-entry"><h3>{esc(entry["company"])}</h3>'
+        previous_company = entry['company']
     metadata = [f'<span class="career-role">{esc(entry["role"])}</span>']
     for key in ('department', 'team', 'location'):
         if entry.get(key):
             metadata.append(f'<span class="career-{key}">{esc(entry[key])}</span>')
-    career += f'<article class="career-entry"><header class="career-heading"><div><h3>{esc(entry["company"])}</h3><p class="career-meta">' + ''.join(metadata) + f'</p></div><p class="date">{esc(entry["date"])}</p></header>'
+    career += '<div class="career-position"><header class="career-heading"><p class="career-meta">' + ''.join(metadata) + f'</p><p class="date">{esc(entry["date"])}</p></header>'
     if entry.get('highlights'):
         career += career_highlights(entry['highlights'])
     for project in entry.get('projects', []):
         career += f'<div class="career-project"><header><div><h4>{esc(title_words(project["title"]))}</h4>'
         if project.get('role'):
-            role = project['role']
-            career += f'<p class="career-project-role">{esc(role)}</p>'
+            career += f'<p class="career-project-role">{esc(project["role"])}</p>'
         career += '</div>'
         if project.get('date'):
             career += f'<p class="date">{esc(project["date"])}</p>'
         career += '</header>' + career_highlights(project['highlights']) + '</div>'
+    career += '</div>'
+if previous_company is not None:
     career += '</article>'
 career += '</div>'
 parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, robotics, and software engineering.', career))
