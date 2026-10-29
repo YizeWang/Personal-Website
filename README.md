@@ -1,106 +1,28 @@
-# Yize Wang — personal website
+# Yize Wang — Personal Website
 
-Static migration of [yizewang.weebly.com](https://yizewang.weebly.com/), inspired
-by the fixed profile sidebar and section layout in
-[manymuch.github.io](https://github.com/manymuch/manymuch.github.io).
-Content was imported on 2026-10-20. Career Experience is based on the CV supplied by the owner, dated 2026-07-31.
-Education and research details retain the separately approved website edits.
+[Visit the website](https://yizewang.github.io/)
 
-## Preview
+## Edit
 
-```sh
-python3 -m http.server 8765 --bind 127.0.0.1
-```
+- `data/career.json` — Career experience.
+- `data/content.json` — Education, research, publications, honors, and interests.
+- `css/site.css` and `js/site.js` — Styling and interactions.
+- `images/` — Original images and optimized previews; sources are recorded in `data/assets.json`.
 
-Open [the local preview](http://127.0.0.1:8765/). No package installation or build
-is required to view the checked-in HTML. The site has a responsive mobile layout,
-automatic dark appearance, keyboard-accessible media viewer, and reduced-motion
-support. Navigation, images, and contact/profile links also work without JavaScript.
-Animation posters remain still until clicked; the original GIF then loads in the viewer.
-
-## Edit and verify
-
-- `data/career.json`: career roles and achievements extracted from the owner’s CV.
-  The original DOCX is not published.
-- `data/content.json`: editable education, projects, publications,
-  patents, honors, interests, and original external links.
-- `scripts/build.py`: renders the content to `index.html` and four old-page redirects.
-- `css/site.css`, `js/site.js`: presentation and progressive enhancements.
-- Degree entries span the page; non-degree entries use smaller type and paired
-  rows on desktop, with a single column on phones. Graduate and undergraduate
-  courses are attached to their corresponding degrees in native disclosure widgets,
-  collapsed by default, with the Courses toggle right-aligned on the GPA/rank line using the date text style.
-  Publications (including patents) and Honors have separate sections and navigation
-  links. The former Skills block has been removed.
-- `images/previews/`: compressed, still WebP thumbnails (about 3.40 MiB total).
-- `images/originals/`: 62 original images, including animated GIFs,
-  the portrait, banner, and three owner-provided 2026 photos, with byte-identical
-  source files. Life captions include years; the three 2026 photos share a smaller first row, with Matterhorn first, retain their full
-  portrait composition and open their originals in the media viewer.
-  Favorite books, board games, and video games include curated official cover art;
-  all 23 covers link to official publisher, studio, distributor, or Steam pages.
-  Replaced covers are retained in the original migration archive; active covers and
-  image provenance are recorded in the content data and asset manifest.
-- Sidebar contact details and GitHub, Google Scholar, LinkedIn, and WeChat links are
-  editable in `data/content.json`; SVG profile icons are stored locally.
-  The user-provided WeChat QR image opens in the existing accessible media viewer
-  and remains available as a normal image link without JavaScript.
-  The CV download and main-content contact panel have been removed.
-- `data/assets.json`: source URLs, dimensions, sizes, and SHA-256 checksums.
-
-The builder versions stylesheet, script, and social-icon URLs using content hashes
-so browsers fetch updated assets after each change.
-
-After editing content, run:
+## Build and Preview
 
 ```sh
 python3 scripts/build.py
 python3 scripts/check-site.py
-node --check js/site.js
+python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-The checker validates every local HTML reference, section anchor, image metadata,
-original-file checksum, and expected content counts (8 projects, 7 publications,
-4 patents and 19 honors).
+Open [localhost:8765](http://127.0.0.1:8765/). Building requires only Python's standard library.
 
-`scripts/import-weebly.py` is the optional one-time importer (requires
-`beautifulsoup4` and `Pillow`). Re-running it refreshes content from the old site while retaining edited personal
-galleries, research descriptions, publications, and honors;
-normal editing and deployment require only standard-library Python.
+## Deploy
 
-## Publish to GitHub Pages
+Push to `main`; GitHub Actions builds, checks, and deploys the site to GitHub Pages.
 
-The target repository is `YizeWang/yizewang.github.io`, with the root Pages URL:
+## Credits
 
-**https://yizewang.github.io/**
-
-The repository is `YizeWang/yizewang.github.io`. Pushes to `main` automatically
-publish the site at the root URL. The old `/Personal-Website/` compatibility pages
-have been removed and that path is no longer published.
-
-The workflow uses GitHub's official configure/upload/deploy Pages actions.
-See [GitHub's publishing source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-The old `/education.html`, `/research.html`, `/publication--honors.html`, and
-`/personal.html` paths redirect to their new sections under the new host. Redirecting
-the original Weebly domain itself requires changing that site in Weebly.
-
-## Content and design attribution
-
-Site content and personal project media are migrated from Yize Wang's original site.
-Book, film, television and game images retain their original external attribution
-links and noncommercial-use notice. Layout inspiration: Jiaxin (Jimmy) Zhang's
-portfolio and [Read Only by HTML5 UP](https://html5up.net/read-only),
-[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
-No reference-site biography, contact details, or project assets are included.
-The former About Me section has been replaced by Career Experience as section 01.
-
-## Validation of this migration
-
-Local Chromium checks passed for 360, 390, 768, 1024 and 1920 pixel widths,
-all original displayed images, GIF viewing, keyboard dismissal and focus restoration,
-missing-image fallback/retry, all four legacy redirects, deployment
-at the root URL, dark appearance, reduced motion, and no-JavaScript
-content. Original assets passed SHA-256 verification. Safari and Firefox have not
-been tested. Pages activation and the first live deployment still require the
-repository setting described above.
+Layout inspiration: [Jiaxin (Jimmy) Zhang](https://github.com/manymuch/manymuch.github.io) and [Read Only by HTML5 UP](https://html5up.net/read-only) ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)). Third-party images link to their sources.
