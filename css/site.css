@@ -109,3 +109,8 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .career-position+.career-position{margin-top:28px}
 .career-position>.career-project:first-of-type{margin-top:18px}
 @media(max-width:760px){.career-entry>h3{font-size:21px}.career-position>.career-heading{flex-direction:row;align-items:baseline;gap:12px}.career-heading>.date{font-size:11px;line-height:1.7}}
+
+.career-company-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+.career-company-heading h3{font-size:23px;letter-spacing:-.3px;margin:0}
+.career-company-heading>.date{margin:0;flex-shrink:0;white-space:nowrap}
+@media(max-width:760px){.career-company-heading h3{font-size:21px}.career-company-heading>.date{font-size:11px}}

@@ -65,16 +65,22 @@ def career_highlights(items):
 career = '<div class="career-list">'
 previous_company = None
 for entry in career_data['entries']:
+    date_at_company = entry.get('date_placement') == 'company'
     if entry['company'] != previous_company:
         if previous_company is not None:
             career += '</article>'
-        career += f'<article class="career-entry"><h3>{esc(entry["company"])}</h3>'
+        career += '<article class="career-entry">'
+        if date_at_company:
+            career += f'<header class="career-company-heading"><h3>{esc(entry["company"])}</h3><p class="date">{esc(entry["date"])}</p></header>'
+        else:
+            career += f'<h3>{esc(entry["company"])}</h3>'
         previous_company = entry['company']
     metadata = [f'<span class="career-role">{esc(entry["role"])}</span>']
     for key in ('department', 'team', 'location'):
         if entry.get(key):
             metadata.append(f'<span class="career-{key}">{esc(entry[key])}</span>')
-    career += '<div class="career-position"><header class="career-heading"><p class="career-meta">' + ''.join(metadata) + f'</p><p class="date">{esc(entry["date"])}</p></header>'
+    position_date = '' if date_at_company else f'<p class="date">{esc(entry["date"])}</p>'
+    career += '<div class="career-position"><header class="career-heading"><p class="career-meta">' + ''.join(metadata) + '</p>' + position_date + '</header>'
     if entry.get('highlights'):
         career += career_highlights(entry['highlights'])
     for project in entry.get('projects', []):

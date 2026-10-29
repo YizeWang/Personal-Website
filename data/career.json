@@ -68,7 +68,8 @@
             "Optimized reference lines by fusing memory maps and perceived lane markers with iLQR, handling turns, U-turns, on/off-ramps, diverging and merging lanes, and narrow gaps."
           ]
         }
-      ]
+      ],
+      "date_placement": "company"
     },
     {
       "company": "Huawei",
