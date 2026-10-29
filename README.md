@@ -70,24 +70,28 @@ normal editing and deployment require only standard-library Python.
 
 ## Publish to GitHub Pages
 
-This checkout is connected to `YizeWang/Personal-Website`. Its Pages URL will be:
+The target repository is `YizeWang/yizewang.github.io`, with the root Pages URL:
 
-**https://yizewang.github.io/Personal-Website/**
+**https://yizewang.github.io/**
 
-1. In the repository's **Settings → Pages → Build and deployment**, set **Source**
-   to **GitHub Actions**. This initial repository setting requires GitHub admin access.
-2. Under **Actions → Deploy GitHub Pages**, use **Run workflow** after enabling Pages,
-   or push a new commit to `main`.
-3. The workflow builds and validates the site, then publishes only the website
-   files. Subsequent pushes to `main` redeploy automatically.
+Migration from `YizeWang/Personal-Website`:
+
+1. In GitHub **Settings → General → Repository name**, rename the repository to
+   `yizewang.github.io`. This requires repository admin access.
+2. Update this checkout's remote after the rename:
+   `git remote set-url origin git@github.com:YizeWang/yizewang.github.io.git`.
+3. Keep **Settings → Pages → Build and deployment** configured to publish from
+   GitHub Actions, and push to `main` to redeploy after the rename.
+4. Confirm that the root URL serves the site and `/Personal-Website/` redirects
+   to the root while preserving section fragments and query parameters.
+
+The workflow publishes the compatibility directory `Personal-Website/` alongside
+all public assets. GitHub repository redirects do not redirect old Pages URLs;
+these compatibility pages handle existing project-site bookmarks explicitly.
+All site assets use relative URLs and work at both the old project path and the root.
 
 The workflow uses GitHub's official configure/upload/deploy Pages actions.
 See [GitHub's publishing source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-For the root address **https://yizewang.github.io/**, the repository must instead
-be named **YizeWang.github.io**. This project uses relative asset paths and supports
-either deployment without code changes. No canonical URL is hard-coded until the
-final repository address is chosen.
 
 The old `/education.html`, `/research.html`, `/publication--honors.html`, and
 `/personal.html` paths redirect to their new sections under the new host. Redirecting

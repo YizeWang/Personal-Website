@@ -25,17 +25,19 @@ class Document(HTMLParser):
                 if not a.get(key): self.errors.append('Image missing ' + key)
             self.images.append(a)
 
-docs = {p.name: Document(p) for p in ROOT.glob('*.html')}
+pages = list(ROOT.glob('*.html')) + list((ROOT / 'Personal-Website').glob('*.html'))
+docs = {str(p.relative_to(ROOT)): Document(p) for p in pages}
 errors = []
 for name, doc in docs.items():
     errors.extend(f'{name}: {s}' for s in doc.errors)
     for ref in doc.refs:
         u = urlsplit(ref)
         if u.scheme or u.netloc: continue
-        target = unquote(u.path) or name
-        path = ROOT / target
+        path = ((ROOT / name).parent / unquote(u.path)).resolve() if u.path else ROOT / name
+        if path.is_dir(): path = path / 'index.html'
+        target = str(path.relative_to(ROOT))
         if not path.is_file(): errors.append(f'{name}: Missing file: {ref}')
-        elif u.fragment and path.name in docs and u.fragment not in docs[path.name].ids:
+        elif u.fragment and target in docs and u.fragment not in docs[target].ids:
             errors.append(f'{name}: Missing anchor: {ref}')
     for a in doc.images:
         if urlsplit(a['src']).scheme: errors.append(f'{name}: Remote image dependency: {a["src"]}')
