@@ -8,7 +8,8 @@
       "highlights": [
         "Implemented Isaac Lab tutorial scripts demonstrating different physics backends and the use of PyTorch and NVIDIA Warp.",
         "Trained Franka and SO-101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
-      ]
+      ],
+      "location": "Shanghai, China"
     },
     {
       "company": "NVIDIA",
@@ -16,11 +17,12 @@
       "department": "Automotive Department",
       "date": "Sep 2024 – Oct 2026",
       "highlights": [
-        "Implemented a belief-and-heuristics-based framework to construct robust road topology with spatiotemporal fusion.",
+        "Implemented a belief-and-heuristics-based framework to construct robust lane-level road topology with spatiotemporal fusion.",
         "Served as a monorepo code approver, reviewing component PRs and driving design iterations to improve system-level behavior.",
         "Owned code quality through Coverity analysis and code coverage checks, supporting compliance with AUTOSAR coding guidelines.",
         "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
-      ]
+      ],
+      "location": "Shanghai, China"
     },
     {
       "company": "DJI Automotive",
@@ -33,8 +35,7 @@
           "role": "Function Owner & Navigation Algorithm Lead",
           "date": "Apr 2023 – May 2024",
           "highlights": [
-            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation, driver takeover requests during functional degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles.",
-            "Achieved a combined success rate of 90% for main-road entry and exit maneuvers. As of December 2023, the system had served 2,300 customers across 610,000 km of autonomous driving.",
+            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation, driver takeover requests during functional degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. As of December 2023, the system had served 2,300 customers across 610,000 km of autonomous driving.",
             "Platformized HNOA across vehicle models from multiple OEMs (Volkswagen, BYD, SGMW, Chery, and Great Wall Motor) supporting different SoC configurations (TI TDA4VH, Qualcomm 8650, and NVIDIA Orin) and navigation map providers (AMap and Tencent Map).",
             "Designed HNOA navigation algorithms that achieved over 98% accuracy for navigation-triggered lane changes only using the vehicle navigation information (maneuvers, distance, suggested lanes, and road classes)."
           ]
@@ -55,11 +56,12 @@
           "highlights": [
             "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility, securing approvals from multiple OEMs. The system was subsequently released to users in June 2024.",
             "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved decisions across multiple lane options, reduced unnecessary adherence to previously recorded trajectories, and prevented deviations from memory maps.",
-            "Optimized turning reference lines by fusing memory maps, perceived lane markers and online static obstacles with iLQR."
+            "Optimized turning reference lines by fusing memory maps, perceived lane markers, and online static obstacles with iLQR."
           ]
         }
       ],
-      "date_placement": "company"
+      "date_placement": "company",
+      "location": "Shenzhen, China"
     },
     {
       "company": "Huawei",

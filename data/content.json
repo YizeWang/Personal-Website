@@ -169,7 +169,7 @@
     {
       "title": "Intersection Path Planning for HD Maps",
       "paragraphs": [
-        "Intelligent Automotive Business Unit, Huawei · Jun 2020 – Sep 2020 (Full-time)<br/>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bézier Curve",
+        "Intelligent Automotive Business Unit, Huawei · Jun 2020 – Sep 2020<br/>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bézier Curve",
         "According to the HD map production pipeline, production workers label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.",
         "To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. The tool also flagged potentially invalid paths, helping labelers identify constraint violations without reviewing every result.",
         "The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
@@ -236,7 +236,7 @@
             "preview_width": 1100,
             "preview_height": 645
           },
-          "caption": "Circumventing Barriers and Respecting Constraints",
+          "caption": "Obstacle Avoidance with Constraints",
           "link": null
         },
         {
@@ -300,53 +300,9 @@
       ]
     },
     {
-      "title": "Robot for 3D Reconstruction with Self-Collision Avoidance",
-      "paragraphs": [
-        "Shanghai Jiao Tong University · Oct 2017 – Jun 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Robot Kinematics, Computer Vision, ROS, Mechanical Design",
-        "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and occlusion between neighboring plants. Therefore, we aimed to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles in front of the object of interest, we applied wearable human motion sensors to facilitate precise remote control, enabling agricultural researchers to operate the robot remotely. Specifically, we collected human motion data via motion capture equipment produced by Noitom. Then, joint angles were computed accordingly by the kinematic model so that human motion was mapped to the robot motion.",
-        "To avoid damage to the robot itself caused by incorrect operation, I designed an algorithm to prevent self-collisions caused by invalid joint commands. The algorithm first read input human motion data and computed the desired joint angles. If the commanded joint angles would cause a link to enter another part’s safety zone, the algorithm prevented the potential collision.",
-        "Traditional 2D pictures lose important spatial information such as spatial angles. Therefore, I implemented the 3D reconstruction algorithm based on linear structured light. A calibrated camera and laser projector were carried by the robot to fulfill the reconstruction task.",
-        "With these two features combined, one could control the robot remotely to reconstruct the crops of interest in 3D for further biological study."
-      ],
-      "images": [
-        {
-          "asset": {
-            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/visualization_orig.png",
-            "path": "images/originals/visualization_orig.png",
-            "sha256": "648fac394f6ab3621b3668f4bae425d37b1a83afd35afad24fdec1394c967cb8",
-            "bytes": 132509,
-            "width": 1090,
-            "height": 800,
-            "frames": 1,
-            "preview": "images/previews/visualization_orig.webp",
-            "preview_width": 1090,
-            "preview_height": 800
-          },
-          "caption": "RViz Visualization",
-          "link": null
-        },
-        {
-          "asset": {
-            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/mapping_orig.jpg",
-            "path": "images/originals/mapping_orig.jpg",
-            "sha256": "ffd715876932b4e1576fdb1bea0c04344894eb179c8bf2e569b68ec2b36312cc",
-            "bytes": 106933,
-            "width": 960,
-            "height": 544,
-            "frames": 1,
-            "preview": "images/previews/mapping_orig.webp",
-            "preview_width": 960,
-            "preview_height": 544
-          },
-          "caption": "Real-Time Motion Mapping",
-          "link": null
-        }
-      ]
-    },
-    {
       "title": "Magnetic Control System Design",
       "paragraphs": [
-        "<a href=\"https://www.wuji.tech/en/\">Wuji Technology</a> · Jun 2018 – Sep 2018 (Full-time)<br/>Keywords: Magnetism, Control, COMSOL, Simulation",
+        "<a href=\"https://www.wuji.tech/en/\">Wuji Technology</a> · Jun 2018 – Sep 2018<br/>Keywords: Magnetism, Control, COMSOL, Simulation",
         "Commercially available linear actuators are often expensive and offer limited design options. The most common ones are voice coil actuators and classical linear actuators, which are expensive and bulky, respectively. However, there are a lot of application scenarios where linear actuators outperform rotary actuators. Thus, we wanted to design a system with movable coil arrays as linear actuators. The potential applications include the military sand table, rhythm visualization and compliant interaction.",
         "The key idea was to exploit the properties of the magnetic field induced by a solenoid. After careful calculation and simulation, we decided on magnetic material (NdFeB) and coil parameters to develop a prototype.",
         "The prototype did not meet the combined force, thermal, and current-capacity requirements. The main barriers were limited magnetic force, the high cost of the feedback loop, and significant magnetic flux leakage. The project provided practical experience in magnetic field simulation and evaluating design trade-offs."
@@ -419,9 +375,53 @@
       ]
     },
     {
+      "title": "Robot for 3D Reconstruction with Self-Collision Avoidance",
+      "paragraphs": [
+        "Shanghai Jiao Tong University · Oct 2017 – Jun 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Robot Kinematics, Computer Vision, ROS, Mechanical Design",
+        "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and occlusion between neighboring plants. Therefore, we aimed to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles in front of the object of interest, we applied wearable human motion sensors to facilitate precise remote control, enabling agricultural researchers to operate the robot remotely. Specifically, we collected human motion data via motion capture equipment produced by Noitom. Then, joint angles were computed accordingly by the kinematic model so that human motion was mapped to the robot motion.",
+        "To avoid damage to the robot itself caused by incorrect operation, I designed an algorithm to prevent self-collisions caused by invalid joint commands. The algorithm first read input human motion data and computed the desired joint angles. If the commanded joint angles would cause a link to enter another part’s safety zone, the algorithm prevented the potential collision.",
+        "Traditional 2D pictures lose important spatial information such as spatial angles. Therefore, I implemented the 3D reconstruction algorithm based on linear structured light. A calibrated camera and laser projector were carried by the robot to fulfill the reconstruction task.",
+        "With these two features combined, one could control the robot remotely to reconstruct the crops of interest in 3D for further biological study."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/visualization_orig.png",
+            "path": "images/originals/visualization_orig.png",
+            "sha256": "648fac394f6ab3621b3668f4bae425d37b1a83afd35afad24fdec1394c967cb8",
+            "bytes": 132509,
+            "width": 1090,
+            "height": 800,
+            "frames": 1,
+            "preview": "images/previews/visualization_orig.webp",
+            "preview_width": 1090,
+            "preview_height": 800
+          },
+          "caption": "RViz Visualization",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/mapping_orig.jpg",
+            "path": "images/originals/mapping_orig.jpg",
+            "sha256": "ffd715876932b4e1576fdb1bea0c04344894eb179c8bf2e569b68ec2b36312cc",
+            "bytes": 106933,
+            "width": 960,
+            "height": 544,
+            "frames": 1,
+            "preview": "images/previews/mapping_orig.webp",
+            "preview_width": 960,
+            "preview_height": 544
+          },
+          "caption": "Real-Time Motion Mapping",
+          "link": null
+        }
+      ]
+    },
+    {
       "title": "Microscale Platform for the Measurement of Clot Retraction Force",
       "paragraphs": [
-        "University of Michigan, Ann Arbor · Jun 2017 – Sep 2017 (Full-time)<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experiment Design, Mechanical Design, Data Analysis",
+        "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experiment Design, Mechanical Design, Data Analysis",
         "Coagulation monitoring is essential for perioperative care and thrombosis treatment, but existing assays can require bulky equipment and complex setups. We developed a miniaturized device for point-of-care blood coagulation testing by measuring clot retraction force during blood clotting.",
         "A blood drop was localized between a protrusion and a flexible force-sensing beam. Micropillar arrays on the beam assisted the deposition of carbon nanotube films, enabling label-free electrical readout of clot retraction force in real time. We characterized the beam’s mechanical and electrical properties and optimized its design.",
         "The measurements agreed with those obtained using an imaging method, and the device differentiated blood samples with different coagulation profiles. Its low fabrication cost, small size, and low blood sample consumption demonstrated its potential for point-of-care coagulation monitoring."
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "title": "Multifunctional Portable Instrument for Seed & Panicle Phenotyping",
+      "title": "Multifunctional Portable Instrument for Seed and Panicle Phenotyping",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2015 – Jan 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Image Analysis, PCB, Mechanical Design",
         "For crop breeding and variety screening, it is essential to improve the phenotyping throughput for quantitatively evaluating the seed traits. However, existing high-throughput phenotyping facilities for crop seeds generally have some limitations such as high cost, large size and high weight which hinder the usage in the field. Thus, a smartphone-based, low-cost, portable instrument to achieve the function of high-throughput field phenotyping for crop seeds is in high demand.",
@@ -563,7 +563,7 @@
     }
   ],
   "publications": [
-    "<strong>Wang, Y.</strong> &amp; Paccagnan, D. (2022). <a href=\"https://doi.org/10.1109/CDC51059.2022.9993033\">Data-Driven Robust Congestion Pricing</a>. <em>2022 IEEE 61st Conference on Decision and Control (CDC)</em>, 4437–4443.",
+    "<strong>Wang, Y.</strong>, &amp; Paccagnan, D. (2022). <a href=\"https://doi.org/10.1109/CDC51059.2022.9993033\">Data-Driven Robust Congestion Pricing</a>. <em>2022 IEEE 61st Conference on Decision and Control (CDC)</em>, 4437–4443.",
     "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings for Effective Blood Sample Fencing and High-Throughput Measurement of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
     "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). <a href=\"https://doi.org/10.1007/978-981-10-8944-2_2\">Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems</a>. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11–19.",
     "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su, S., &amp; Fei, Y. (2019). <a href=\"https://doi.org/10.13841/j.cnki.jxsj.2019.01.002\">A Self-Morphing Algorithm of Modular Robot</a>. <em>Journal of Machine Design</em>, 36(1), 5–9.",
@@ -601,7 +601,7 @@
       "2018"
     ],
     [
-      "<strong>Tang Lixin Study Abroad Scholarship (7,000 USD)</strong>",
+      "Tang Lixin Study Abroad Scholarship (7,000 USD)",
       "2018"
     ],
     [
@@ -617,7 +617,7 @@
       "2017"
     ],
     [
-      "<strong>Person of the Year at SJTU (SCI-TECH Innovation) (Top 3)</strong>",
+      "<strong>Person of the Year at SJTU (Top 3)</strong>",
       "2017"
     ],
     [
