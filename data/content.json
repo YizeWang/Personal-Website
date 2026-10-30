@@ -171,7 +171,7 @@
       "paragraphs": [
         "Intelligent Automotive Business Unit, Huawei · Jun 2020 – Sep 2020 (Full-time)<br/>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bézier Curve",
         "According to the HD map production pipeline, production workers label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.",
-        "To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool could accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.",
+        "To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. The tool also flagged potentially invalid paths, helping labellers identify constraint violations without reviewing every result.",
         "The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
       ],
       "images": [
@@ -220,8 +220,8 @@
       "paragraphs": [
         "ETH Zurich · Jun 2019 – Sep 2019<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a>, <a href=\"https://scholar.google.com/citations?user=ciragesAAAAJ&amp;hl=en\">Dr. Farbod Farshidian</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a>, <a href=\"https://rsl.ethz.ch/\">Robotic Systems Lab</a><br/>Keywords: Stochastic Constrained Optimal Control, Path Integral, MPC",
         "The problem of optimal control in the presence of noise occurs in many areas of science and engineering. Examples are the control of movement in biological systems, robotics, financial investment policies, and robot path planning. Dealing with real systems, we often have state-input inequality constraints. For instance, we want to keep the contact force inside the friction cone.",
-        "In a stochastic setting, the cost function would thus be the expectation of nominal cost. After mathematical manipulation and a logarithmic transformation, the optimality condition for the cost can be expressed in the linear form. Based on the path integral formulation, I investigated the possibility of finding analytical and numerical optimizers. The sampling policy was finally modified to respect the inequality constraints. As a result, the robot could safely circumvent the barriers by applying the optimal control corrupted by the noise.",
-        "For higher dimensions, the state-input constrained feasible region may be complex and the computational cost grows rapidly. Further work would thus involve applying parallel computation to improve the computational efficiency."
+        "In a stochastic setting, the cost function would thus be the expected nominal cost. After mathematical manipulation and a logarithmic transformation, the optimality condition for the cost can be expressed in linear form. Based on the path integral formulation, I investigated the possibility of finding analytical and numerical optimizers. The sampling policy was finally modified to respect the inequality constraints. As a result, the robot could safely circumvent the barriers by applying the optimal control corrupted by the noise.",
+        "For higher dimensions, the state-input constrained feasible region may be complex and the computational cost grows rapidly. Further work would thus involve applying parallel computation to improve computational efficiency."
       ],
       "images": [
         {
@@ -350,7 +350,7 @@
         "<a href=\"https://www.wuji.tech/en/\">Wuji Technology</a> · Jun 2018 – Sep 2018 (Full-time)<br/>Keywords: Magnetism, Control, COMSOL, Simulation",
         "Commercially available linear actuators are often expensive and offer limited design options. The most common ones are voice coil actuators and classical linear actuators, which are expensive and bulky, respectively. However, there are a lot of application scenarios where linear actuators outperform rotary actuators. Thus, we wanted to design a system with movable coil arrays as linear actuators. The potential applications include the military sand table, rhythm visualization and compliant interaction.",
         "The key idea was to exploit the properties of the magnetic field induced by a solenoid. After careful calculation and simulation, we decided on magnetic material (NdFeB) and coil parameters to develop a prototype.",
-        "Result: we failed to come up with a feasible design to meet all required specifications, namely, excellent dynamic response characteristics, adequate heat-sinking capability and high current-carrying capacity. The three most significant barriers were the limited magnetic force, the high cost of the feedback loop and significant magnetic flux leakage. Despite the failure, I learned a lot about field simulation and enjoyed the time when I tried to exploit every possibility."
+        "The prototype did not meet the combined force, thermal, and current-capacity requirements. The main barriers were limited magnetic force, the high cost of the feedback loop, and significant magnetic flux leakage. The project provided practical experience in magnetic field simulation and evaluating design trade-offs."
       ],
       "images": [
         {
@@ -772,7 +772,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "Lab Group in University of Michigan, Ann Arbor (2017)",
+          "caption": "Lab Group at the University of Michigan, Ann Arbor (2017)",
           "link": null
         }
       ]
