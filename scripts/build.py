@@ -103,7 +103,9 @@ for e in d['education']:
     if e.get('courses'):
         label = esc(e['courses_title'])
         courses = f'<details class="courses"><summary aria-label="{label}" title="{label}">Courses</summary><div class="table-scroll"><table><caption>{label} and Grades</caption><thead><tr><th scope="col">Course</th><th scope="col">Grade</th></tr></thead><tbody>'
-        courses += ''.join(f'<tr><td>{course}</td><td>{esc(grade)}</td></tr>' for course, grade in e['courses'])
+        for course, grade in e['courses']:
+            code, name = course.split(' ', 1)
+            courses += f'<tr><td><span class="course-code">{esc(code)}</span> {esc(name)}</td><td>{esc(grade)}</td></tr>'
         courses += '</tbody></table></div></details>'
         before, rank = body.rsplit('<strong>', 1)
         body = before + '<div class="degree-stats"><strong>' + rank + courses + '</div>'
@@ -117,7 +119,7 @@ for n,p in enumerate(d['research'],1):
     research += ''.join(f'<p>{v}</p>' for v in body) + '</div></div></article>'
 parts.append(section('research','03','Research','For tomorrow&#39;s robotics and autonomous driving.',research))
 pubs = ''
-for title,key in [('Publications','publications'),('Patents','patents')]:
+for title,key in [('Paper','publications'),('Patents','patents')]:
     pubs += f'<h3 class="subheading">{title}</h3><ol class="publication-list">'
     pubs += ''.join('<li>' + re.sub(r'^\[\d+\]\s*', '', p) + '</li>' for p in d[key]) + '</ol>'
 parts.append(section('publications','04','Publications','Writing is thinking.',pubs))
