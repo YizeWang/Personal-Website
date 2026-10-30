@@ -18,7 +18,7 @@
       "highlights": [
         "Implemented a belief-and-heuristics-based framework to construct robust road topology with spatiotemporal fusion.",
         "Served as a monorepo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
-        "Owned code quality, overseeing Coverity and code coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
+        "Owned code quality through Coverity analysis and code coverage checks, supporting compliance with AUTOSAR coding guidelines.",
         "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
       ]
     },
@@ -53,7 +53,7 @@
           "role": "Integration Lead & Core Developer",
           "date": "Jul 2021 – Apr 2023",
           "highlights": [
-            "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility, securing approvals from multiple OEMs. MOD was released to users in June 2024.",
+            "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility, securing approvals from multiple OEMs. The system was subsequently released to users in June 2024.",
             "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved decisions across multiple lane options, reduced trajectory-following behavior, and prevented deviations from memory maps.",
             "Optimized reference lines by fusing memory maps and perceived lane markers with iLQR, handling turns, U-turns, on/off-ramps, diverging and merging lanes, and narrow gaps."
           ]

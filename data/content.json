@@ -83,63 +83,63 @@
       "courses": [
         [
           "ME429 Design and Practice of Mechatronic Systems",
-          "90/100"
+          "90 / 100"
         ],
         [
           "EE205 Electrical and Electronic Technology",
-          "99/100"
+          "99 / 100"
         ],
         [
           "ME113 Programming: Principles and Practice Using C++",
-          "93/100"
+          "93 / 100"
         ],
         [
           "ME208 Design and Manufacture",
-          "90/100"
+          "90 / 100"
         ],
         [
           "ME369 Modeling Analysis and System Control",
-          "85/100"
+          "85 / 100"
         ],
         [
           "ME399 Measurement Principles and Technologies",
-          "97/100"
+          "97 / 100"
         ],
         [
           "ME345 Engineering Material",
-          "95/100"
+          "95 / 100"
         ],
         [
           "ES004 Electronic System Design Based on Android System",
-          "98/100"
+          "98 / 100"
         ],
         [
           "CS902 Thinking and Approach of Programming",
-          "94/100"
+          "94 / 100"
         ],
         [
           "EM003 Engineering Fluid Mechanics",
-          "91/100"
+          "91 / 100"
         ],
         [
           "BE203 Engineering Thermodynamics",
-          "92/100"
+          "92 / 100"
         ],
         [
           "MA097 Mathematical Methods in Physics",
-          "88/100"
+          "88 / 100"
         ],
         [
           "MA118 Mathematical Analysis",
-          "91/100"
+          "91 / 100"
         ],
         [
           "EM001 Theoretical Mechanics",
-          "89/100"
+          "89 / 100"
         ],
         [
           "MA119 Probability and Statistics",
-          "91/100"
+          "91 / 100"
         ]
       ],
       "courses_title": "Undergraduate Core Courses"
@@ -220,7 +220,7 @@
       "paragraphs": [
         "ETH Zurich · Jun 2019 – Sep 2019<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a>, <a href=\"https://scholar.google.com/citations?user=ciragesAAAAJ&amp;hl=en\">Dr. Farbod Farshidian</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a>, <a href=\"https://rsl.ethz.ch/\">Robotic Systems Lab</a><br/>Keywords: Stochastic Constrained Optimal Control, Path Integral, MPC",
         "The problem of optimal control in the presence of noise occurs in many areas of science and engineering. Examples are the control of movement in biological systems, robotics, financial investment policies, and robot path planning. Dealing with real systems, we often have state-input inequality constraints. For instance, we want to keep the contact force inside the friction cone.",
-        "In a stochastic setting, the cost function would thus be the expected nominal cost. After mathematical manipulation and a logarithmic transformation, the optimality condition for the cost can be expressed in linear form. Based on the path integral formulation, I investigated the possibility of finding analytical and numerical optimizers. The sampling policy was finally modified to respect the inequality constraints. As a result, the robot could safely circumvent the barriers by applying the optimal control corrupted by the noise.",
+        "In a stochastic setting, the cost function would thus be the expected nominal cost. After mathematical manipulation and a logarithmic transformation, the optimality condition for the cost can be expressed in linear form. Based on the path integral formulation, I investigated the possibility of finding analytical and numerical optimizers. The sampling policy was finally modified to respect the inequality constraints. As a result, the robot could safely avoid obstacles by applying optimal control inputs subject to noise.",
         "For higher dimensions, the state-input constrained feasible region may be complex and the computational cost grows rapidly. Further work would thus involve applying parallel computation to improve computational efficiency."
       ],
       "images": [
@@ -301,10 +301,10 @@
       ]
     },
     {
-      "title": "3D Reconstruction Robot with Self-Collision Avoidance",
+      "title": "Robot for 3D Reconstruction with Self-Collision Avoidance",
       "paragraphs": [
         "Shanghai Jiao Tong University · Oct 2017 – Jun 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, Institute of Mechatronics<br/>Keywords: Robot Kinematics, Computer Vision, ROS, Mechanical Design",
-        "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and occlusion between neighboring plants. Therefore, we aimed to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles in front of the object of interest, we applied wearable human motion sensors to facilitate precise remote control (so that agricultural scientists do not have to go to fields). Specifically, we collected human motion data via motion capture equipment produced by Noitom. Then, joint angles were computed accordingly by the kinematic model so that human motion was mapped to the robot motion.",
+        "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and occlusion between neighboring plants. Therefore, we aimed to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles in front of the object of interest, we applied wearable human motion sensors to facilitate precise remote control, enabling agricultural researchers to operate the robot remotely. Specifically, we collected human motion data via motion capture equipment produced by Noitom. Then, joint angles were computed accordingly by the kinematic model so that human motion was mapped to the robot motion.",
         "To avoid damage to the robot itself caused by incorrect operation, I designed a self-collision avoidance algorithm to ensure safety. The algorithm first read input human motion data and computed the desired joint angles. If the commanded joint angles would cause a link to enter another part’s safety zone, the algorithm prevented the potential collision.",
         "Traditional 2D pictures lose important spatial information such as spatial angles. Therefore, I implemented the 3D reconstruction algorithm based on linear structured light. A calibrated camera and laser projector were carried by the robot to fulfill the reconstruction task.",
         "With these two features combined, one could control the robot remotely to reconstruct the crops of interest in 3D for further biological study."
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "title": "Microscale Platform for the Measurement of Blood Retraction Force",
+      "title": "Microscale Platform for the Measurement of Clot Retraction Force",
       "paragraphs": [
         "University of Michigan, Ann Arbor · Jun 2017 – Sep 2017 (Full-time)<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>, Department of Mechanical Engineering<br/>Keywords: Image Analysis, Experiment Design, Mechanical Design, Data Analysis",
         "Coagulation monitoring is essential for perioperative care and thrombosis treatment, but existing assays can require bulky equipment and complex setups. We developed a miniaturized device for point-of-care blood coagulation testing by measuring clot retraction force during blood clotting.",
@@ -524,7 +524,7 @@
       "title": "Unmanned Ground Vehicle",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2014 – Jul 2015<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, Institute of Mechatronics<br/>Keywords: Mechanical Design, PCB, Control, Arduino Microcontroller",
-        "For cutting-edge protected agriculture, it is a leading trend to build an unmanned plant factory that requires robotic machinery as basic autonomous production units. However, the scheduling and cooperation among agricultural machines are rarely investigated. This research focused on a modular logistics system based on the motion decomposition, and the objective was to develop a fully interrelating intelligent agricultural production system.",
+        "For cutting-edge protected agriculture, it is a leading trend to build an unmanned plant factory that requires robotic machinery as basic autonomous production units. However, the scheduling and cooperation among agricultural machines are rarely investigated. This research focused on a modular logistics system based on motion decomposition, and the objective was to develop an integrated intelligent agricultural production system.",
         "First, an unmanned ground vehicle was developed for transferring intelligent agricultural machines such as agricultural robots. Considering the complex terrain features, both automatic and manual modes were available. The multifunctional smart remote-control mode was designed for users to control the logistics systems accurately and the use of a tablet PC provided a good user experience. Second, a control and mechanical system was designed to dock and transfer a harvesting robot. The safety and reliability of this system were jointly ensured by its movement pattern, the design of guide rails on the slope and the precise positioning. Third, automatic charging was implemented by an automatic docking system with a maximum tolerance of 8 cm, which enabled the system to operate 24/7."
       ],
       "images": [
@@ -742,7 +742,7 @@
             "preview_width": 800,
             "preview_height": 600
           },
-          "caption": "With Tang Linxin on Royal Caribbean (2018)",
+          "caption": "With Tang Lixin on Royal Caribbean (2018)",
           "link": null
         },
         {
@@ -972,7 +972,7 @@
             "preview_height": 800,
             "origin": "curated"
           },
-          "caption": "The Pirates of the Caribbean",
+          "caption": "Pirates of the Caribbean",
           "link": "https://movies.disney.com/pirates-of-the-caribbean-dead-men-tell-no-tales"
         },
         {
