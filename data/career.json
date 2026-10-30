@@ -17,7 +17,7 @@
       "department": "Automotive Department",
       "date": "Sep 2024 – Oct 2026",
       "highlights": [
-        "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
+        "Implemented a belief-and-heuristics-based framework to construct robust road topology with spatiotemporal fusion.",
         "Served as a monorepo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
         "Owned code quality, overseeing Coverity and code coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
         "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."

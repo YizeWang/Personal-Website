@@ -152,7 +152,7 @@ for group in d['personal']:
     personal += f'<h3 class="subheading">{esc(title_words(group["title"]))}</h3><div class="gallery {"life" if group["title"] == "Life" else "favorites"}">' + ''.join(figure(i) for i in group['images']) + '</div>'
 personal += f'<p class="smallprint">{esc(d["personal_notice"])}</p>'
 parts.append(section('personal','06','Personal','Don’t worry, be happy!',personal))
-parts.append('''<footer><span>© Yize Wang</span><a href="#career">Back to top ↑</a></footer></main>
+parts.append('''<footer><span>© Yize Wang</span><a href="#main">Back to top ↑</a></footer></main>
 <dialog id="media-viewer" aria-label="Image viewer"><div class="viewer-toolbar"><p id="media-caption"></p><button type="button" id="close-viewer" aria-label="Close image viewer">Close ×</button></div><div id="media-content"></div><p id="media-status" role="status" aria-live="polite"></p><a id="media-original" target="_blank" rel="noopener">Open original ↗</a></dialog></body></html>''')
 (ROOT / 'index.html').write_text('\n'.join(parts) + '\n')
 for path,target in [('education.html','education'),('research.html','research'),('publication--honors.html','publications'),('personal.html','personal')]:
