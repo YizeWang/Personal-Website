@@ -138,6 +138,10 @@ figcaption,.project-meta{font-size:12px}
 .favorites figure img{width:auto;max-width:calc(100% - 24px);height:auto;max-height:196px;object-fit:contain;padding:0}
 .favorites figcaption{padding-top:12px;min-height:48px;line-height:1.5}
 
+/* Hide padding embedded in selected cover images while keeping their proportions. */
+.favorites figure .media-crop{width:calc(196px * var(--crop-ratio));max-width:calc(100% - 24px);flex:none}
+.favorites figure .media-crop>img{width:var(--crop-image-width);max-width:none;height:auto;max-height:none;padding:0}
+
 /* Consistent research paragraph spacing (V18). */
 .project-copy p{margin:0 0 18px}
 .project-copy p:last-child{margin-bottom:0}

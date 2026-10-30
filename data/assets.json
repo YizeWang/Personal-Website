@@ -525,16 +525,16 @@
     "preview_height": 384
   },
   {
-    "source": "https://images.moviesanywhere.com/crux/85a18a0db1053a3135805d1f8ddac0b1.jpeg?r=16x9&w=1280",
-    "path": "images/originals/pirates-series.jpg",
-    "sha256": "abd53bb40e0e455a42e588f863ccf8122e448340d07c5f1ca689e84316aaa41a",
-    "bytes": 66696,
-    "width": 1280,
-    "height": 720,
+    "source": "https://lumiere-a.akamaihd.net/v1/images/product_21830_21697_3_12495_12442_12452_12524_12540_124_d5b4acd4.jpeg?region=0%2C0%2C800%2C600",
+    "path": "images/originals/pirates-five-movie-collection.jpg",
+    "sha256": "2f575871abfeeada86b67e9ba3a050f91f15fd01dbed3b4c6e0e9578ffb3b28b",
+    "bytes": 69580,
+    "width": 800,
+    "height": 600,
     "frames": 1,
-    "preview": "images/previews/pirates-series.webp",
-    "preview_width": 1100,
-    "preview_height": 619
+    "preview": "images/previews/pirates-five-movie-collection.webp",
+    "preview_width": 800,
+    "preview_height": 600
   },
   {
     "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/library_600x900.jpg",
@@ -625,5 +625,17 @@
     "preview_width": 640,
     "preview_height": 730,
     "origin": "curated"
+  },
+  {
+    "source": "https://capstone-games.com/cdn/shop/files/ArkNova.jpg?v=1764335617&width=800",
+    "path": "images/originals/ark-nova.jpg",
+    "sha256": "5de9f02937277910c3f1a4573fad16595793e8240fbb5fc76944f56f948cb85c",
+    "bytes": 80456,
+    "width": 800,
+    "height": 514,
+    "frames": 1,
+    "preview": "images/previews/ark-nova.webp",
+    "preview_width": 800,
+    "preview_height": 514
   }
 ]

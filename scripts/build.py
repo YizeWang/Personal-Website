@@ -59,7 +59,7 @@ def external_links_new_tab(html):
         return tag[:-1] + ' target="_blank" rel="noopener noreferrer">'
     return re.sub(r'<a\b[^>]*>', update, html, flags=re.I)
 
-nav = [('career', 'Career Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications'), ('honors', 'Honors'), ('personal', 'Personal')]
+nav = [('career', 'Professional Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications'), ('honors', 'Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
 profile_links = []
 for profile in d['profiles']:
@@ -74,6 +74,7 @@ parts = [f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yize Wang · Robotics & Autonomous Driving</title>
 <meta name="description" content="{esc(site_description, quote=True)}">
+<link rel="canonical" href="https://yizewang.github.io/">
 <meta name="color-scheme" content="light dark"><meta name="theme-color" content="#245c4f">
 <meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="{esc(site_description, quote=True)}">
 <meta property="og:type" content="website"><meta property="og:url" content="https://yizewang.github.io/">
@@ -130,7 +131,7 @@ for entry in career_data['entries']:
 if previous_company is not None:
     career += '</article>'
 career += '</div>'
-parts.append(section('career', '01', 'Career Experience', 'Robotics, autonomous driving, and software engineering.', career))
+parts.append(section('career', '01', 'Professional Experience', 'Robotics, autonomous driving, and software engineering.', career))
 ed = '<div class="education-list">'
 for e in d['education']:
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
@@ -164,7 +165,8 @@ parts.append(section('publications','04','Publications','Writing is thinking.',p
 def award_label(award):
     text = unescape(re.sub(r'<[^>]+>', '', award))
     name, separator, details = text.partition('(')
-    label = f'<strong>{esc(name.strip())}</strong>'
+    tag = "strong" if "<strong>" in award else "span"
+    label = f'<{tag}>{esc(name.strip())}</{tag}>'
     if separator:
         label += f' <span class="award-detail">{esc(separator + details)}</span>'
     return label
