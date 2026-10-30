@@ -77,8 +77,8 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .gallery.life figure.portrait img{aspect-ratio:auto;object-fit:contain}
 @media(max-width:760px){.gallery.life{column-gap:12px}}
 
-/* Center every Life and favorites caption beneath its own image. */
-#personal figcaption{text-align:center}
+/* Center every image caption beneath its own figure. */
+figcaption{text-align:center}
 
 /* Company, position, and project metadata share a consistent hierarchy. */
 .career-heading>div,.career-project>header>div{min-width:0}
