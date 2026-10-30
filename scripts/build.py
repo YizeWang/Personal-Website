@@ -1,6 +1,6 @@
 """Build the dependency-free static site from the editable content archive."""
 from pathlib import Path
-from html import escape as esc
+from html import escape as esc, unescape
 import hashlib, json, re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,6 +115,9 @@ parts.append(section('education', '02', 'Education', 'Excellent academic perform
 research = '<div class="project-index">' + ''.join(f'<a href="#project-{n}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'
 for n,p in enumerate(d['research'],1):
     meta, *body = p['paragraphs']
+    meta = re.sub(r'</?strong>', '', meta)
+    meta_rows = re.split(r'<br\s*/?>', meta)
+    meta = ''.join(f'<span class="project-meta-row{ " project-meta-keywords" if row.startswith("Keywords:") else "" }">{row}</span>' for row in meta_rows)
     research += f'<article class="project" id="project-{n}"><header><span class="project-number">PROJECT {n:02d}</span><h3>{esc(title_words(p["title"]))}</h3><p class="project-meta">{meta}</p></header><div class="project-grid"><div class="project-media">' + ''.join(figure(i) for i in p['images']) + '</div><div class="project-copy">'
     research += ''.join(f'<p>{v}</p>' for v in body) + '</div></div></article>'
 parts.append(section('research','03','Research','For tomorrow&#39;s robotics and autonomous driving.',research))
@@ -123,7 +126,15 @@ for title,key in [('Paper','publications'),('Patents','patents')]:
     pubs += f'<h3 class="subheading">{title}</h3><ol class="publication-list">'
     pubs += ''.join('<li>' + re.sub(r'^\[\d+\]\s*', '', p) + '</li>' for p in d[key]) + '</ol>'
 parts.append(section('publications','04','Publications','Writing is thinking.',pubs))
-honors = '<ul class="honors">' + ''.join(f'<li><span>{award}</span><span class="date">{year}</span></li>' for award,year in d['honors']) + '</ul>'
+def award_label(award):
+    text = unescape(re.sub(r'<[^>]+>', '', award))
+    name, separator, details = text.partition('(')
+    label = f'<strong>{esc(name.strip())}</strong>'
+    if separator:
+        label += f' <span class="award-detail">{esc(separator + details)}</span>'
+    return label
+
+honors = '<ul class="honors">' + ''.join(f'<li><span>{award_label(award)}</span><span class="date">{year}</span></li>' for award,year in d['honors']) + '</ul>'
 parts.append(section('honors','05','Honors','Selected Honors &amp; Awards',honors))
 personal = ''
 for group in d['personal']:

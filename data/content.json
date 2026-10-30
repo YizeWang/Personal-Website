@@ -42,7 +42,7 @@
           "5.5 / 6.0"
         ],
         [
-          "151-0563-01 Dynamic Programming and Optimal Control",
+          "151-0563-01 Dynamic Programming And Optimal Control",
           "5.5 / 6.0"
         ],
         [
@@ -82,27 +82,27 @@
       "kind": "degree",
       "courses": [
         [
-          "ME429 Design and Practice of Mechatronic Systems",
+          "ME429 Design And Practice Of Mechatronic Systems",
           "90/100"
         ],
         [
-          "EE205 Electrical and Electronic Technology",
+          "EE205 Electrical And Electronic Technology",
           "99/100"
         ],
         [
-          "ME113 Programming: Principles and Practice Using C++",
+          "ME113 Programming: Principles And Practice Using C++",
           "93/100"
         ],
         [
-          "ME208 Design and Manufacture",
+          "ME208 Design And Manufacture",
           "90/100"
         ],
         [
-          "ME369 Modeling Analysis and System Control",
+          "ME369 Modeling Analysis And System Control",
           "85/100"
         ],
         [
-          "ME399 Measurement Principles and Technologies",
+          "ME399 Measurement Principles And Technologies",
           "97/100"
         ],
         [
@@ -110,11 +110,11 @@
           "95/100"
         ],
         [
-          "ES004 Electronic System Design Based on Android System",
+          "ES004 Electronic System Design Based On Android System",
           "98/100"
         ],
         [
-          "CS902 Thinking and Approach of Programming",
+          "CS902 Thinking And Approach Of Programming",
           "94/100"
         ],
         [
@@ -126,7 +126,7 @@
           "92/100"
         ],
         [
-          "MA097 Mathematical Methods in Physics",
+          "MA097 Mathematical Methods In Physics",
           "88/100"
         ],
         [
@@ -138,7 +138,7 @@
           "89/100"
         ],
         [
-          "MA119 Probability and Statistics",
+          "MA119 Probability And Statistics",
           "91/100"
         ]
       ],
@@ -169,7 +169,7 @@
     {
       "title": "Intersection Path Planning For HD Maps",
       "paragraphs": [
-        "<strong>Intelligent Automotive Solution Department, Huawei | Jun 2020 – Sep 2020 (Full Time)</strong><br/><strong>Keywords: Autonomous Driving, Path Planning, HD Map, A* search, Bezier Curve</strong>",
+        "<strong>Intelligent Automotive Solution Department, Huawei | Jun 2020 – Sep 2020 (Full Time)</strong><br/><strong>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bezier Curve</strong>",
         "According to the HD map production pipeline, production workers label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool could accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
       ],
       "images": [
@@ -551,12 +551,12 @@
   ],
   "publications": [
     "<strong>Wang, Y.</strong>, &amp; Paccagnan, D. (2022). <a href=\"https://doi.org/10.1109/CDC51059.2022.9993033\">Data-Driven Robust Congestion Pricing</a>. <em>2022 IEEE 61st Conference on Decision and Control (CDC)</em>, 4437–4443.",
-    "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings for Effective Blood Sample Fencing and High-Throughput Measurement of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
-    "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). <a href=\"https://doi.org/10.1007/978-981-10-8944-2_2\">Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems</a>. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11–19.",
-    "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). <a href=\"https://doi.org/10.13841/j.cnki.jxsj.2019.01.002\">A Self-morphing Algorithm of Modular Robot</a>. <em>Journal of Machine Design</em>, 36(01), 5–9",
-    "Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). <a href=\"https://doi.org/10.1021/acssensors.7b00971\">Carbon Nanotube Strain Sensor Based Hemoretractometer for Blood Coagulation Testing</a>. <em>ACS Sensors</em>, 3(3), 670–676.",
-    "Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). <a href=\"https://doi.org/10.1063/1.5001754\">Capillary Assisted Deposition of Carbon Nanotube Film for Strain Sensing</a>. <em>Applied Physics Letters</em>, 111(17), 173105.",
-    "Mao, Y., Wang, Y., Gong, L., <strong>Wang, Y.</strong>, Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016). <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">A Multistage Winnowing Fulfilled and Unfulfilled Grains Device and Method Based on Human-Computer Interaction</a>. <em>Mechatronics</em>, 22(3), 3–6, 28."
+    "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings For Effective Blood Sample Fencing And High-Throughput Measurement Of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
+    "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). <a href=\"https://doi.org/10.1007/978-981-10-8944-2_2\">Building Unmanned Plant Factory With Modular Robotic Manipulation And Logistics Systems</a>. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11–19.",
+    "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). <a href=\"https://doi.org/10.13841/j.cnki.jxsj.2019.01.002\">A Self-Morphing Algorithm Of Modular Robot</a>. <em>Journal of Machine Design</em>, 36(01), 5–9",
+    "Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). <a href=\"https://doi.org/10.1021/acssensors.7b00971\">Carbon Nanotube Strain Sensor Based Hemoretractometer For Blood Coagulation Testing</a>. <em>ACS Sensors</em>, 3(3), 670–676.",
+    "Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). <a href=\"https://doi.org/10.1063/1.5001754\">Capillary Assisted Deposition Of Carbon Nanotube Film For Strain Sensing</a>. <em>Applied Physics Letters</em>, 111(17), 173105.",
+    "Mao, Y., Wang, Y., Gong, L., <strong>Wang, Y.</strong>, Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016). <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">A Multistage Winnowing Fulfilled And Unfulfilled Grains Device And Method Based On Human-Computer Interaction</a>. <em>Mechatronics</em>, 22(3), 3–6, 28."
   ],
   "patents": [
     "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma Z., Mao Y. &amp; Zhang D., “An Intelligent Platform for Agricultural Robots Based on Motion Decomposition”, Patent Number: ZL 2016 2 0928634.8",

@@ -125,3 +125,15 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .project-copy{font-size:14px;line-height:1.85}
 figcaption,.project-meta{font-size:12px}
 .courses .course-code{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Approved desktop preview refinements: D14, D18, D19, and D20. */
+.project-meta-row{display:block}
+.project-meta-row+.project-meta-row{margin-top:6px}
+.project-meta-row:first-child{color:var(--heading);font-size:13px}
+.project-meta-keywords{font-size:12px;color:var(--muted)}
+.course-code{display:inline-block;margin-right:10px}
+.honors .award-detail{font-weight:400;color:var(--muted)}
+.gallery.favorites{align-items:start;row-gap:26px}
+.favorites figure>a{height:220px;display:flex;align-items:center;justify-content:center;background:var(--soft);border:1px solid var(--line);border-radius:6px}
+.favorites figure img{width:auto;max-width:calc(100% - 24px);height:auto;max-height:196px;object-fit:contain;padding:0}
+.favorites figcaption{padding-top:12px;min-height:48px;line-height:1.5}
