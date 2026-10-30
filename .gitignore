@@ -4,3 +4,19 @@ __pycache__/
 node_modules/
 _site/
 artifacts/
+
+# Local-only drafts, diagnostics, credentials, and source documents.
+/private/
+/drafts/
+/screenshots/
+/tmp/
+/backups/
+*.bundle
+*.har
+*.log
+*.docx
+/files/*cv*.pdf
+/files/*CV*.pdf
+.env
+.env.*
+!.env.example

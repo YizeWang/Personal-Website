@@ -694,10 +694,10 @@
         },
         {
           "asset": {
-            "source": "user-provided:/Users/yizew/Desktop/Hawaii Volcanoes National - Fuji Camera (3).JPG",
+            "source": "user-provided:hawaii-volcano-eruption-2026",
             "path": "images/originals/hawaii-volcano-eruption-2026.jpg",
-            "sha256": "977c34dd2f83ef9176f3ccb47353eb3f869492eca3929dd37bd675e4f7faccb6",
-            "bytes": 1708980,
+            "sha256": "cd88d88f16d07831421fb4b79db7278fa96e8e6018767aceb49bac72c800ee39",
+            "bytes": 1703970,
             "width": 2488,
             "height": 4416,
             "frames": 1,
