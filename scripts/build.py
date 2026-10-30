@@ -9,6 +9,7 @@ career_data = json.loads((ROOT / 'data/career.json').read_text())
 css_version = hashlib.sha256((ROOT / 'css/site.css').read_bytes()).hexdigest()[:12]
 js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
 icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
+share_version = hashlib.sha256((ROOT / 'images/social-preview.png').read_bytes()).hexdigest()[:12]
 
 def title_words(s):
     """Keep articles and short prepositions/conjunctions lowercase within titles."""
@@ -63,8 +64,8 @@ parts = [f'''<!doctype html>
 <meta name="color-scheme" content="light dark"><meta name="theme-color" content="#245c4f">
 <meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="Robots are reflections of ourselves. Research, education, publications, and life.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://yizewang.github.io/">
-<meta property="og:image" content="https://yizewang.github.io/images/social-preview.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Yize Wang · Robotics & Autonomous Driving"><meta name="twitter:description" content="Robots are reflections of ourselves."><meta name="twitter:image" content="https://yizewang.github.io/images/social-preview.png"><meta name="twitter:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
+<meta property="og:image" content="https://yizewang.github.io/images/social-preview.png?v={share_version}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Yize Wang · Robotics & Autonomous Driving"><meta name="twitter:description" content="Robots are reflections of ourselves."><meta name="twitter:image" content="https://yizewang.github.io/images/social-preview.png?v={share_version}"><meta name="twitter:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
 <link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js?v={js_version}" defer></script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><aside id="sidebar" aria-label="Profile and navigation"><header>''',
  img(d['portrait'], 'Yize Wang', True),
