@@ -13,6 +13,19 @@
             "Implemented Isaac Lab tutorial scripts demonstrating physics backends and the use of PyTorch and Warp.",
             "Trained Franka and SO101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
           ]
+        },
+        {
+          "title": "Holoscan Camera",
+          "links": [
+            {
+              "label": "Repository",
+              "url": "https://gitlab-master.nvidia.com/holoscan/holoscan-camera"
+            },
+            {
+              "label": "Holoscan Group",
+              "url": "https://gitlab-master.nvidia.com/groups/holoscan"
+            }
+          ]
         }
       ]
     },
