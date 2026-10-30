@@ -84,18 +84,6 @@
     "preview_height": 733
   },
   {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/cities-skylines_orig.png",
-    "path": "images/originals/cities-skylines_orig.png",
-    "sha256": "554a7211d152eb3ac726b8056de9e69a5f200e7de6f0d1050ba1574a1413f31f",
-    "bytes": 2327005,
-    "width": 700,
-    "height": 800,
-    "frames": 1,
-    "preview": "images/previews/cities-skylines_orig.webp",
-    "preview_width": 700,
-    "preview_height": 800
-  },
-  {
     "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/delayed-decision_orig.png",
     "path": "images/originals/delayed-decision_orig.png",
     "sha256": "00703ff4fd4881893d004efcfad47ba3b0c5841acbddd8b573534f9f20db2403",
@@ -300,18 +288,6 @@
     "preview_height": 500
   },
   {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/skyrim_orig.png",
-    "path": "images/originals/skyrim_orig.png",
-    "sha256": "e4219bdb6e7de22f3a797be17c6ca87567a8f6edf8984d471d5a10143568d90e",
-    "bytes": 2976087,
-    "width": 700,
-    "height": 800,
-    "frames": 1,
-    "preview": "images/previews/skyrim_orig.webp",
-    "preview_width": 700,
-    "preview_height": 800
-  },
-  {
     "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/stardew-valley_orig.png",
     "path": "images/originals/stardew-valley_orig.png",
     "sha256": "e23c9c83f63f1a432721e025c8f60ca497fd02e277a5059addc44f0e07387d8a",
@@ -321,42 +297,6 @@
     "frames": 1,
     "preview": "images/previews/stardew-valley_orig.webp",
     "preview_width": 700,
-    "preview_height": 800
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-lord-of-the-rings_orig.png",
-    "path": "images/originals/the-lord-of-the-rings_orig.png",
-    "sha256": "de6bc3f3647161d7d0e86328708a83e9f1ee940d1314e975b08f09cc7f84a6f5",
-    "bytes": 4101543,
-    "width": 700,
-    "height": 1000,
-    "frames": 1,
-    "preview": "images/previews/the-lord-of-the-rings_orig.webp",
-    "preview_width": 560,
-    "preview_height": 800
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-pirates-of-the-caribbean_orig.png",
-    "path": "images/originals/the-pirates-of-the-caribbean_orig.png",
-    "sha256": "392c4df51129234be99386ffc896da0bf1fb41c18d8a66c86a1c7ee5c12e9002",
-    "bytes": 2160278,
-    "width": 700,
-    "height": 1000,
-    "frames": 1,
-    "preview": "images/previews/the-pirates-of-the-caribbean_orig.webp",
-    "preview_width": 560,
-    "preview_height": 800
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/the-shawshank-redemption_1_orig.png",
-    "path": "images/originals/the-shawshank-redemption_1_orig.png",
-    "sha256": "576c200345185a15b7352e77f708771c3a2ae17c0799d8869289147b00f2b2d1",
-    "bytes": 2204594,
-    "width": 700,
-    "height": 1000,
-    "frames": 1,
-    "preview": "images/previews/the-shawshank-redemption_1_orig.webp",
-    "preview_width": 560,
     "preview_height": 800
   },
   {
@@ -370,18 +310,6 @@
     "preview": "images/previews/untitled-1_1_orig.webp",
     "preview_width": 600,
     "preview_height": 431
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-1_2_orig.png",
-    "path": "images/originals/untitled-1_2_orig.png",
-    "sha256": "8ad36c1539bf750dce6c749e1c743d2c42b7783991a60fe5967986d71607ddf8",
-    "bytes": 2230344,
-    "width": 700,
-    "height": 800,
-    "frames": 1,
-    "preview": "images/previews/untitled-1_2_orig.webp",
-    "preview_width": 700,
-    "preview_height": 800
   },
   {
     "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-2_2_orig.png",
@@ -404,18 +332,6 @@
     "height": 800,
     "frames": 1,
     "preview": "images/previews/untitled-3_orig.webp",
-    "preview_width": 700,
-    "preview_height": 800
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/untitled-5_1_orig.png",
-    "path": "images/originals/untitled-5_1_orig.png",
-    "sha256": "8dd22ea9ac32499bea32b7534ee29738c2b040372260aa0ca73d5479b75dd930",
-    "bytes": 2322712,
-    "width": 700,
-    "height": 800,
-    "frames": 1,
-    "preview": "images/previews/untitled-5_1_orig.webp",
     "preview_width": 700,
     "preview_height": 800
   },
@@ -453,18 +369,6 @@
     "frames": 1,
     "preview": "images/previews/your-lie-in-april_orig.webp",
     "preview_width": 700,
-    "preview_height": 800
-  },
-  {
-    "source": "https://yizewang.weebly.com/uploads/1/1/2/5/112557707/your-name_orig.png",
-    "path": "images/originals/your-name_orig.png",
-    "sha256": "efe535da3c35c3e8589d405c76944039a608da5d64b916302edf34d37e34b979",
-    "bytes": 1866216,
-    "width": 700,
-    "height": 1000,
-    "frames": 1,
-    "preview": "images/previews/your-name_orig.webp",
-    "preview_width": 560,
     "preview_height": 800
   },
   {
@@ -609,19 +513,6 @@
     "origin": "curated"
   },
   {
-    "source": "https://irs.www.warnerbros.com/keyart-jpeg/shawshank_redemption_keyart.jpg",
-    "path": "images/originals/shawshank-official.jpg",
-    "sha256": "f609a60d2a829f90844d88867b1d3f8e2c858555fe131ee66a32edf02a1302b1",
-    "bytes": 34125,
-    "width": 256,
-    "height": 384,
-    "frames": 1,
-    "preview": "images/previews/shawshank-official.webp",
-    "preview_width": 256,
-    "preview_height": 384,
-    "origin": "curated"
-  },
-  {
     "source": "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/lord_of_the_rings_fellowship_of_the_ring_2000x3000.jpg",
     "path": "images/originals/lotr-official.jpg",
     "sha256": "657d5b97e20e27fa6aa0ad8579c36035ff53b9d7d1c98a370461def47480d055",
@@ -645,32 +536,6 @@
     "preview": "images/previews/pirates-official.webp",
     "preview_width": 533,
     "preview_height": 800,
-    "origin": "curated"
-  },
-  {
-    "source": "https://i0.wp.com/gkids.com/wp-content/uploads/2026/07/YNAME-4K_Poster2_Web_Dated.jpg?fit=700%2C1024&ssl=1",
-    "path": "images/originals/your-name-official.jpg",
-    "sha256": "1393908e453a6f235ce0704d2200112e9de89f8b7c7c1e31ed3bfa25bc0c0eba",
-    "bytes": 108779,
-    "width": 700,
-    "height": 1024,
-    "frames": 1,
-    "preview": "images/previews/your-name-official.webp",
-    "preview_width": 547,
-    "preview_height": 800,
-    "origin": "curated"
-  },
-  {
-    "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/library_600x900.jpg",
-    "path": "images/originals/cities-skylines-steam.jpg",
-    "sha256": "96c18791c0ff1f83cd6c895aa1af56ef6172db06948da68e90a067fea9cae044",
-    "bytes": 65619,
-    "width": 300,
-    "height": 450,
-    "frames": 1,
-    "preview": "images/previews/cities-skylines-steam.webp",
-    "preview_width": 300,
-    "preview_height": 450,
     "origin": "curated"
   },
   {
