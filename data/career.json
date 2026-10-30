@@ -6,14 +6,9 @@
       "role": "Senior Software Engineer",
       "department": "Robotics Software",
       "date": "Oct 2026 – Present",
-      "projects": [
-        {
-          "title": "Isaac Lab",
-          "highlights": [
-            "Implemented Isaac Lab tutorial scripts demonstrating physics backends and the use of PyTorch and Warp.",
-            "Trained Franka and SO101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
-          ]
-        }
+      "highlights": [
+        "Implemented Isaac Lab tutorial scripts demonstrating different physics backends and the use of PyTorch and NVIDIA Warp.",
+        "Trained Franka and SO101 arms to perform lifting tasks using curriculum-based reinforcement learning with PPO."
       ]
     },
     {
@@ -21,16 +16,11 @@
       "role": "Senior Software Engineer",
       "department": "Automotive Department",
       "date": "Sep 2024 – Oct 2026",
-      "projects": [
-        {
-          "title": "Road Graph Fusion",
-          "highlights": [
-            "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
-            "Served as a mono-repo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
-            "Owned code quality, overseeing Coverity and coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
-            "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
-          ]
-        }
+      "highlights": [
+        "Implemented a belief-and-heuristics-based framework to construct robust road topology with temporal-spatial fusion.",
+        "Served as a mono-repo code approver, reviewing component PRs and driving design iterations to improve end-to-end behavior.",
+        "Owned code quality, overseeing Coverity and coverage checks to ensure compliance with AUTOSAR standards for functional safety.",
+        "Improved development efficiency by building debugging tools, sharing best practices, and developing automated workflows."
       ]
     },
     {
@@ -45,7 +35,7 @@
           "date": "Apr 2023 – May 2024",
           "highlights": [
             "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation and escalation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. Achieved over 85% success in merging into and exiting main roads, serving 2,300 customers across 610,000 km of autonomous driving as of December 2023.",
-            "Platformized HNOA across vehicle models from multiple OEMs, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
+            "Platformized HNOA across vehicle models from multiple OEMs, including Volkswagen, BYD, SGMW, Chery, and Greatwall Motor, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
             "Designed HNOA navigation algorithms that achieved over 98% accuracy for navigation-triggered lane changes using only vehicle navigation information, including maneuvers, distance, suggested lanes, and road classes."
           ]
         },
@@ -78,7 +68,7 @@
       "date": "Jun 2020 – Sep 2020",
       "highlights": [
         "Developed intersection path-planning algorithms using third-order Bézier curve optimization, lane-group combinatorial optimization, and Hybrid A* to generate smooth, collision-free reference lines that respect vehicle kinematics.",
-        "Planned 9,625 intersection paths in Shanghai; 99% met the required standards, and the remaining 1% were correctly flagged for review.",
+        "Planned 9,625 intersection paths in Shanghai; 99% met the required standards, and the remaining 1% were correctly flagged for human review.",
         "Deployed the algorithms to the HD-map labeling production platform, increasing labeling efficiency by over 1,000% and replacing error-prone manual operations."
       ],
       "team": "HD Map Group",

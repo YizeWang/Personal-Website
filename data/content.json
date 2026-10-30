@@ -29,7 +29,7 @@
   },
   "education": [
     {
-      "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/>ETH Zurich, Zurich, Switzerland<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a><br/><strong>GPA: 5.7 / 6.0 | Rank: Top 10%</strong>",
+      "html": "<strong>MSc in Mechanical Engineering</strong><br/>Department of Mechanical and Process Engineering<br/>ETH Zurich, Zurich, Switzerland<br/>Advised by <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a> and <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a><br/><strong>GPA: 5.7 / 6.0 · Rank: Top 10%</strong>",
       "date": "Sep 2018 – May 2021",
       "kind": "degree",
       "courses": [
@@ -77,7 +77,7 @@
       "courses_title": "Graduate Courses"
     },
     {
-      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 | Rank: 1/441</strong>",
+      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"http://me.sjtu.edu.cn/teacher_directory1/2339.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 · Rank: 1/441</strong>",
       "date": "Sep 2014 – Jul 2018",
       "kind": "degree",
       "courses": [
@@ -145,17 +145,22 @@
       "courses_title": "Undergraduate Core Courses"
     },
     {
-      "html": "<strong>Master’s Thesis</strong><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dpaccagnan\">Prof. Dario Paccagnan</a>",
+      "html": "<strong>Research Assistant</strong><br/><a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics &amp; Logistics Equipment</a><br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"https://me.sjtu.edu.cn/teacher_directory1/gongliang.html\">Prof. Liang Gong</a>",
+      "date": "Jun 2024 – Sep 2024",
+      "kind": "nondegree"
+    },
+    {
+      "html": "<strong>Master’s Thesis</strong><br/><a href=\"https://optimisation.doc.ic.ac.uk/\">Computational Optimisation Group</a><br/>Department of Computing<br/>Imperial College London, London, United Kingdom<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dpaccagnan\">Prof. Dario Paccagnan</a>",
       "date": "Oct 2020 – May 2021",
       "kind": "nondegree"
     },
     {
-      "html": "<strong>ETH </strong><strong>Robotics Summer School<br/></strong>Wangen an der Aare, Switzerland<br/>Topic: Path Planning on Rescue Robots",
+      "html": "<strong>ETH Robotics Summer School</strong><br/><a href=\"https://rsl.ethz.ch/\">Robotic Systems Lab (RSL)</a><br/>Wangen an der Aare, Switzerland<br/>Topic: Path Planning on Rescue Robots",
       "date": "Jun 2019 – Jul 2019",
       "kind": "nondegree"
     },
     {
-      "html": "<strong>Research Assistant</strong><br/>Department of Mechanical Engineering<br/>University of Michigan, Ann Arbor, USA<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>",
+      "html": "<strong>Research Assistant</strong><br/><a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Department of Mechanical Engineering<br/>University of Michigan, Ann Arbor, USA<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>",
       "date": "Jun 2017 – Sep 2017",
       "kind": "nondegree"
     }
@@ -165,7 +170,7 @@
       "title": "Intersection Path Planning For HD Maps",
       "paragraphs": [
         "<strong>Intelligent Automotive Solution Dept., Huawei | Jun 2020 - Sep 2020 (Full Time)</strong><br/><strong>Key Words: Autonomous Driving, Path Planning, HD Map, A* search, Bezier Curve</strong>",
-        "According to the HD map production pipeline, production workers will label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool will output a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool can accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
+        "According to the HD map production pipeline, production workers will label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool will output a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool can accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
       ],
       "images": [
         {

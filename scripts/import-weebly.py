@@ -87,8 +87,8 @@ education_blocks = [b.strip() for b in education_blocks if b.strip()]
 assert len(education_blocks) == 4
 # Preserve the owner's corrected rankings when refreshing the source content.
 education_blocks[0] = education_blocks[0].replace('<a href="https://www.mavt.ethz.ch/the-department/people/person-detail.html?persid=29981">Prof. Roland Siegwart</a>', '<a href="https://jan.carius.io/about/">Dr. Jan Carius</a> and <a href="https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html">Prof. Marco Hutter</a>')
-education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 | Rank: Top 10%</strong>')
-education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 | Rank: 1/441</strong>')
+education_blocks[0] = education_blocks[0].replace('GPA: 5.7 / 6.0</strong>', 'GPA: 5.7 / 6.0 · Rank: Top 10%</strong>')
+education_blocks[2] = education_blocks[2].replace('GPA: 90 / 100</strong>', 'GPA: 90 / 100 · Rank: 1/441</strong>')
 education_blocks[0] = education_blocks[0].replace('<a href="https://www.topuniversities.com/universities/eth-zurich-swiss-federal-institute-technology/postgrad">ETH Zurich</a>, Switzerland', 'ETH Zurich, Zurich, Switzerland')
 education_blocks[2] = education_blocks[2].replace('<a href="https://www.topuniversities.com/universities/shanghai-jiao-tong-university/undergrad">Shanghai Jiao Tong University</a>, China', 'Shanghai Jiao Tong University, Shanghai, China')
 education_blocks[3] = education_blocks[3].replace('<a href="https://www.usnews.com/best-colleges/university-of-michigan-ann-arbor-9092">University of Michigan, Ann Arbor</a>, USA', 'University of Michigan, Ann Arbor, USA')
@@ -128,7 +128,7 @@ for entry, kind in zip(data['education'], ['degree', 'degree', 'nondegree', 'non
 # Career awards supplied by the owner from the newer CV.
 data['honors'] = [['<strong>DJI Automotive Best Individual Award (Top 1/400, 40g Gold Coin)</strong>', '2023'], ['<strong>DJI Automotive Outstanding Individual Award in the Planning Department (Top 6%)</strong>', '2022']] + data['honors']
 # Preserve reviewed project contributions, publications, and awards on re-import.
-for key in ('research', 'publications', 'honors'):
+for key in ('education', 'research', 'publications', 'honors'):
     if saved_content.get(key):
         data[key] = saved_content[key]
 assert len(data['research']) == 8
