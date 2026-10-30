@@ -261,7 +261,7 @@
     {
       "title": "3D Reconstruction from Depth Maps with Microsoft HoloLens",
       "paragraphs": [
-        "ETH Zurich · Mar 2019 – Jun 2019<br/>Advised by Dr. Silvano Galliani and <a href=\"https://inf.ethz.ch/people/person-detail.pollefeys.html\">Prof. Marc Pollefeys</a>, <a href=\"https://cvg.ethz.ch/\">Computer Vision and Geometry Group</a><br/>Keywords: Computer Vision, Depth Map Fusion, C++",
+        "ETH Zurich · Mar 2019 – Jun 2019<br/>Advised by <a href=\"https://intanto.net/\">Dr. Silvano Galliani</a> and <a href=\"https://inf.ethz.ch/people/person-detail.pollefeys.html\">Prof. Marc Pollefeys</a>, <a href=\"https://cvg.ethz.ch/\">Computer Vision and Geometry Group</a><br/>Keywords: Computer Vision, Depth Map Fusion, C++",
         "Depth map fusion is an essential part of both stereo- and RGB-D-based 3D reconstruction pipelines. Thanks to the research mode in HoloLens, it’s possible to get direct access to the raw data obtained from the time-of-flight (ToF) camera. The goal of this research was to implement an algorithm that fuses multiple depth maps into a single point cloud by checking for visibility, geometric and appearance consistency. The input was a stream of depth and intensity images from the HoloLens ToF camera, together with a sequence of corresponding camera poses. The output was a single point cloud containing the same amount of 3D information but in a more compact and consistent representation.",
         "The outcome of this fusion algorithm was a combined and consistent point cloud derived from a stream of depth and intensity images produced by HoloLens. Tests were performed on public data sets as well as real data recorded from HoloLens. With appropriate parameter settings, the results were satisfactory, as shown in the figures."
       ],
@@ -347,7 +347,7 @@
     {
       "title": "Magnetic Control System Design",
       "paragraphs": [
-        "Wuji Technology · Jun 2018 – Sep 2018 (Full-time)<br/>Keywords: Magnetism, Control, COMSOL, Simulation",
+        "<a href=\"https://www.wuji.tech/en/\">Wuji Technology</a> · Jun 2018 – Sep 2018 (Full-time)<br/>Keywords: Magnetism, Control, COMSOL, Simulation",
         "Commercially available linear actuators are often expensive and offer limited design options. The most common ones are voice coil actuators and classical linear actuators, which are expensive and bulky, respectively. However, there are a lot of application scenarios where linear actuators outperform rotary actuators. Thus, we wanted to design a system with movable coil arrays as linear actuators. The potential applications include the military sand table, rhythm visualization and compliant interaction.",
         "The key idea was to exploit the properties of the magnetic field induced by a solenoid. After careful calculation and simulation, we decided on magnetic material (NdFeB) and coil parameters to develop a prototype.",
         "Result: we failed to come up with a feasible design to meet all required specifications, namely, excellent dynamic response characteristics, adequate heat-sinking capability and high current-carrying capacity. The three most significant barriers were the limited magnetic force, the high cost of the feedback loop and significant magnetic flux leakage. Despite the failure, I learned a lot about field simulation and enjoyed the time when I tried to exploit every possibility."
@@ -619,11 +619,11 @@
       "2017"
     ],
     [
-      "Second Place in CHENJIAGENG Cup Invention Competition (Top 3 out of 395)",
+      "Second Prize in CHENJIAGENG Cup Invention Competition (Top 3 out of 395)",
       "2017"
     ],
     [
-      "Second Place in Hsue-Shen Tsien Cup Innovation Competition (Top 10%)",
+      "Second Prize in Hsue-Shen Tsien Cup Innovation Competition (Top 10%)",
       "2017"
     ],
     [
