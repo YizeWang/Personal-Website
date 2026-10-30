@@ -45,12 +45,8 @@
           "date": "Oct 2023 – May 2024",
           "highlights": [
             "Designed and delivered CNOA navigation algorithms, achieving robust urban routing based on multi-hypothesis matching of SD maps and online lane perception. Produced a lane-level topological graph with probabilistic connectivity.",
-            "Led a 12-member CNOA Scrum team as Scrum Master, responsible for planning, tracking, and verifying Stories and Tasks in Sprints."
-          ],
-          "highlight_links": {
-            "Stories": "https://support.atlassian.com/jira-cloud-administration/docs/what-are-issue-types/",
-            "Tasks": "https://support.atlassian.com/jira-cloud-administration/docs/what-are-issue-types/"
-          }
+            "Led a 12-member CNOA Scrum team as Scrum Master, responsible for planning, tracking, and verifying JIRA Stories and Tasks."
+          ]
         },
         {
           "title": "Memory on Driving (MOD)",
