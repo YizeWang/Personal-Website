@@ -172,7 +172,7 @@ def award_label(award):
     return label
 
 honors = '<ul class="honors">' + ''.join(f'<li><span>{award_label(award)}</span><span class="date">{year}</span></li>' for award,year in d['honors']) + '</ul>'
-parts.append(section('honors','05','Honors','Selected Honors &amp; Awards',honors))
+parts.append(section('honors','05','Honors','Honors are a byproduct of the journey, not the destination.',honors))
 personal = ''
 for group in d['personal']:
     personal += f'<h3 class="subheading">{esc(title_words(group["title"]))}</h3><div class="gallery {"life" if group["title"] == "Life" else "favorites"}">' + ''.join(figure(i) for i in group['images']) + '</div>'

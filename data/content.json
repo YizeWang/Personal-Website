@@ -1133,7 +1133,13 @@
             "preview_height": 800
           },
           "caption": "The Legend of Zelda: Breath of the Wild",
-          "link": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
+          "link": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/",
+          "crop": {
+            "x": 125,
+            "y": 0,
+            "width": 450,
+            "height": 800
+          }
         },
         {
           "asset": {
@@ -1149,7 +1155,7 @@
             "preview_height": 450,
             "origin": "curated"
           },
-          "caption": "Skyrim",
+          "caption": "The Elder Scrolls V: Skyrim Special Edition",
           "link": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
         },
         {
