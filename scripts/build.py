@@ -10,6 +10,8 @@ css_version = hashlib.sha256((ROOT / 'css/site.css').read_bytes()).hexdigest()[:
 js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
 icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
 share_version = hashlib.sha256((ROOT / 'images/social-preview.png').read_bytes()).hexdigest()[:12]
+favicon_version = hashlib.sha256((ROOT / 'images/favicon-32.png').read_bytes()).hexdigest()[:12]
+site_description = 'Yize Wang is a Senior Software Engineer at NVIDIA, focused on humanoid robots, policy fine-tuning, path planning, optimization, and autonomous driving.'
 
 def title_words(s):
     """Keep articles and short prepositions/conjunctions lowercase within titles."""
@@ -60,13 +62,13 @@ social_links = '<div class="social-links" aria-label="Social profiles">' + ''.jo
 parts = [f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yize Wang · Robotics & Autonomous Driving</title>
-<meta name="description" content="Yize Wang's research in robotics, autonomous driving, path planning, optimal control, and mechatronics. Education, publications, and projects.">
+<meta name="description" content="{esc(site_description, quote=True)}">
 <meta name="color-scheme" content="light dark"><meta name="theme-color" content="#245c4f">
-<meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="Robots are reflections of ourselves. Research, education, publications, and life.">
+<meta property="og:title" content="Yize Wang · Robotics & Autonomous Driving"><meta property="og:description" content="{esc(site_description, quote=True)}">
 <meta property="og:type" content="website"><meta property="og:url" content="https://yizewang.github.io/">
 <meta property="og:image" content="https://yizewang.github.io/images/social-preview.png?v={share_version}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Yize Wang · Robotics & Autonomous Driving"><meta name="twitter:description" content="Robots are reflections of ourselves."><meta name="twitter:image" content="https://yizewang.github.io/images/social-preview.png?v={share_version}"><meta name="twitter:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
-<link rel="icon" href="images/previews/portrait_orig.webp"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js?v={js_version}" defer></script>
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Yize Wang · Robotics & Autonomous Driving"><meta name="twitter:description" content="{esc(site_description, quote=True)}"><meta name="twitter:image" content="https://yizewang.github.io/images/social-preview.png?v={share_version}"><meta name="twitter:image:alt" content="Yize Wang — Robotics and Autonomous Driving">
+<link rel="icon" href="favicon.ico?v={favicon_version}" type="image/x-icon" sizes="32x32"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v={favicon_version}"><link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png?v={favicon_version}"><link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v={favicon_version}"><link rel="stylesheet" href="css/site.css?v={css_version}"><script src="js/site.js?v={js_version}" defer></script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><aside id="sidebar" aria-label="Profile and navigation"><header>''',
  img(d['portrait'], 'Yize Wang', True),
  f'<h1>Yize Wang</h1><p class="profile-role">Robotics &amp; Autonomous Driving</p><p class="profile-focus">Humanoid Robots · Policy Fine-Tuning<br>Path Planning · Optimization</p><div class="profile-contact"><a href="mailto:{email}">{email}</a><a href="tel:{esc(d["phone"], quote=True)}">{esc(d["phone_display"])}</a></div>{social_links}</header><nav aria-label="Main navigation">',
