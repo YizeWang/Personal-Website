@@ -11,8 +11,8 @@ js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
 icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
 
 def title_words(s):
-    """Keep short prepositions/conjunctions lowercase within titles."""
-    minor = {'and', 'or', 'nor', 'but', 'for', 'so', 'yet', 'as', 'at', 'by',
+    """Keep articles and short prepositions/conjunctions lowercase within titles."""
+    minor = {'the', 'a', 'an', 'and', 'or', 'nor', 'but', 'for', 'so', 'yet', 'as', 'at', 'by',
              'down', 'from', 'in', 'into', 'like', 'near', 'of', 'off', 'on',
              'onto', 'out', 'over', 'past', 'per', 'than', 'till', 'to', 'up',
              'upon', 'via', 'with'}
