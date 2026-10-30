@@ -62,7 +62,7 @@
     },
     {
       "company": "Huawei",
-      "department": "Automotive Business Unit",
+      "department": "Intelligent Automotive Business Unit",
       "role": "Algorithm Intern",
       "date": "Jun 2020 – Sep 2020",
       "highlights": [
@@ -70,7 +70,6 @@
         "Planned 9,625 intersection paths in Shanghai; 99% met the required standards, and the remaining 1% were correctly flagged for human review.",
         "Deployed the algorithms to the HD-map labeling production platform, increasing labeling efficiency by over 1,000% and replacing error-prone manual operations."
       ],
-      "team": "HD Map Group",
       "location": "Shanghai, China"
     }
   ]
