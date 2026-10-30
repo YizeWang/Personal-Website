@@ -61,7 +61,7 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .degree-stats{margin:0}
 .degree-stats::after{content:"";display:block;clear:both}
 .degree-stats>.courses{display:inline;margin:0;padding:0;border:0;font-size:12px}
-.degree-stats>.courses summary{float:right;display:inline-flex;align-items:center;gap:5px;margin-left:12px;line-height:1.7;font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;text-decoration:none;cursor:pointer}
+.degree-stats>.courses summary{float:right;display:inline-flex;align-items:center;gap:5px;margin-left:12px;line-height:1.6;font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;text-decoration:none;cursor:pointer}
 .degree-stats>.courses summary::before{content:"▸";font-size:10px}
 .degree-stats>.courses[open] summary::before{content:"▾"}
 .degree-stats>.courses summary::-webkit-details-marker{display:none}
@@ -117,3 +117,6 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 
 /* Pack non-degree content and dates together within equal-height grid cards. */
 .education-secondary{align-content:start}
+
+/* Avoid a false empty row between the table and the next education divider. */
+.degree-stats>.courses tbody tr:last-child td{border-bottom:0}
