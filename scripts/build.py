@@ -90,12 +90,7 @@ for entry in career_data['entries']:
         career += '</div>'
         if project.get('date'):
             career += f'<p class="date">{esc(project["date"])}</p>'
-        career += '</header>'
-        if project.get('highlights'):
-            career += career_highlights(project['highlights'])
-        if project.get('links'):
-            career += '<p class="career-project-links">' + ' · '.join(f'<a href="{esc(link["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{esc(link["label"])}</a>' for link in project['links']) + '</p>'
-        career += '</div>'
+        career += '</header>' + career_highlights(project['highlights']) + '</div>'
     career += '</div>'
 if previous_company is not None:
     career += '</article>'

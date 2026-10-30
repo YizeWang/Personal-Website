@@ -114,5 +114,3 @@ main{margin-left:var(--sidebar-width)}.hero{position:relative;height:340px;isola
 .career-company-heading h3{font-size:23px;letter-spacing:-.3px;margin:0}
 .career-company-heading>.date{margin:0;flex-shrink:0;white-space:nowrap}
 @media(max-width:760px){.career-company-heading h3{font-size:21px}.career-company-heading>.date{font-size:11px}}
-
-.career-project-links{font-size:13px;margin:0;line-height:1.8}
