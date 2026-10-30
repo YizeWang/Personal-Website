@@ -115,7 +115,7 @@ for n,p in enumerate(d['research'],1):
     meta, *body = p['paragraphs']
     research += f'<article class="project" id="project-{n}"><header><span class="project-number">PROJECT {n:02d}</span><h3>{esc(title_words(p["title"]))}</h3><p class="project-meta">{meta}</p></header><div class="project-grid"><div class="project-media">' + ''.join(figure(i) for i in p['images']) + '</div><div class="project-copy">'
     research += ''.join(f'<p>{v}</p>' for v in body) + '</div></div></article>'
-parts.append(section('research','03','Research','For tomorrow’s autonomous driving.',research))
+parts.append(section('research','03','Research','For tomorrow&#39;s robotics and autonomous driving.',research))
 pubs = ''
 for title,key in [('Publications','publications'),('Patents','patents')]:
     pubs += f'<h3 class="subheading">{title}</h3><ol class="publication-list">'
@@ -127,7 +127,7 @@ personal = ''
 for group in d['personal']:
     personal += f'<h3 class="subheading">{esc(title_words(group["title"]))}</h3><div class="gallery {"life" if group["title"] == "Life" else "favorites"}">' + ''.join(figure(i) for i in group['images']) + '</div>'
 personal += f'<p class="smallprint">{esc(d["personal_notice"])}</p>'
-parts.append(section('personal','06','Beyond Research','Don’t worry, be happy!',personal))
+parts.append(section('personal','06','Personal','Don’t worry, be happy!',personal))
 parts.append('''<footer><span>© Yize Wang</span><a href="#career">Back to top ↑</a></footer></main>
 <dialog id="media-viewer" aria-label="Image viewer"><div class="viewer-toolbar"><p id="media-caption"></p><button type="button" id="close-viewer" aria-label="Close image viewer">Close ×</button></div><div id="media-content"></div><p id="media-status" role="status" aria-live="polite"></p><a id="media-original" target="_blank" rel="noopener">Open original ↗</a></dialog></body></html>''')
 (ROOT / 'index.html').write_text('\n'.join(parts) + '\n')
