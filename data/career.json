@@ -35,7 +35,7 @@
           "date": "Apr 2023 – May 2024",
           "highlights": [
             "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation and escalation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. Achieved over 85% success in merging into and exiting main roads, serving 2,300 customers across 610,000 km of autonomous driving as of December 2023.",
-            "Platformized HNOA across vehicle models from multiple OEMs, including Volkswagen, BYD, SGMW, Chery, and Greatwall Motor, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
+            "Platformized HNOA across vehicle models from multiple OEMs, including Volkswagen, BYD, SGMW, Chery, and Great Wall Motor, supporting different SoC configurations and map providers, including AMap and Tencent Map.",
             "Designed HNOA navigation algorithms that achieved over 98% accuracy for navigation-triggered lane changes using only vehicle navigation information, including maneuvers, distance, suggested lanes, and road classes."
           ]
         },
