@@ -262,8 +262,8 @@
       "title": "3D Reconstruction from Depth Maps with Microsoft HoloLens",
       "paragraphs": [
         "ETH Zurich · Mar 2019 – Jun 2019<br/>Advised by <a href=\"https://intanto.net/\">Dr. Silvano Galliani</a> and <a href=\"https://inf.ethz.ch/people/person-detail.pollefeys.html\">Prof. Marc Pollefeys</a>, <a href=\"https://cvg.ethz.ch/\">Computer Vision and Geometry Group</a><br/>Keywords: Computer Vision, Depth Map Fusion, C++",
-        "Depth map fusion is an essential part of both stereo- and RGB-D-based 3D reconstruction pipelines. Thanks to the research mode in HoloLens, it’s possible to get direct access to the raw data obtained from the time-of-flight (ToF) camera. The goal of this research was to implement an algorithm that fuses multiple depth maps into a single point cloud by checking for visibility, geometric and appearance consistency. The input was a stream of depth and intensity images from the HoloLens ToF camera, together with a sequence of corresponding camera poses. The output was a single point cloud containing the same amount of 3D information but in a more compact and consistent representation.",
-        "The outcome of this fusion algorithm was a combined and consistent point cloud derived from a stream of depth and intensity images produced by HoloLens. Tests were performed on public data sets as well as real data recorded from HoloLens. With appropriate parameter settings, the results were satisfactory, as shown in the figures."
+        "Depth map fusion is an essential part of both stereo- and RGB-D-based 3D reconstruction pipelines. Using HoloLens Research Mode, I accessed raw depth and intensity images from the time-of-flight (ToF) camera, together with their corresponding camera poses. I implemented a depth map fusion algorithm that checked visibility, geometric consistency, and appearance consistency to combine multiple depth maps into a single point cloud.",
+        "The algorithm produced a compact, consistent point cloud while preserving the 3D information contained in the input depth maps. I evaluated it on public datasets and real data recorded with HoloLens. With appropriate parameter settings, it produced the reconstruction results shown in the figures."
       ],
       "images": [
         {
@@ -423,7 +423,9 @@
       "title": "Microscale Platform for the Measurement of Blood Retraction Force",
       "paragraphs": [
         "University of Michigan, Ann Arbor · Jun 2017 – Sep 2017 (Full-time)<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>, Department of Mechanical Engineering<br/>Keywords: Image Analysis, Experiment Design, Mechanical Design, Data Analysis",
-        "Coagulation monitoring is essential for perioperative care and thrombosis treatment. However, existing assays for coagulation monitoring have limitations such as a large footprint and complex setup. In this work, we developed a miniaturized device for point-of-care blood coagulation testing by measuring dynamic clot retraction force development during blood clotting. In this device, a blood drop was localized between a protrusion and a flexible force-sensing beam to measure clot retraction force. The beam featured micropillar arrays to assist the deposition of carbon nanotube films, which served as a strain sensor to achieve label-free electrical readout of clot retraction force in real time. We characterized mechanical and electrical properties of the force-sensing beam and optimized its design. We further demonstrated that this blood coagulation monitoring device could obtain results that were consistent with those using an imaging method and that the device was capable of differentiating blood samples with different coagulation profiles. Owing to its low fabrication cost, small size, and low consumption of blood samples, the blood coagulation testing device using carbon nanotube strain sensors holds great potential as a point-of-care tool for future coagulation monitoring."
+        "Coagulation monitoring is essential for perioperative care and thrombosis treatment, but existing assays can require bulky equipment and complex setups. We developed a miniaturized device for point-of-care blood coagulation testing by measuring clot retraction force during blood clotting.",
+        "A blood drop was localized between a protrusion and a flexible force-sensing beam. Micropillar arrays on the beam assisted the deposition of carbon nanotube films, enabling label-free electrical readout of clot retraction force in real time. We characterized the beam’s mechanical and electrical properties and optimized its design.",
+        "The measurements agreed with those obtained using an imaging method, and the device differentiated blood samples with different coagulation profiles. Its low fabrication cost, small size, and low blood sample consumption demonstrated its potential for point-of-care coagulation monitoring."
       ],
       "images": [
         {
@@ -612,7 +614,7 @@
       "2018"
     ],
     [
-      "<strong>Tang Lixin </strong><strong>Scholarship (Top 1 out of 441, 5,000 USD)</strong>",
+      "<strong>Tang Lixin </strong><strong>Scholarship (Top 1/441, 5,000 USD)</strong>",
       "2017"
     ],
     [
@@ -620,7 +622,7 @@
       "2017"
     ],
     [
-      "Second Prize in CHENJIAGENG Cup Invention Competition (Top 3 out of 395)",
+      "Second Prize in CHENJIAGENG Cup Invention Competition (Top 3/395)",
       "2017"
     ],
     [
@@ -640,7 +642,7 @@
       "2017"
     ],
     [
-      "<strong>China National Scholarship (Top 3 out of 468, 1,150 USD)</strong>",
+      "<strong>China National Scholarship (Top 3/468, 1,150 USD)</strong>",
       "2016"
     ],
     [
@@ -648,7 +650,7 @@
       "2016"
     ],
     [
-      "Eleme Scholarship (Top 3 out of 48)",
+      "Eleme Scholarship (Top 3/48)",
       "2015"
     ],
     [

@@ -76,8 +76,15 @@ parts = [f'''<!doctype html>
  '</nav></aside><main id="main">',
  f'<div class="hero"><img src="{d["hero"]["preview"]}" width="{d["hero"]["preview_width"]}" height="{d["hero"]["preview_height"]}" alt="Yize Wang working on a mechatronics project" fetchpriority="high"><div class="hero-content"><p class="eyebrow">YIZE WANG / PERSONAL WEBSITE</p><p class="hero-title">Robots are reflections<br>of ourselves.</p></div></div>'
 ]
-def career_highlights(items):
-    return '<ul class="career-highlights">' + ''.join(f'<li>{esc(item)}</li>' for item in items) + '</ul>'
+def career_highlights(items, term_links=None):
+    rendered = []
+    for item in items:
+        text = esc(item)
+        for label, url in (term_links or {}).items():
+            text = re.sub(r'\b' + re.escape(label) + r'\b',
+                          lambda match: f'<a href="{esc(url, quote=True)}">{match[0]}</a>', text)
+        rendered.append(f'<li>{text}</li>')
+    return '<ul class="career-highlights">' + ''.join(rendered) + '</ul>'
 
 career = '<div class="career-list">'
 previous_company = None
@@ -107,7 +114,7 @@ for entry in career_data['entries']:
         career += '</div>'
         if project.get('date'):
             career += f'<p class="date">{esc(project["date"])}</p>'
-        career += '</header>' + career_highlights(project['highlights']) + '</div>'
+        career += '</header>' + career_highlights(project['highlights'], project.get('highlight_links')) + '</div>'
     career += '</div>'
 if previous_company is not None:
     career += '</article>'
