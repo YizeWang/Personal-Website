@@ -11,8 +11,19 @@ js_version = hashlib.sha256((ROOT / 'js/site.js').read_bytes()).hexdigest()[:12]
 icons_version = hashlib.sha256((ROOT / 'images/social-icons.svg').read_bytes()).hexdigest()[:12]
 
 def title_words(s):
-    """Capitalize each title word without changing acronyms or names."""
-    return re.sub(r"(^|[\s-])([a-z])", lambda m: m[1] + m[2].upper(), s)
+    """Keep short prepositions/conjunctions lowercase within titles."""
+    minor = {'and', 'or', 'nor', 'but', 'for', 'so', 'yet', 'as', 'at', 'by',
+             'down', 'from', 'in', 'into', 'like', 'near', 'of', 'off', 'on',
+             'onto', 'out', 'over', 'past', 'per', 'than', 'till', 'to', 'up',
+             'upon', 'via', 'with'}
+    words = list(re.finditer(r"(?<![A-Za-z0-9])[A-Za-z]+(?:['’][A-Za-z]+)?", s))
+    edges = {words[0].start(), words[-1].start()} if words else set()
+    def case_word(match):
+        word = match[0]
+        if word.lower() in minor and match.start() not in edges:
+            return word.lower()
+        return word[0].upper() + word[1:]
+    return re.sub(r"(?<![A-Za-z0-9])[A-Za-z]+(?:['’][A-Za-z]+)?", case_word, s)
 
 def img(a, alt, eager=False):
     return f'<img src="{a["preview"]}" alt="{esc(alt, quote=True)}" width="{a["preview_width"]}" height="{a["preview_height"]}" decoding="async" ' + ('fetchpriority="high"' if eager else 'loading="lazy"') + '>'
@@ -105,7 +116,7 @@ for e in d['education']:
         courses = f'<details class="courses"><summary aria-label="{label}" title="{label}">Courses</summary><div class="table-scroll"><table><caption>{label} and Grades</caption><thead><tr><th scope="col">Course</th><th scope="col">Grade</th></tr></thead><tbody>'
         for course, grade in e['courses']:
             code, name = course.split(' ', 1)
-            courses += f'<tr><td><span class="course-code">{esc(code)}</span> {esc(name)}</td><td>{esc(grade)}</td></tr>'
+            courses += f'<tr><td><span class="course-code">{esc(code)}</span> {esc(title_words(name))}</td><td>{esc(grade)}</td></tr>'
         courses += '</tbody></table></div></details>'
         before, rank = body.rsplit('<strong>', 1)
         body = before + '<div class="degree-stats"><strong>' + rank + courses + '</div>'

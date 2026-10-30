@@ -42,7 +42,7 @@
           "5.5 / 6.0"
         ],
         [
-          "151-0563-01 Dynamic Programming And Optimal Control",
+          "151-0563-01 Dynamic Programming and Optimal Control",
           "5.5 / 6.0"
         ],
         [
@@ -82,27 +82,27 @@
       "kind": "degree",
       "courses": [
         [
-          "ME429 Design And Practice Of Mechatronic Systems",
+          "ME429 Design and Practice of Mechatronic Systems",
           "90/100"
         ],
         [
-          "EE205 Electrical And Electronic Technology",
+          "EE205 Electrical and Electronic Technology",
           "99/100"
         ],
         [
-          "ME113 Programming: Principles And Practice Using C++",
+          "ME113 Programming: Principles and Practice Using C++",
           "93/100"
         ],
         [
-          "ME208 Design And Manufacture",
+          "ME208 Design and Manufacture",
           "90/100"
         ],
         [
-          "ME369 Modeling Analysis And System Control",
+          "ME369 Modeling Analysis and System Control",
           "85/100"
         ],
         [
-          "ME399 Measurement Principles And Technologies",
+          "ME399 Measurement Principles and Technologies",
           "97/100"
         ],
         [
@@ -110,11 +110,11 @@
           "95/100"
         ],
         [
-          "ES004 Electronic System Design Based On Android System",
+          "ES004 Electronic System Design Based on Android System",
           "98/100"
         ],
         [
-          "CS902 Thinking And Approach Of Programming",
+          "CS902 Thinking and Approach of Programming",
           "94/100"
         ],
         [
@@ -126,7 +126,7 @@
           "92/100"
         ],
         [
-          "MA097 Mathematical Methods In Physics",
+          "MA097 Mathematical Methods in Physics",
           "88/100"
         ],
         [
@@ -138,7 +138,7 @@
           "89/100"
         ],
         [
-          "MA119 Probability And Statistics",
+          "MA119 Probability and Statistics",
           "91/100"
         ]
       ],
@@ -167,7 +167,7 @@
   ],
   "research": [
     {
-      "title": "Intersection Path Planning For HD Maps",
+      "title": "Intersection Path Planning for HD Maps",
       "paragraphs": [
         "<strong>Intelligent Automotive Solution Department, Huawei | Jun 2020 – Sep 2020 (Full Time)</strong><br/><strong>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bezier Curve</strong>",
         "According to the HD map production pipeline, production workers label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. As for non-intersections, such paths can be generated as the geometrical centerline of lanes, while for intersections, such virtual lanes are labeled manually, which results in low efficiency, inconsistent style, and kinematic infeasibility.<br/> <br/>To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect the previous lane and the next lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. More importantly, the tool could accurately forewarn users of potential risks, which makes it easier for users to locate such constraint-inconsistent virtual lanes, without checking all results.<br/> <br/>The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "title": "Path Planning For Constrained Stochastic Systems Based On Path Integral Algorithm",
+      "title": "Path Planning for Constrained Stochastic Systems Based on Path Integral Algorithm",
       "paragraphs": [
         "<strong>ETH Zurich | Jun 2019 – Sep 2019</strong><br/><strong>Advised by</strong><strong> <a href=\"https://jan.carius.io/about/\">Dr. Jan Carius</a>, Dr. Farbod Farshidian, <a href=\"https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html\">Prof. Marco Hutter</a>, <a href=\"https://rsl.ethz.ch/\">Robotic Systems Lab</a></strong><br/><strong>Keywords: Stochastic Constrained Optimal Control, Path Integral, MPC</strong>",
         "The problem of optimal control in the presence of noise occurs in many areas of science and engineering. Examples are the control of movement in biological systems, robotics, financial investment policies, and robot path planning. Dealing with real systems, we often have state-input inequality constraints. For instance, we want to keep the contact force inside the friction cone. <br/><br/>In a stochastic setting, the cost function would thus be the expectation of nominal cost. After mathematical manipulation and a logarithmic transformation, the optimality condition for the cost can be expressed in the linear form. Based on the path integral formulation, I investigated the possibility of finding analytical and numerical optimizers. The sampling policy was finally modified to respect the inequality constraints. As a result, the robot could safely circumvent the barriers by applying the optimal control corrupted by the noise.<br/><br/>For higher dimensions, the state-input constrained feasible region may be complex and the computational cost grows rapidly. Further work would thus involve applying parallel computation to improve the computation efficiency."
@@ -255,7 +255,7 @@
       ]
     },
     {
-      "title": "3D Reconstruction From Depth Maps With Microsoft HoloLens",
+      "title": "3D Reconstruction from Depth Maps with Microsoft HoloLens",
       "paragraphs": [
         "<strong>ETH Zurich | Mar 2019 – Jun 2019</strong><br/><strong>Advised by Dr. Silvano Galliani and <a href=\"https://inf.ethz.ch/people/person-detail.pollefeys.html\">Prof. Marc Pollefeys</a>, <a href=\"https://cvg.ethz.ch/\">Computer Vision and Geometry Group</a></strong><br/><strong>Keywords: Computer Vision, Depth Map Fusion, C++</strong>",
         "Depth map fusion is an essential part of both stereo and RGB-D based 3D reconstruction pipelines. Thanks to the research mode in HoloLens, it’s possible to get direct access to the raw data obtained from the time-of-flight (ToF) camera. The goal of this research was to implement an algorithm that fuses multiple depth maps into a single point cloud by checking for visibility, geometric and appearance consistency. The input was a stream of depth and intensity images from the HoloLens ToF camera, together with a sequence of corresponding camera poses. The output was a single point cloud containing the same amount of 3D information but in a more compact and consistent representation.<br/><br/>The outcome of this fusion algorithm was a combined and consistent point cloud derived from a stream of depth and intensity images produced by HoloLens. Tests were performed on public data sets as well as real data recorded from HoloLens. With appropriate parameter settings, the results were satisfactory, as shown in the figures."
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "title": "3D Reconstruction Robot With Self-Collision Avoidance",
+      "title": "3D Reconstruction Robot with Self-Collision Avoidance",
       "paragraphs": [
         "<strong>Shanghai Jiao Tong University | Oct 2017 – Jun 2018</strong><br/><strong>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, Institute of Mechatronics, SJTU</strong><br/><strong>Keywords: Robot Kinematics, Computer Vision, ROS, Mechanical Design</strong>",
         "3D models of crops contain rich information such as the branch number and the branch angle. However, the measurement of a single crop in the fields is typically hard to perform due to poor working conditions and occlusion between neighboring plants. Therefore, we aimed to develop a robot, controlled by human-machine interaction, to create optimal measurement conditions. To remove obstacles in front of the object of interest, we applied wearable human motion sensors to facilitate precise remote control (so that agricultural scientists do not have to go to fields). Specifically, we collected human motion data via motion capture equipment produced by Noitom. Then, joint angles were computed accordingly by the kinematic model so that human motion was mapped to the robot motion.<br/><br/>To avoid damage to the robot itself caused by incorrect operation, I designed a self-collision avoidance algorithm to ensure safety. The algorithm first read input human motion data and computed the desired joint angles. If the commanded joint angles would cause a link to enter another part’s safety zone, the algorithm prevented the potential collision.<br/><br/>Traditional 2D pictures lose important spatial information such as spatial angles. Therefore, I implemented the 3D reconstruction algorithm based on linear structured light. A calibrated camera and laser projector were carried by the robot to fulfill the reconstruction task.<br/> <br/>With these two features combined, one could control the robot remotely to reconstruct the crops of interest in 3D for further biological study."
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "title": "Microscale Platform For The Measurement Of Blood Retraction Force",
+      "title": "Microscale Platform for The Measurement of Blood Retraction Force",
       "paragraphs": [
         "<strong>University of Michigan, Ann Arbor | Jun 2017 – Oct 2017 (Full Time)</strong><br/><strong>Advised by Prof. Jianping Fu, Department of Mechanical Engineering, University of Michigan, Ann Arbor</strong><br/><strong>Keywords:  Image Analysis, Experiment Design, Mechanical Design, Data Analysis</strong>",
         "Coagulation monitoring is essential for perioperative care and thrombosis treatment. However, existing assays for coagulation monitoring have limitations such as a large footprint and complex setup. In this work, we developed a miniaturized device for point-of-care blood coagulation testing by measuring dynamic clot retraction force development during blood clotting. In this device, a blood drop was localized between a protrusion and a flexible force-sensing beam to measure clot retraction force. The beam featured micropillar arrays to assist the deposition of carbon nanotube films, which served as a strain sensor to achieve label-free electrical readout of clot retraction force in real time. We characterized mechanical and electrical properties of the force-sensing beam and optimized its design. We further demonstrated that this blood coagulation monitoring device could obtain results that were consistent with those using an imaging method and that the device was capable of differentiating blood samples with different coagulation profiles. Owing to its low fabrication cost, small size, and low consumption of blood samples, the blood coagulation testing device using carbon nanotube strain sensors holds great potential as a point-of-care tool for future coagulation monitoring."
@@ -451,7 +451,7 @@
       ]
     },
     {
-      "title": "Multifunctional Portable Instrument For Seed & Panicle Phenotyping",
+      "title": "Multifunctional Portable Instrument for Seed & Panicle Phenotyping",
       "paragraphs": [
         "<strong>Shanghai Jiao Tong University | Sep 2015 – Jan 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, Institute of Mechatronics, SJTU</strong><br/><strong>Keywords: Image Analysis, PCB, Mechanical Design</strong>",
         "For crop breeding and variety screening, it is essential to improve the phenotyping throughput for quantitatively evaluating the seed traits. However, existing high-throughput phenotyping facilities for crop seeds generally have some limitations such as high cost, large size and high weight which hinder the usage in the field. Thus, a smartphone-based, low-cost, portable instrument to achieve the function of high-throughput field phenotyping for crop seeds is in high demand.<br/><br/>I used a smartphone as the instrument's main platform, which offered rich functionality for fast phenotyping the crop seeds. First, advanced computing ability and the high-resolution camera offered the conditions for image analysis, which measured morphological parameters by image processing. Second, the Bluetooth module made communication convenient for device control. Third, a user-friendly HMI made it easy for users to find and correct a calculation error. The experimental results showed that the measurement accuracy of phenotypic parameters was over 97%, and this instrument could be applied in the precise measurement of phenotypic parameters of crop seeds. More importantly, I introduced cloud storage to my instrument and equipped it with the capability of location-based data collection. I took full advantage of the big data collected via this instrument to provide valuable information for agricultural breeding as well as crop selection. The instrument had been deployed in 24 agricultural technology promotion service centers, with further deployments ongoing at the time."
@@ -551,12 +551,12 @@
   ],
   "publications": [
     "<strong>Wang, Y.</strong>, &amp; Paccagnan, D. (2022). <a href=\"https://doi.org/10.1109/CDC51059.2022.9993033\">Data-Driven Robust Congestion Pricing</a>. <em>2022 IEEE 61st Conference on Decision and Control (CDC)</em>, 4437–4443.",
-    "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings For Effective Blood Sample Fencing And High-Throughput Measurement Of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
-    "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). <a href=\"https://doi.org/10.1007/978-981-10-8944-2_2\">Building Unmanned Plant Factory With Modular Robotic Manipulation And Logistics Systems</a>. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11–19.",
-    "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). <a href=\"https://doi.org/10.13841/j.cnki.jxsj.2019.01.002\">A Self-Morphing Algorithm Of Modular Robot</a>. <em>Journal of Machine Design</em>, 36(01), 5–9",
-    "Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). <a href=\"https://doi.org/10.1021/acssensors.7b00971\">Carbon Nanotube Strain Sensor Based Hemoretractometer For Blood Coagulation Testing</a>. <em>ACS Sensors</em>, 3(3), 670–676.",
-    "Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). <a href=\"https://doi.org/10.1063/1.5001754\">Capillary Assisted Deposition Of Carbon Nanotube Film For Strain Sensing</a>. <em>Applied Physics Letters</em>, 111(17), 173105.",
-    "Mao, Y., Wang, Y., Gong, L., <strong>Wang, Y.</strong>, Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016). <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">A Multistage Winnowing Fulfilled And Unfulfilled Grains Device And Method Based On Human-Computer Interaction</a>. <em>Mechatronics</em>, 22(3), 3–6, 28."
+    "Huang, L., Liu, X., Ou, Y., Huang, H., Zhang, X., <strong>Wang, Y.</strong>, Liang, Y., Yu, X., Zheng, W., Zhang, H., &amp; Li, Z. (2020). <a href=\"https://doi.org/10.1021/acssensors.0c01596\">Microengineered Flexural Post Rings for Effective Blood Sample Fencing and High-Throughput Measurement of Clot Retraction Force</a>. <em>ACS Sensors</em>, 5(12), 3949–3955.",
+    "<strong>Wang, Y.</strong>, Kong, L., Yang, H., Li, J., Xia, P., Gong, L., &amp; Liu, C. (2019). <a href=\"https://doi.org/10.1007/978-981-10-8944-2_2\">Building Unmanned Plant Factory with Modular Robotic Manipulation and Logistics Systems</a>. <em>Recent Developments in Intelligent Computing, Communication and Devices</em>, 11–19.",
+    "Shen, G., Chen, M., <strong>Wang, Y.</strong>, Su S. &amp; Fei, Y. (2019). <a href=\"https://doi.org/10.13841/j.cnki.jxsj.2019.01.002\">A Self-Morphing Algorithm of Modular Robot</a>. <em>Journal of Machine Design</em>, 36(01), 5–9",
+    "Li, Z., <strong>Wang, Y.</strong>, Xue, X., McCracken, B., Ward, K., &amp; Fu, J. (2018). <a href=\"https://doi.org/10.1021/acssensors.7b00971\">Carbon Nanotube Strain Sensor Based Hemoretractometer for Blood Coagulation Testing</a>. <em>ACS Sensors</em>, 3(3), 670–676.",
+    "Li, Z., Xue, X., Lin, F., <strong>Wang, Y.</strong>, Ward, K., &amp; Fu, J. (2017). <a href=\"https://doi.org/10.1063/1.5001754\">Capillary Assisted Deposition of Carbon Nanotube Film for Strain Sensing</a>. <em>Applied Physics Letters</em>, 111(17), 173105.",
+    "Mao, Y., Wang, Y., Gong, L., <strong>Wang, Y.</strong>, Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016). <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">A Multistage Winnowing Fulfilled and Unfulfilled Grains Device and Method Based on Human-Computer Interaction</a>. <em>Mechatronics</em>, 22(3), 3–6, 28."
   ],
   "patents": [
     "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma Z., Mao Y. &amp; Zhang D., “An Intelligent Platform for Agricultural Robots Based on Motion Decomposition”, Patent Number: ZL 2016 2 0928634.8",
@@ -659,7 +659,7 @@
             "preview_width": 563,
             "preview_height": 1000
           },
-          "caption": "Marriage Proposal At The Matterhorn (2026)",
+          "caption": "Marriage Proposal at The Matterhorn (2026)",
           "link": null,
           "orientation": "portrait"
         },
@@ -693,7 +693,7 @@
             "preview_width": 451,
             "preview_height": 800
           },
-          "caption": "Volcanic Eruption In Hawaii (2026)",
+          "caption": "Volcanic Eruption in Hawaii (2026)",
           "link": null,
           "orientation": "portrait"
         },
@@ -939,7 +939,7 @@
             "preview_height": 384,
             "origin": "curated"
           },
-          "caption": "The Lord of the Rings",
+          "caption": "The Lord of The Rings",
           "link": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
         },
         {
@@ -956,7 +956,7 @@
             "preview_height": 800,
             "origin": "curated"
           },
-          "caption": "The Pirates of the Caribbean",
+          "caption": "The Pirates of The Caribbean",
           "link": "https://movies.disney.com/pirates-of-the-caribbean-dead-men-tell-no-tales"
         },
         {
@@ -1067,7 +1067,7 @@
             "preview_width": 700,
             "preview_height": 800
           },
-          "caption": "The Legend of Zelda: Breath of the Wild",
+          "caption": "The Legend of Zelda: Breath of The Wild",
           "link": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
         },
         {
