@@ -513,30 +513,28 @@
     "origin": "curated"
   },
   {
-    "source": "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/lord_of_the_rings_fellowship_of_the_ring_2000x3000.jpg",
-    "path": "images/originals/lotr-official.jpg",
-    "sha256": "657d5b97e20e27fa6aa0ad8579c36035ff53b9d7d1c98a370461def47480d055",
-    "bytes": 20067,
+    "source": "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/lotr_trilogy_2000x3000.jpg",
+    "path": "images/originals/lotr-trilogy-official.jpg",
+    "sha256": "30122a3c504e34f63dc8006887c42a76e49940b5cfbca200f0cef29bc779c160",
+    "bytes": 21961,
     "width": 256,
     "height": 384,
     "frames": 1,
-    "preview": "images/previews/lotr-official.webp",
+    "preview": "images/previews/lotr-trilogy-official.webp",
     "preview_width": 256,
-    "preview_height": 384,
-    "origin": "curated"
+    "preview_height": 384
   },
   {
-    "source": "https://lumiere-a.akamaihd.net/v1/images/p_piratesofthecaribbean_deadmentellnotales_19642_e89de0a3.jpeg?region=0%2C0%2C540%2C810",
-    "path": "images/originals/pirates-official.jpg",
-    "sha256": "dcb7339a149d0a08763436b9efa7338a30da6c141e8fa105afa297808f69cfb2",
-    "bytes": 188534,
-    "width": 540,
-    "height": 810,
+    "source": "https://images.moviesanywhere.com/crux/85a18a0db1053a3135805d1f8ddac0b1.jpeg?r=16x9&w=1280",
+    "path": "images/originals/pirates-series.jpg",
+    "sha256": "abd53bb40e0e455a42e588f863ccf8122e448340d07c5f1ca689e84316aaa41a",
+    "bytes": 66696,
+    "width": 1280,
+    "height": 720,
     "frames": 1,
-    "preview": "images/previews/pirates-official.webp",
-    "preview_width": 533,
-    "preview_height": 800,
-    "origin": "curated"
+    "preview": "images/previews/pirates-series.webp",
+    "preview_width": 1100,
+    "preview_height": 619
   },
   {
     "source": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/library_600x900.jpg",

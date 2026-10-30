@@ -48,6 +48,17 @@ def figure(i):
 def section(id, number, title, intro, content):
     return f'<section id="{id}" aria-labelledby="{id}-title"><div class="container"><header class="section-heading"><span class="section-number">{number}</span><div><h2 id="{id}-title">{title_words(title)}</h2><p>{intro}</p></div></header>{content}</div></section>'
 
+def external_links_new_tab(html):
+    """Give every HTTP(S) link the same behavior across all sections."""
+    def update(match):
+        tag = match[0]
+        href = re.search(r'''\bhref\s*=\s*(["'])(.*?)\1''', tag, re.I)
+        if not href or not re.match(r'^(?:https?:)?//', unescape(href[2]), re.I):
+            return tag
+        tag = re.sub(r'''\s+(?:target|rel)\s*=\s*(["']).*?\1''', '', tag, flags=re.I)
+        return tag[:-1] + ' target="_blank" rel="noopener noreferrer">'
+    return re.sub(r'<a\b[^>]*>', update, html, flags=re.I)
+
 nav = [('career', 'Career Experience'), ('education', 'Education'), ('research', 'Research'), ('publications', 'Publications'), ('honors', 'Honors'), ('personal', 'Personal')]
 email = esc(d['email'])
 profile_links = []
@@ -119,7 +130,7 @@ for entry in career_data['entries']:
 if previous_company is not None:
     career += '</article>'
 career += '</div>'
-parts.append(section('career', '01', 'Career Experience', 'Autonomous driving, robotics, and software engineering.', career))
+parts.append(section('career', '01', 'Career Experience', 'Robotics, autonomous driving, and software engineering.', career))
 ed = '<div class="education-list">'
 for e in d['education']:
     kind = 'education-primary' if e['kind'] == 'degree' else 'education-secondary'
@@ -167,7 +178,7 @@ personal += f'<p class="smallprint">{esc(d["personal_notice"])}</p>'
 parts.append(section('personal','06','Personal','Don’t worry, be happy!',personal))
 parts.append('''<footer><span>© Yize Wang</span><a href="#main">Back to top ↑</a></footer></main>
 <dialog id="media-viewer" aria-label="Image viewer"><div class="viewer-toolbar"><p id="media-caption"></p><button type="button" id="close-viewer" aria-label="Close image viewer">Close ×</button></div><div id="media-content"></div><p id="media-status" role="status" aria-live="polite"></p><a id="media-original" target="_blank" rel="noopener">Open original ↗</a></dialog></body></html>''')
-(ROOT / 'index.html').write_text('\n'.join(parts) + '\n')
+(ROOT / 'index.html').write_text(external_links_new_tab('\n'.join(parts) + '\n'))
 for path,target in [('education.html','education'),('research.html','research'),('publication--honors.html','publications'),('personal.html','personal')]:
     (ROOT / path).write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yize Wang · {target.title()}</title><meta http-equiv="refresh" content="0;url=./index.html#{target}"></head><body><p>This page has moved. <a href="./index.html#{target}">Continue to {target}</a>.</p></body></html>\n')
 print('Built index.html and four legacy page redirects.')
