@@ -35,8 +35,8 @@
           "role": "Function Owner & Navigation Algorithm Lead",
           "date": "Apr 2023 – May 2024",
           "highlights": [
-            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation, driver takeover requests during functional degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. As of December 2023, the system had served 2,300 customers across 610,000 km of autonomous driving.",
-            "Platformized HNOA across vehicle models from multiple OEMs (Volkswagen, BYD, SGMW, Chery, and Great Wall Motor) supporting different SoC configurations (TI TDA4VH, Qualcomm 8650, and NVIDIA Orin) and navigation map providers (AMap and Tencent Map).",
+            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation/degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. As of December 2023, the system had served 2,300 customers across 610,000 km of autonomous driving.",
+            "Platformized HNOA across vehicle models from multiple OEMs (Volkswagen, BYD, SGMW, Chery, and Great Wall Motor) supporting different SoC configurations (TI TDA4VH, Qualcomm 8650, and NVIDIA Orin) and navigation providers (AMap and Tencent Map).",
             "Designed HNOA navigation algorithms that achieved a recognition rate of over 98% for navigation-triggered lane-change requirements using only vehicle navigation inputs (maneuvers, distance, suggested lanes, and road classes)."
           ]
         },
@@ -54,7 +54,7 @@
           "role": "Integration Lead & Core Developer",
           "date": "Jul 2021 – Apr 2023",
           "highlights": [
-            "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility, securing approvals from multiple OEMs. The system was subsequently released to users in June 2024.",
+            "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility. The system was subsequently released to users in June 2024.",
             "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved decisions across multiple lane options, reduced unnecessary adherence to previously recorded trajectories, and prevented deviations from memory maps.",
             "Optimized turning reference lines by fusing memory maps, perceived lane markers, and online static obstacles with iLQR."
           ]
@@ -70,7 +70,7 @@
       "date": "Jun 2020 – Sep 2020",
       "highlights": [
         "Developed intersection path-planning algorithms using third-order Bézier curve optimization, lane-group combinatorial optimization, and Hybrid A* to generate smooth, collision-free reference lines that respect vehicle kinematics.",
-        "Planned 9,625 intersection paths in Shanghai; 99% met the required standards, and the remaining 1% were correctly flagged for human review.",
+        "Planned 9,625 intersection paths in Shanghai, with 99% meeting the required standards and the remaining 1% correctly flagged for human review.",
         "Deployed the algorithms to the HD-map labeling production platform, increasing labeling efficiency by over 1,000% and replacing error-prone manual operations."
       ],
       "location": "Shanghai, China"
