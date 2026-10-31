@@ -167,6 +167,82 @@
   ],
   "research": [
     {
+      "id": "congestion-pricing",
+      "title": "Data-Driven Robust Congestion Pricing",
+      "paragraphs": [
+        "ETH Zurich &amp; Imperial College London · <a href=\"https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec\">Master’s Thesis</a> · Oct 2020 – May 2021<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dp414/\">Prof. Dario Paccagnan</a> and <a href=\"https://control.ee.ethz.ch/people/profile.john-lygeros.html\">Prof. John Lygeros</a><br/>Keywords: Robust Optimization, Game Theory, Scenario Optimization, Bi-Level Optimization",
+        "I developed a data-driven framework for designing fixed road tolls that improve traffic efficiency under uncertain travel demands. Toll design was formulated as a bilevel optimization problem, with a toll-setting objective at the upper level and a Wardrop traffic equilibrium at the lower level. The formulation accommodated toll limits and restrictions on which roads could be charged.",
+        "Scenario optimization and gradient-based algorithms enabled toll design from observed demand scenarios without requiring knowledge of the demand distribution. Scenario-theoretic bounds quantified out-of-sample performance guarantees and the trade-off between traffic efficiency and robustness.",
+        "The approach was evaluated on the Sioux Falls benchmark network under varying demands and partial tolling restrictions. Across 36,500 unseen demand scenarios with ±5% variation, one selected toll vector kept total travel time within 2% of the social optimum in 99.67% of the tested scenarios."
+      ],
+      "images": [
+        {
+          "asset": {
+            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
+            "path": "images/originals/congestion-sioux-falls.png",
+            "sha256": "882e9146a592dcd55316d6e4bf0ecc4832af8885a1a60e7a0ee9a0af63236554",
+            "bytes": 90591,
+            "width": 784,
+            "height": 635,
+            "frames": 1,
+            "preview": "images/previews/congestion-sioux-falls.webp",
+            "preview_width": 784,
+            "preview_height": 635
+          },
+          "caption": "Sioux Falls Network (24 Nodes, 76 Edges)",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
+            "path": "images/originals/congestion-performance-robustness.png",
+            "sha256": "bab0a9479422f1ac1443d6f79017c912d80ca85c484ae319043d1f86edf59bde",
+            "bytes": 136864,
+            "width": 1338,
+            "height": 1096,
+            "frames": 1,
+            "preview": "images/previews/congestion-performance-robustness.webp",
+            "preview_width": 977,
+            "preview_height": 800
+          },
+          "caption": "Performance–Robustness Trade-off",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
+            "path": "images/originals/congestion-travel-time.png",
+            "sha256": "0b9984e7cfea626ad24325164cd3651a251892cb2b818979064942284f00f3b3",
+            "bytes": 31619,
+            "width": 773,
+            "height": 612,
+            "frames": 1,
+            "preview": "images/previews/congestion-travel-time.webp",
+            "preview_width": 773,
+            "preview_height": 612
+          },
+          "caption": "Travel-Time Performance on Unseen Scenarios",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
+            "path": "images/originals/congestion-toll-comparison.png",
+            "sha256": "5f87ab3591641c5ccf77ceb893e3350b346a39c51f213c3d36ee9b86299d30a2",
+            "bytes": 68366,
+            "width": 772,
+            "height": 612,
+            "frames": 1,
+            "preview": "images/previews/congestion-toll-comparison.webp",
+            "preview_width": 772,
+            "preview_height": 612
+          },
+          "caption": "Toll Magnitude Comparison",
+          "link": null
+        }
+      ]
+    },
+    {
       "title": "Intersection Path Planning for HD Maps",
       "paragraphs": [
         "Intelligent Automotive Business Unit, Huawei · Jun 2020 – Sep 2020<br/>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bézier Curve",
@@ -213,7 +289,8 @@
             "height": 677
           }
         }
-      ]
+      ],
+      "id": "project-1"
     },
     {
       "title": "Constrained Stochastic Path Planning Based on Path Integral",
@@ -255,7 +332,8 @@
           "caption": "Delayed Decision Phenomenon",
           "link": null
         }
-      ]
+      ],
+      "id": "project-2"
     },
     {
       "title": "3D Reconstruction from Depth Maps with Microsoft HoloLens",
@@ -297,7 +375,8 @@
           "caption": "Point Cloud with Reflectivity",
           "link": null
         }
-      ]
+      ],
+      "id": "project-3"
     },
     {
       "title": "Magnetic Control System Design",
@@ -372,7 +451,8 @@
           "caption": "Parameter Study",
           "link": null
         }
-      ]
+      ],
+      "id": "project-4"
     },
     {
       "title": "Robot for 3D Reconstruction with Self-Collision Avoidance",
@@ -415,7 +495,8 @@
           "caption": "Real-Time Motion Mapping",
           "link": null
         }
-      ]
+      ],
+      "id": "project-5"
     },
     {
       "title": "Microscale Platform for the Measurement of Clot Retraction Force",
@@ -459,7 +540,8 @@
           "caption": "Measurement",
           "link": null
         }
-      ]
+      ],
+      "id": "project-6"
     },
     {
       "title": "Multifunctional Portable Instrument for Seed and Panicle Phenotyping",
@@ -519,7 +601,8 @@
           "caption": "Panicle Analysis",
           "link": null
         }
-      ]
+      ],
+      "id": "project-7"
     },
     {
       "title": "Unmanned Ground Vehicle",
@@ -561,7 +644,8 @@
           "caption": "Motion Decomposition",
           "link": null
         }
-      ]
+      ],
+      "id": "project-8"
     }
   ],
   "publications": [

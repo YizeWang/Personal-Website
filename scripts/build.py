@@ -148,13 +148,14 @@ for e in d['education']:
     ed += f'<article class="education-entry {kind}"><div class="education-body">{body}</div><p class="date">{e["date"]}</p></article>'
 ed += '</div>'
 parts.append(section('education', '02', 'Education', 'Excellent academic performance is never the destination.', ed))
-research = '<div class="project-index">' + ''.join(f'<a href="#project-{n}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'
+research = '<div class="project-index">' + ''.join(f'<a href="#{p.get("id", f"project-{n}")}">{n:02d} {esc(title_words(p["title"]))}</a>' for n,p in enumerate(d['research'],1)) + '</div>'
 for n,p in enumerate(d['research'],1):
     meta, *body = p['paragraphs']
     meta = re.sub(r'</?strong>', '', meta)
     meta_rows = re.split(r'<br\s*/?>', meta)
     meta = ''.join(f'<span class="project-meta-row{ " project-meta-keywords" if row.startswith("Keywords:") else "" }">{row}</span>' for row in meta_rows)
-    research += f'<article class="project" id="project-{n}"><header><span class="project-number">PROJECT {n:02d}</span><h3>{esc(title_words(p["title"]))}</h3><p class="project-meta">{meta}</p></header><div class="project-grid"><div class="project-media">' + ''.join(figure(i) for i in p['images']) + '</div><div class="project-copy">'
+    project_id = p.get('id', f'project-{n}')
+    research += f'<article class="project" id="{esc(project_id, quote=True)}"><header><span class="project-number">PROJECT {n:02d}</span><h3>{esc(title_words(p["title"]))}</h3><p class="project-meta">{meta}</p></header><div class="project-grid"><div class="project-media">' + ''.join(figure(i) for i in p['images']) + '</div><div class="project-copy">'
     research += ''.join(f'<p>{v}</p>' for v in body) + '</div></div></article>'
 parts.append(section('research','03','Research','For tomorrow&#39;s robotics and autonomous driving.',research))
 pubs = ''
