@@ -214,7 +214,7 @@
       "title": "Intersection Path Planning for HD Maps",
       "paragraphs": [
         "Intelligent Automotive Business Unit, Huawei · Jun 2020 – Sep 2020<br/>Keywords: Autonomous Driving, Path Planning, HD Map, A* Search, Bézier Curve",
-        "According to the HD map production pipeline, production workers label lane boundaries, crosswalks, obstacles, road connectivity, and so on. We then need to plan paths in the road network for autonomous vehicles. Outside intersections, paths can follow lane centerlines; within intersections, connecting paths are manually labeled, which can lead to inconsistent geometry and kinematic infeasibility.",
+        "In the HD-map production pipeline, labelers annotate lane boundaries, crosswalks, obstacles, and road connectivity. We then need to plan paths in the road network for autonomous vehicles. Outside intersections, paths can follow lane centerlines; within intersections, connecting paths are manually labeled, which can lead to inconsistent geometry and kinematic infeasibility.",
         "To address these problems, I developed an automation tool for path planning at intersections. Given the information around an intersection, the tool generated a smooth virtual lane to connect an incoming lane to an outgoing lane, respecting kinematic constraints, obstacle avoidance, and traffic rules. The tool also flagged potentially invalid paths, helping labelers identify constraint violations without reviewing every result.",
         "The algorithms planned 9,625 intersection paths in Shanghai: 99% met the required standards, while the remaining 1% were correctly flagged for human review. Deployment to the HD-map labeling production platform increased labeling efficiency by over 1,000%."
       ],
@@ -336,9 +336,10 @@
             "width": 600,
             "height": 431,
             "frames": 51,
-            "preview": "images/previews/image12_orig.webp",
+            "preview": "images/previews/image12_orig-animated.webp",
             "preview_width": 600,
-            "preview_height": 431
+            "preview_height": 431,
+            "preview_frames": 51
           },
           "caption": "Point Cloud with Reflectivity",
           "link": null
@@ -380,9 +381,10 @@
             "width": 150,
             "height": 267,
             "frames": 98,
-            "preview": "images/previews/image9_orig.webp",
+            "preview": "images/previews/image9_orig-animated.webp",
             "preview_width": 150,
-            "preview_height": 267
+            "preview_height": 267,
+            "preview_frames": 98
           },
           "caption": "Single Coil Test",
           "link": null
@@ -514,7 +516,7 @@
       "title": "Multifunctional Portable Instrument for Seed Phenotyping",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2015 – Jan 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Image Analysis, PCB, Mechanical Design",
-        "I developed a smartphone-based instrument integrating winnowing, weighing, imaging, analysis, and label printing. Its volume was approximately 2% of that of the reference instruments.",
+        "I developed a smartphone-based instrument integrating winnowing, weighing, imaging, analysis, and label printing.",
         "An Android application used OpenCV to measure morphological parameters and Bluetooth to control the device. A MySQL-backed cloud database supported location-based data collection, while a convolutional neural network achieved 98% seed-counting accuracy.",
         "Phenotypic parameter measurement accuracy exceeded 97%. The project entered a business incubator, and the instrument was deployed in 24 agricultural technology promotion service centers."
       ],
@@ -574,7 +576,7 @@
       "title": "Unmanned Ground Vehicle",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2014 – Jul 2015<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Mechanical Design, PCB, Control, Arduino Microcontroller",
-        "For cutting-edge protected agriculture, it is a leading trend to build an unmanned plant factory that requires robotic machinery as basic autonomous production units. This project investigated the scheduling and coordination of agricultural machines within a modular logistics system, with the objective of developing an integrated intelligent agricultural production system.",
+        "This project explored the transport and coordination of agricultural robots within a modular logistics system.",
         "First, an unmanned ground vehicle was developed to transport agricultural equipment, including harvesting robots. To accommodate challenging terrain, the vehicle supported both autonomous operation and manual control through a tablet-based interface. Second, a mechanical and control system was designed to enable a harvesting robot to board the vehicle via a loading ramp for transport. Safe and reliable loading was achieved by guiding the transport vehicle along rails and ensuring precise positioning. Third, an automated charging system reduced the positioning error between the vehicle and the charging station to within 8 cm during docking, supporting round-the-clock operation."
       ],
       "images": [
@@ -689,7 +691,7 @@
       "2017"
     ],
     [
-      "Outstanding Individual of Student Association (Top 10%)",
+      "Outstanding Student Association Member (Top 10%)",
       "2017"
     ],
     [

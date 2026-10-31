@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -31,9 +32,23 @@ jobs:
           mkdir _site
           cp index.html education.html research.html publication--honors.html personal.html favicon.ico .nojekyll _site/
           cp -R css js images _site/
+          printf '%s\n' "$GITHUB_SHA" > _site/revision.txt
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+      - name: Check revision before publishing
+        id: revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          latest_sha="$(git ls-remote --exit-code origin refs/heads/main | cut -f1)"
+          if [[ "$GITHUB_SHA" == "$latest_sha" ]]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Skipping superseded revision $GITHUB_SHA; main is $latest_sha."
+          fi
       - name: Deploy
         id: deployment
+        if: steps.revision.outputs.current == 'true'
         uses: actions/deploy-pages@v4
