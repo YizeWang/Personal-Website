@@ -75,5 +75,43 @@
       ],
       "location": "Shanghai, China"
     }
-  ]
+  ],
+  "logos": {
+    "NVIDIA": {
+      "source": "https://nvidianews.nvidia.com/_gallery/get_file/?file_id=692f50553d6332b453bbc5c2&file_ext=.png&page_id=5e8bac312cfac277698b5c1f",
+      "path": "images/originals/company-nvidia.png",
+      "sha256": "89b2a915f3865239c8ff0328ec2765940295a37987332f45c7ffe0660a59fd2e",
+      "bytes": 68706,
+      "width": 2160,
+      "height": 1808,
+      "frames": 1,
+      "preview": "images/previews/company-nvidia.webp",
+      "preview_width": 256,
+      "preview_height": 214
+    },
+    "DJI Automotive": {
+      "source": "https://www-cdn.djiits.com/dps/5622076973f439e11ffdac3c57b73558.png",
+      "path": "images/originals/company-dji.png",
+      "sha256": "bd888318408794287b4d42e4dec13cb3b0321beb24f5edf060224d14738969b9",
+      "bytes": 1364,
+      "width": 180,
+      "height": 180,
+      "frames": 1,
+      "preview": "images/previews/company-dji.webp",
+      "preview_width": 180,
+      "preview_height": 180
+    },
+    "Huawei": {
+      "source": "https://www.huawei.com/-/media/htemplate-home/1.0.1.20251205144752/components/assets/img/apple-touch-icon-180.png",
+      "path": "images/originals/company-huawei.png",
+      "sha256": "f56e1f0616fe91c18416dea24ce30da8192c32eb82443ba1af412ad309dd8265",
+      "bytes": 14658,
+      "width": 181,
+      "height": 181,
+      "frames": 1,
+      "preview": "images/previews/company-huawei.webp",
+      "preview_width": 181,
+      "preview_height": 181
+    }
+  }
 }

@@ -101,7 +101,8 @@ def career_highlights(items, term_links=None):
 career = '<div class="career-list">'
 for entry in career_data['entries']:
     date_at_company = entry.get('date_placement') == 'company'
-    career += '<article class="career-entry">'
+    logo = career_data['logos'][entry['company']]
+    career += '<article class="career-entry"><div class="career-entry-heading"><div class="career-logo">' + img(logo, entry['company'] + ' logo') + '</div><div class="career-identity">'
     if date_at_company:
         career += f'<header class="career-company-heading"><h3>{esc(entry["company"])}</h3><p class="date">{esc(entry["date"])}</p></header>'
     else:
@@ -111,7 +112,7 @@ for entry in career_data['entries']:
         if entry.get(key):
             metadata.append(f'<span class="career-{key}">{esc(entry[key])}</span>')
     position_date = '' if date_at_company else f'<p class="date">{esc(entry["date"])}</p>'
-    career += '<div class="career-position"><header class="career-heading"><p class="career-meta">' + ''.join(metadata) + '</p>' + position_date + '</header>'
+    career += '<header class="career-heading"><p class="career-meta">' + ''.join(metadata) + '</p>' + position_date + '</header></div></div><div class="career-position">'
     if entry.get('highlights'):
         career += career_highlights(entry['highlights'])
     for project in entry.get('projects', []):
