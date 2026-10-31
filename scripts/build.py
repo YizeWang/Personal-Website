@@ -138,7 +138,8 @@ for e in d['education']:
             courses += f'<tr><td><span class="course-code">{esc(code)}</span> {esc(title_words(name))}</td><td>{esc(grade)}</td></tr>'
         courses += '</tbody></table></div></details>'
         before, rank = body.rsplit('<strong>', 1)
-        body = before + '<div class="degree-stats"><strong>' + rank + courses + '</div>'
+        rank = re.sub(r'</?strong>', '', rank)
+        body = before + '<div class="degree-stats"><span class="degree-score">' + rank + '</span>' + courses + '</div>'
     ed += f'<article class="education-entry {kind}"><div class="education-body">{body}</div><p class="date">{e["date"]}</p></article>'
 ed += '</div>'
 parts.append(section('education', '02', 'Education', 'Excellent academic performance is never the destination.', ed))
