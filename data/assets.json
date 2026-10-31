@@ -639,51 +639,27 @@
     "preview_height": 514
   },
   {
-    "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-    "path": "images/originals/congestion-sioux-falls.png",
-    "sha256": "882e9146a592dcd55316d6e4bf0ecc4832af8885a1a60e7a0ee9a0af63236554",
-    "bytes": 90591,
-    "width": 784,
-    "height": 635,
+    "source": "User-provided research figure",
+    "path": "images/originals/congestion-multistart-convergence.png",
+    "sha256": "eafc9b31cbf09776a2215826203aa14b00235adb1011fe728ab67ac9c825a3dd",
+    "bytes": 148350,
+    "width": 1036,
+    "height": 748,
     "frames": 1,
-    "preview": "images/previews/congestion-sioux-falls.webp",
-    "preview_width": 784,
-    "preview_height": 635
+    "preview": "images/previews/congestion-multistart-convergence.webp",
+    "preview_width": 1036,
+    "preview_height": 748
   },
   {
-    "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-    "path": "images/originals/congestion-performance-robustness.png",
-    "sha256": "bab0a9479422f1ac1443d6f79017c912d80ca85c484ae319043d1f86edf59bde",
-    "bytes": 136864,
-    "width": 1338,
-    "height": 1096,
+    "source": "User-provided research figure",
+    "path": "images/originals/congestion-zurich-network.png",
+    "sha256": "69ba214745c8d7e60a1f34c595b7ad0c179bbe200bc8603c89dd1e46a0941262",
+    "bytes": 45309,
+    "width": 754,
+    "height": 686,
     "frames": 1,
-    "preview": "images/previews/congestion-performance-robustness.webp",
-    "preview_width": 977,
-    "preview_height": 800
-  },
-  {
-    "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-    "path": "images/originals/congestion-travel-time.png",
-    "sha256": "0b9984e7cfea626ad24325164cd3651a251892cb2b818979064942284f00f3b3",
-    "bytes": 31619,
-    "width": 773,
-    "height": 612,
-    "frames": 1,
-    "preview": "images/previews/congestion-travel-time.webp",
-    "preview_width": 773,
-    "preview_height": 612
-  },
-  {
-    "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-    "path": "images/originals/congestion-toll-comparison.png",
-    "sha256": "5f87ab3591641c5ccf77ceb893e3350b346a39c51f213c3d36ee9b86299d30a2",
-    "bytes": 68366,
-    "width": 772,
-    "height": 612,
-    "frames": 1,
-    "preview": "images/previews/congestion-toll-comparison.webp",
-    "preview_width": 772,
-    "preview_height": 612
+    "preview": "images/previews/congestion-zurich-network.webp",
+    "preview_width": 754,
+    "preview_height": 686
   }
 ]

@@ -170,7 +170,7 @@
       "id": "congestion-pricing",
       "title": "Data-Driven Robust Congestion Pricing",
       "paragraphs": [
-        "ETH Zurich &amp; Imperial College London · <a href=\"https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec\">Master’s Thesis</a> · Oct 2020 – May 2021<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dp414/\">Prof. Dario Paccagnan</a> and <a href=\"https://control.ee.ethz.ch/people/profile.john-lygeros.html\">Prof. John Lygeros</a><br/>Keywords: Robust Optimization, Game Theory, Scenario Optimization, Bi-Level Optimization",
+        "ETH Zurich &amp; Imperial College London · <a href=\"https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec\">Master’s Thesis</a> · Oct 2020 – May 2021<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dp414/\">Prof. Dario Paccagnan</a> and <a href=\"https://control.ee.ethz.ch/people/profile.john-lygeros.html\">Prof. John Lygeros</a>, <a href=\"https://optimisation.doc.ic.ac.uk/\">Computational Optimisation Group</a><br/>Keywords: Robust Optimization, Game Theory, Scenario Optimization, Bi-Level Optimization",
         "I developed a data-driven framework for designing fixed road tolls that improve traffic efficiency under uncertain travel demands. Toll design was formulated as a bilevel optimization problem, with a toll-setting objective at the upper level and a Wardrop traffic equilibrium at the lower level. The formulation accommodated toll limits and restrictions on which roads could be charged.",
         "Scenario optimization and gradient-based algorithms enabled toll design from observed demand scenarios without requiring knowledge of the demand distribution. Scenario-theoretic bounds quantified out-of-sample performance guarantees and the trade-off between traffic efficiency and robustness.",
         "The approach was evaluated on the Sioux Falls benchmark network under varying demands and partial tolling restrictions. Across 36,500 unseen demand scenarios with ±5% variation, one selected toll vector kept total travel time within 2% of the social optimum in 99.67% of the tested scenarios."
@@ -178,66 +178,34 @@
       "images": [
         {
           "asset": {
-            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-            "path": "images/originals/congestion-sioux-falls.png",
-            "sha256": "882e9146a592dcd55316d6e4bf0ecc4832af8885a1a60e7a0ee9a0af63236554",
-            "bytes": 90591,
-            "width": 784,
-            "height": 635,
+            "source": "User-provided research figure",
+            "path": "images/originals/congestion-multistart-convergence.png",
+            "sha256": "eafc9b31cbf09776a2215826203aa14b00235adb1011fe728ab67ac9c825a3dd",
+            "bytes": 148350,
+            "width": 1036,
+            "height": 748,
             "frames": 1,
-            "preview": "images/previews/congestion-sioux-falls.webp",
-            "preview_width": 784,
-            "preview_height": 635
+            "preview": "images/previews/congestion-multistart-convergence.webp",
+            "preview_width": 1036,
+            "preview_height": 748
           },
-          "caption": "Sioux Falls Network (24 Nodes, 76 Edges)",
+          "caption": "Convergence from Different Initial Tolls",
           "link": null
         },
         {
           "asset": {
-            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-            "path": "images/originals/congestion-performance-robustness.png",
-            "sha256": "bab0a9479422f1ac1443d6f79017c912d80ca85c484ae319043d1f86edf59bde",
-            "bytes": 136864,
-            "width": 1338,
-            "height": 1096,
+            "source": "User-provided research figure",
+            "path": "images/originals/congestion-zurich-network.png",
+            "sha256": "69ba214745c8d7e60a1f34c595b7ad0c179bbe200bc8603c89dd1e46a0941262",
+            "bytes": 45309,
+            "width": 754,
+            "height": 686,
             "frames": 1,
-            "preview": "images/previews/congestion-performance-robustness.webp",
-            "preview_width": 977,
-            "preview_height": 800
+            "preview": "images/previews/congestion-zurich-network.webp",
+            "preview_width": 754,
+            "preview_height": 686
           },
-          "caption": "Performance–Robustness Trade-off",
-          "link": null
-        },
-        {
-          "asset": {
-            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-            "path": "images/originals/congestion-travel-time.png",
-            "sha256": "0b9984e7cfea626ad24325164cd3651a251892cb2b818979064942284f00f3b3",
-            "bytes": 31619,
-            "width": 773,
-            "height": 612,
-            "frames": 1,
-            "preview": "images/previews/congestion-travel-time.webp",
-            "preview_width": 773,
-            "preview_height": 612
-          },
-          "caption": "Travel-Time Performance on Unseen Scenarios",
-          "link": null
-        },
-        {
-          "asset": {
-            "source": "https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec",
-            "path": "images/originals/congestion-toll-comparison.png",
-            "sha256": "5f87ab3591641c5ccf77ceb893e3350b346a39c51f213c3d36ee9b86299d30a2",
-            "bytes": 68366,
-            "width": 772,
-            "height": 612,
-            "frames": 1,
-            "preview": "images/previews/congestion-toll-comparison.webp",
-            "preview_width": 772,
-            "preview_height": 612
-          },
-          "caption": "Toll Magnitude Comparison",
+          "caption": "Illustrative Zurich Road Network",
           "link": null
         }
       ]
@@ -501,7 +469,7 @@
     {
       "title": "Microscale Platform for the Measurement of Clot Retraction Force",
       "paragraphs": [
-        "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experiment Design, Mechanical Design, Data Analysis",
+        "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experimental Design, Mechanical Design, Data Analysis",
         "Coagulation monitoring is essential for perioperative care and thrombosis treatment, but existing assays can require bulky equipment and complex setups. We developed a miniaturized device for point-of-care blood coagulation testing by measuring clot retraction force during blood clotting.",
         "A blood drop was localized between a protrusion and a flexible force-sensing beam. Micropillar arrays on the beam assisted the deposition of carbon nanotube films, enabling label-free electrical readout of clot retraction force in real time. We characterized the beam’s mechanical and electrical properties and optimized its design.",
         "My contributions included improving image-based clot tracking during retraction using normalized cross-correlation (NCC) template matching. I developed a laser-cutting-based fabrication process to standardize experimental devices and reduce manufacturing variability, and designed alignment structures to ensure consistent imaging and measurement conditions. I also conducted 50 sets of experiments and analyzed the resulting data to investigate how coagulation behavior varied with disease and physiological condition.",
