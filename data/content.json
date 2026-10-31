@@ -179,22 +179,6 @@
         {
           "asset": {
             "source": "User-provided research figure",
-            "path": "images/originals/congestion-multistart-convergence.png",
-            "sha256": "eafc9b31cbf09776a2215826203aa14b00235adb1011fe728ab67ac9c825a3dd",
-            "bytes": 148350,
-            "width": 1036,
-            "height": 748,
-            "frames": 1,
-            "preview": "images/previews/congestion-multistart-convergence.webp",
-            "preview_width": 1036,
-            "preview_height": 748
-          },
-          "caption": "Convergence from Different Initial Tolls",
-          "link": null
-        },
-        {
-          "asset": {
-            "source": "User-provided research figure",
             "path": "images/originals/congestion-zurich-network.png",
             "sha256": "69ba214745c8d7e60a1f34c595b7ad0c179bbe200bc8603c89dd1e46a0941262",
             "bytes": 45309,
@@ -206,6 +190,22 @@
             "preview_height": 686
           },
           "caption": "Illustrative Zurich Road Network",
+          "link": null
+        },
+        {
+          "asset": {
+            "source": "User-provided research figure",
+            "path": "images/originals/congestion-multistart-convergence.png",
+            "sha256": "eafc9b31cbf09776a2215826203aa14b00235adb1011fe728ab67ac9c825a3dd",
+            "bytes": 148350,
+            "width": 1036,
+            "height": 748,
+            "frames": 1,
+            "preview": "images/previews/congestion-multistart-convergence.webp",
+            "preview_width": 1036,
+            "preview_height": 748
+          },
+          "caption": "Convergence from Different Initial Tolls",
           "link": null
         }
       ]
