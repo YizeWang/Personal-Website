@@ -55,7 +55,7 @@
           "date": "Jul 2021 – Apr 2023",
           "highlights": [
             "Led MOD integration across Perception, Mapping, Localization, Planning, and HMI teams. Demonstrated memory map building, localization, intersection handling, and computational feasibility. The system was subsequently released to users in June 2024.",
-            "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved decisions across multiple lane options, reduced unnecessary adherence to previously recorded trajectories, and prevented deviations from memory maps.",
+            "Developed navigation algorithms using dynamic programming to calculate drivable areas and a greedy algorithm to minimize lane changes. Improved lane-change decisions across multiple lane options, reduced unnecessary adherence to previously recorded trajectories, and prevented deviations from the built memory maps.",
             "Optimized turning reference lines by fusing memory maps, perceived lane markers, and online static obstacles with iLQR."
           ]
         }
