@@ -35,7 +35,7 @@
           "role": "Function Owner & Navigation Algorithm Lead",
           "date": "Apr 2023 – May 2024",
           "highlights": [
-            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation/degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. As of December 2023, the system had served 2,300 customers across 610,000 km of autonomous driving.",
+            "Delivered China’s first mapless HNOA on SGMW YunDuo using a TI TDA4VH automotive SoC (32 TOPS) and a 1R7V sensor configuration. Features included automatic activation/degradation, on/off-ramp navigation, intelligent lane selection, overtaking, speed adaptation, and avoidance of diversion areas and static obstacles. As of December 2023, the system had served 2,300 customers across 610,000 km.",
             "Platformized HNOA across vehicle models from multiple OEMs (Volkswagen, BYD, SGMW, Chery, and Great Wall Motor) supporting different SoC configurations (TI TDA4VH, Qualcomm 8650, and NVIDIA Orin) and navigation providers (AMap and Tencent Map).",
             "Designed HNOA navigation algorithms that achieved a recognition rate of over 98% for navigation-triggered lane-change requirements using only vehicle navigation inputs (maneuvers, distance, suggested lanes, and road classes)."
           ]
