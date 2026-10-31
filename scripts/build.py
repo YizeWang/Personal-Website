@@ -34,7 +34,7 @@ def img(a, alt, eager=False):
 def figure(i):
     a, caption = i['asset'], title_words(i['caption'])
     link = i['link'] or a['path']
-    attrs = 'target="_blank" rel="noopener noreferrer"' if i['link'] else 'data-media'
+    attrs = 'target="_blank" rel="noopener noreferrer"' if i['link'] else 'data-media aria-haspopup="dialog" aria-controls="media-viewer"'
     figure_attrs = ' class="portrait"' if i.get('orientation') == 'portrait' else ''
     inline_asset = {**a, "preview": a["path"], "preview_width": a["width"], "preview_height": a["height"]} if a.get("frames", 1) > 1 and a.get("preview_frames", 1) == 1 else a
     picture = img(inline_asset, caption)
