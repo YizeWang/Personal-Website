@@ -516,9 +516,9 @@
       "title": "Multifunctional Portable Instrument for Seed Phenotyping",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2015 – Jan 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Image Analysis, PCB, Mechanical Design",
-        "I developed a smartphone-based instrument integrating winnowing, weighing, imaging, analysis, and label printing.",
-        "An Android application used OpenCV to measure morphological parameters and Bluetooth to control the device. A MySQL-backed cloud database supported location-based data collection, while a convolutional neural network achieved 98% seed-counting accuracy.",
-        "Phenotypic parameter measurement accuracy exceeded 97%. The project entered a business incubator, and the instrument was deployed in 24 agricultural technology promotion service centers."
+        "I designed and manufactured a portable, smartphone-based instrument for field phenotyping, integrating winnowing, weighing, image capture, data analysis, and label printing. The smartphone served as the main computing and imaging platform, with Bluetooth communication for device control.",
+        "I developed an Android application using OpenCV to measure seed morphological parameters. An HMI allowed users to identify and correct analysis errors. I also built a MySQL-backed cloud database with location-based data collection to support agricultural breeding and statistical analysis, and trained a convolutional neural network on the collected data for seed counting.",
+        "The instrument achieved over 97% accuracy in phenotypic parameter measurement and 98% accuracy in seed counting. The project entered a business incubator, and the instrument was deployed in 24 agricultural technology promotion service centers."
       ],
       "images": [
         {
