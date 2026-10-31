@@ -77,7 +77,7 @@
       "courses_title": "Graduate Courses"
     },
     {
-      "html": "<strong>BEng in Mechanical Engineering (Honor Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 · Rank: 1/441</strong>",
+      "html": "<strong>BEng in Mechanical Engineering (Honors Program)</strong><br/>School of Mechanical Engineering<br/>Shanghai Jiao Tong University, Shanghai, China<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a><br/><strong>GPA: 90 / 100 · Rank: 1/441</strong>",
       "date": "Sep 2014 – Jun 2018",
       "kind": "degree",
       "courses": [
@@ -170,7 +170,7 @@
       "id": "congestion-pricing",
       "title": "Data-Driven Robust Congestion Pricing",
       "paragraphs": [
-        "Imperial College London &amp; ETH Zurich · <a href=\"https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec\">Master’s Thesis</a> · Oct 2020 – May 2021<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dp414/\">Prof. Dario Paccagnan</a> and <a href=\"https://control.ee.ethz.ch/people/profile.john-lygeros.html\">Prof. John Lygeros</a>, <a href=\"https://optimisation.doc.ic.ac.uk/\">Computational Optimisation Group</a><br/>Keywords: Robust Optimization, Game Theory, Scenario Optimization, Bi-Level Optimization",
+        "Imperial College London &amp; ETH Zurich · <a href=\"https://www.research-collection.ethz.ch/entities/publication/f4e3fa8f-d216-4f61-a9af-45d997415aec\">Master’s Thesis</a> · Oct 2020 – May 2021<br/>Advised by <a href=\"https://www.doc.ic.ac.uk/~dp414/\">Prof. Dario Paccagnan</a>, <a href=\"https://optimisation.doc.ic.ac.uk/\">Computational Optimisation Group</a><br/>Keywords: Robust Optimization, Game Theory, Scenario Optimization, Bi-Level Optimization",
         "I developed a data-driven framework for designing fixed road tolls that improve traffic efficiency under uncertain travel demands. Toll design was formulated as a bilevel optimization problem, with a toll-setting objective at the upper level and a Wardrop traffic equilibrium at the lower level. The formulation accommodated toll limits and restrictions on which roads could be charged.",
         "Scenario optimization and gradient-based algorithms enabled toll design from observed demand scenarios without requiring knowledge of the demand distribution. Scenario-theoretic bounds quantified out-of-sample performance guarantees and the trade-off between traffic efficiency and robustness.",
         "The approach was evaluated on the Sioux Falls benchmark network under varying demands and partial tolling restrictions. Across 36,500 unseen demand scenarios with ±5% variation, one selected toll vector kept total travel time within 2% of the social optimum in 99.67% of the tested scenarios."
@@ -626,12 +626,12 @@
     "Mao, Y., Wang, Y., Gong, L., <strong>Wang, Y.</strong>, Ma, Z., Zhou, B., Liu, C., &amp; Zhang, D. (2016, December). <a href=\"https://kns.cnki.net/kcms2/article/abstract?v=bGUDtmHwhl34mNREITPw0eY9i5nngP1OW10a8BDMDozjl1fPenfz4qyFvvoyFfW1gVDHX_TsOV9c3bZBCL9RmP1BjCE_o44-QmM66q3dXZIveSQxlGteUUe_7d8fXNUjgeYLbPktSPvz2z6gb4flqz6KDb-FU-SZQAkHZGih4vqHQZ-3lOqvqA==\">A Multistage Winnowing Fulfilled and Unfulfilled Grains Device and Method Based on Human-computer Interaction</a>. <em>Mechatronics</em>, 3–6, 28."
   ],
   "patents": [
-    "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma, Z., Mao, Y., Zhang, D., &amp; Yuan, Z., “<a href=\"https://patents.google.com/patent/CN206012418U/zh\">A Modular Logistics System for Protected Agriculture Based on Motion Decomposition</a>”, Publication No.: CN206012418U",
-    "[2] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma, Z., Zhang, D., Yuan, Z., &amp; Mao, Y., “<a href=\"https://patents.google.com/patent/CN205642434U/zh\">A Portable Fully Automatic Crop Seed Trait Analyzer Based on Android</a>”, Publication No.: CN205642434U",
-    "[3] Liu, C., Wu, L., Gong, L., Ma, Z., Zhou, B., <strong>Wang, Y.</strong>, Zhang, D., &amp; Yuan, Z., “<a href=\"https://patents.google.com/patent/CN106153546A/zh\">A Grain Panicle Suction and Fixation Device Using Magnetic Sealing and Method of Use</a>”, Publication No.: CN106153546A",
-    "[4] Gong, L., Wang, Y., Mao, Y., Ma, Z., Zhou, B., <strong>Wang, Y.</strong>, Liu, C., &amp; Zhang, D., “<a href=\"https://patents.google.com/patent/CN106111528A/zh\">A Multistage Winnowing Device for Filled and Unfilled Grains Based on Human-Computer Interaction and Method of Use</a>”, Publication No.: CN106111528A",
-    "[5] Gong, L., Ma, Z., Wu, L., Mao, Y., <strong>Wang, Y.</strong>, Yang, H., Zhang, D., Yuan, Z., &amp; Liu, C., “<a href=\"https://patents.google.com/patent/CN106403816A/zh\">A Device and Method for Fixing Grain Panicles Using a Magnetic Pressure Plate</a>”, Publication No.: CN106403816A",
-    "[6] Gong, L., Ma, Z., Mao, Y., Zhou, B., <strong>Wang, Y.</strong>, Yang, H., Wu, L., Zhang, D., &amp; Liu, C., “<a href=\"https://patents.google.com/patent/CN106404780A/zh\">A Tablet-Based Rice Panicle Phenotyping Analyzer and Method of Use</a>”, Publication No.: CN106404780A"
+    "[1] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma, Z., Mao, Y., Zhang, D., &amp; Yuan, Z. (2017). <a href=\"https://patents.google.com/patent/CN206012418U/zh\">A Modular Logistics System for Protected Agriculture Based on Motion Decomposition</a>. Publication No.: CN206012418U.",
+    "[2] <strong>Wang, Y.</strong>, Yang, H., Wang, W., Dai, S., Gong, L., Liu, C., Zhou, B., Ma, Z., Zhang, D., Yuan, Z., &amp; Mao, Y. (2016). <a href=\"https://patents.google.com/patent/CN205642434U/zh\">A Portable Fully Automatic Crop Seed Trait Analyzer Based on Android</a>. Publication No.: CN205642434U.",
+    "[3] Liu, C., Wu, L., Gong, L., Ma, Z., Zhou, B., <strong>Wang, Y.</strong>, Zhang, D., &amp; Yuan, Z. (2016). <a href=\"https://patents.google.com/patent/CN106153546A/zh\">A Grain Panicle Suction and Fixation Device Using Magnetic Sealing and Method of Use</a>. Publication No.: CN106153546A.",
+    "[4] Gong, L., Wang, Y., Mao, Y., Ma, Z., Zhou, B., <strong>Wang, Y.</strong>, Liu, C., &amp; Zhang, D. (2016). <a href=\"https://patents.google.com/patent/CN106111528A/zh\">A Multistage Winnowing Device for Filled and Unfilled Grains Based on Human-Computer Interaction and Method of Use</a>. Publication No.: CN106111528A.",
+    "[5] Gong, L., Ma, Z., Wu, L., Mao, Y., <strong>Wang, Y.</strong>, Yang, H., Zhang, D., Yuan, Z., &amp; Liu, C. (2017). <a href=\"https://patents.google.com/patent/CN106403816A/zh\">A Device and Method for Fixing Grain Panicles Using a Magnetic Pressure Plate</a>. Publication No.: CN106403816A.",
+    "[6] Gong, L., Ma, Z., Mao, Y., Zhou, B., <strong>Wang, Y.</strong>, Yang, H., Wu, L., Zhang, D., &amp; Liu, C. (2017). <a href=\"https://patents.google.com/patent/CN106404780A/zh\">A Tablet-Based Rice Panicle Phenotyping Analyzer and Method of Use</a>. Publication No.: CN106404780A."
   ],
   "honors": [
     [
