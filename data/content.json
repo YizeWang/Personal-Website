@@ -155,7 +155,7 @@
       "kind": "nondegree"
     },
     {
-      "html": "<strong>Research Assistant</strong><br/><a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>University of Michigan, Ann Arbor, USA<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>",
+      "html": "<strong>Research Assistant</strong><br/><a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>University of Michigan, Ann Arbor, USA<br/>Advised by <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Dr. Zida Li</a> and <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>",
       "date": "Jun 2017 – Sep 2017",
       "kind": "nondegree"
     },
@@ -471,7 +471,7 @@
     {
       "title": "Microscale Platform for the Measurement of Clot Retraction Force",
       "paragraphs": [
-        "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experimental Design, Mechanical Design, Data Analysis",
+        "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Dr. Zida Li</a> and <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experimental Design, Mechanical Design, Data Analysis",
         "We developed a miniaturized device that measured clot retraction force through electrical signals from carbon nanotube films deposited on a flexible sensing beam.",
         "My contributions included improving image-based clot tracking with normalized cross-correlation, standardizing device fabrication through laser cutting, and designing alignment structures for consistent measurements. I conducted 50 sets of experiments to investigate how coagulation behavior varied with disease and physiological condition.",
         "Electrical measurements agreed with imaging-based results, and the device distinguished samples with different coagulation profiles. Its small size, low fabrication cost, and low sample consumption supported its potential for point-of-care testing."
