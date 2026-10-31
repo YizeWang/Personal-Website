@@ -1168,6 +1168,11 @@ th:last-child {
   grid-template-columns: repeat(2, minmax(0px, 1fr));
 }
 
+/* Show the instrument overview above the two analysis examples. */
+#project-7 .project-media > figure:first-child {
+  grid-column: 1 / -1;
+}
+
 .project-media figure .media-crop {
   width: min(100%, 224px);
   margin: auto;
