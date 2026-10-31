@@ -470,10 +470,9 @@
       "title": "Microscale Platform for the Measurement of Clot Retraction Force",
       "paragraphs": [
         "University of Michigan · Jun 2017 – Sep 2017<br/>Advised by <a href=\"https://me.engin.umich.edu/people/faculty/jianping-fu\">Prof. Jianping Fu</a> and <a href=\"https://med.szu.edu.cn/en/faculty/engineering/content_10211\">Prof. Zida Li</a>, <a href=\"https://me-web.engin.umich.edu/ibbl/\">Integrated Biosystems and Biomechanics Laboratory</a><br/>Keywords: Image Analysis, Experimental Design, Mechanical Design, Data Analysis",
-        "Coagulation monitoring is essential for perioperative care and thrombosis treatment, but existing assays can require bulky equipment and complex setups. We developed a miniaturized device for point-of-care blood coagulation testing by measuring clot retraction force during blood clotting.",
-        "A blood drop was localized between a protrusion and a flexible force-sensing beam. Micropillar arrays on the beam assisted the deposition of carbon nanotube films, enabling label-free electrical readout of clot retraction force in real time. We characterized the beam’s mechanical and electrical properties and optimized its design.",
-        "My contributions included improving image-based clot tracking during retraction using normalized cross-correlation (NCC) template matching. I developed a laser-cutting-based fabrication process to standardize experimental devices and reduce manufacturing variability, and designed alignment structures to ensure consistent imaging and measurement conditions. I also conducted 50 sets of experiments and analyzed the resulting data to investigate how coagulation behavior varied with disease and physiological condition.",
-        "The measurements agreed with those obtained using an imaging method, and the device differentiated blood samples with different coagulation profiles. Its low fabrication cost, small size, and low blood sample consumption demonstrated its potential for point-of-care coagulation monitoring."
+        "We developed a miniaturized device that measured clot retraction force through electrical signals from carbon nanotube films deposited on a flexible sensing beam.",
+        "My contributions included improving image-based clot tracking with normalized cross-correlation, standardizing device fabrication through laser cutting, and designing alignment structures for consistent measurements. I conducted 50 sets of experiments to investigate how coagulation behavior varied with disease and physiological condition.",
+        "Electrical measurements agreed with imaging-based results, and the device distinguished samples with different coagulation profiles. Its small size, low fabrication cost, and low sample consumption supported its potential for point-of-care testing."
       ],
       "images": [
         {
@@ -512,13 +511,12 @@
       "id": "project-6"
     },
     {
-      "title": "Multifunctional Portable Instrument for Seed and Panicle Phenotyping",
+      "title": "Multifunctional Portable Instrument for Seed Phenotyping",
       "paragraphs": [
         "Shanghai Jiao Tong University · Sep 2015 – Jan 2018<br/>Advised by <a href=\"https://me.sjtu.edu.cn/en/FullTimeTeacher/gongliang.html\">Prof. Liang Gong</a>, <a href=\"https://me.sjtu.edu.cn/upload2/file/20180927/Institute%20of%20Mechatronics%20%26%20Logistics%20Equipment.pdf\">Institute of Mechatronics</a><br/>Keywords: Image Analysis, PCB, Mechanical Design",
-        "For crop breeding and variety screening, it is essential to improve the phenotyping throughput for quantitatively evaluating the seed traits. However, existing high-throughput phenotyping facilities for crop seeds generally have some limitations such as high cost, large size, and heavy weight, which limit field deployment. Thus, a smartphone-based, low-cost, portable instrument to achieve the function of high-throughput field phenotyping for crop seeds is in high demand.",
-        "I designed and manufactured a portable instrument integrating winnowing, weighing, image capture, data analysis, and label printing. Its volume was approximately 2% of that of the existing instruments used for comparison. A smartphone served as the main computing and imaging platform, with Bluetooth communication for device control.",
-        "I developed an Android application with OpenCV-based image analysis to measure seed morphological parameters. A user-friendly HMI enabled users to identify and correct calculation errors. I also built a MySQL-backed cloud database with location-based data collection to support agricultural breeding and statistical analysis, and trained a convolutional neural network on the collected data for seed counting.",
-        "The instrument achieved over 97% accuracy in phenotypic parameter measurement and 98% accuracy in seed counting. The project joined a business incubator, and the instrument was deployed in 24 agricultural technology promotion service centers, with further deployments ongoing at the time."
+        "I developed a smartphone-based instrument integrating winnowing, weighing, imaging, analysis, and label printing. Its volume was approximately 2% of that of the reference instruments.",
+        "An Android application used OpenCV to measure morphological parameters and Bluetooth to control the device. A MySQL-backed cloud database supported location-based data collection, while a convolutional neural network achieved 98% seed-counting accuracy.",
+        "Phenotypic parameter measurement accuracy exceeded 97%. The project entered a business incubator, and the instrument was deployed in 24 agricultural technology promotion service centers."
       ],
       "images": [
         {
