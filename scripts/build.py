@@ -106,8 +106,9 @@ for entry in career_data['entries']:
         if previous_company is not None:
             career += '</article>'
         career += '<article class="career-entry">'
-        if date_at_company:
-            career += f'<header class="career-company-heading"><h3>{esc(entry["company"])}</h3><p class="date">{esc(entry["date"])}</p></header>'
+        company_date = entry.get('company_date') or (entry['date'] if date_at_company else None)
+        if company_date:
+            career += f'<header class="career-company-heading"><h3>{esc(entry["company"])}</h3><p class="date">{esc(company_date)}</p></header>'
         else:
             career += f'<h3>{esc(entry["company"])}</h3>'
         previous_company = entry['company']
